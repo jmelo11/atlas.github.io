@@ -108,7 +108,7 @@ Inheritance diagram for Atlas::Visitor&lt; adouble &gt;:</div>
   <img src="class_atlas_1_1_visitor.png" usemap="#Atlas::Visitor_3C_20adouble_20_3E_map" alt=""/>
   <map id="Atlas::Visitor_3C_20adouble_20_3E_map" name="Atlas::Visitor_3C_20adouble_20_3E_map">
 <area href="class_atlas_1_1_forward_rate_forecaster.html" alt="Atlas::ForwardRateForecaster&lt; adouble &gt;" shape="rect" coords="0,56,250,80"/>
-<area href="class_atlas_1_1_indexer.html" alt="Atlas::Indexer&lt; adouble &gt;" shape="rect" coords="260,56,510,80"/>
+<area href="class_atlas_1_1_indexer.html" title="A class for indexing the cashflows of an instrument." alt="Atlas::Indexer&lt; adouble &gt;" shape="rect" coords="260,56,510,80"/>
 <area href="class_atlas_1_1_n_p_v_calculator.html" title="A class for calculating the net present value of an instrument." alt="Atlas::NPVCalculator&lt; adouble &gt;" shape="rect" coords="520,56,770,80"/>
   </map>
 </div></div>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b56c227db7ff32a1084a79662bb56a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1194794d7138150733888f836bf26f61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#a1194794d7138150733888f836bf26f61">visit</a> (<a class="el" href="class_atlas_1_1_fx_forward.html">FxForward</a>&lt; adouble &gt; &amp;inst)</td></tr>
 <tr class="separator:a1194794d7138150733888f836bf26f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa49197bf6806ebcbcd76042b2adf92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#acfa49197bf6806ebcbcd76042b2adf92">visit</a> (<a class="el" href="class_atlas_1_1_vanilla_swap.html">VanillaSwap</a>&lt; adouble &gt; &amp;inst)</td></tr>
-<tr class="separator:acfa49197bf6806ebcbcd76042b2adf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6620f08a1a07e73b3d5ff14ecc28f6f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#a6620f08a1a07e73b3d5ff14ecc28f6f3">visit</a> (<a class="el" href="class_atlas_1_1_fix_float_swap.html">FixFloatSwap</a>&lt; adouble &gt; &amp;inst)</td></tr>
+<tr class="separator:a6620f08a1a07e73b3d5ff14ecc28f6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename adouble&gt;<br />
@@ -194,8 +194,38 @@ template&lt;typename adouble &gt; </div>
 
 </div>
 </div>
+<a id="a6620f08a1a07e73b3d5ff14ecc28f6f3" name="a6620f08a1a07e73b3d5ff14ecc28f6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6620f08a1a07e73b3d5ff14ecc28f6f3">&#9670;&#160;</a></span>visit() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename adouble &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="class_atlas_1_1_visitor.html">Atlas::Visitor</a>&lt; adouble &gt;::visit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_atlas_1_1_fix_float_swap.html">FixFloatSwap</a>&lt; adouble &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_atlas_1_1_forward_rate_forecaster.html#ab0e57472e86e58995f5ccd38e5feebfc">Atlas::ForwardRateForecaster&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_indexer.html#ad1d7b6ef058ef9235b2259705eae60a2">Atlas::Indexer&lt; adouble &gt;</a>, and <a class="el" href="class_atlas_1_1_n_p_v_calculator.html#ade291081de1f4ef8c048b9ae3fb3a121">Atlas::NPVCalculator&lt; adouble &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a06ce8119063251c2b37223254b049f03" name="a06ce8119063251c2b37223254b049f03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ce8119063251c2b37223254b049f03">&#9670;&#160;</a></span>visit() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ce8119063251c2b37223254b049f03">&#9670;&#160;</a></span>visit() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +255,7 @@ template&lt;typename adouble &gt; </div>
 </div>
 </div>
 <a id="a1194794d7138150733888f836bf26f61" name="a1194794d7138150733888f836bf26f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1194794d7138150733888f836bf26f61">&#9670;&#160;</a></span>visit() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1194794d7138150733888f836bf26f61">&#9670;&#160;</a></span>visit() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,36 +281,6 @@ template&lt;typename adouble &gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="class_atlas_1_1_indexer.html#a1058adefc1c8ea0dfb808786fee0e2e1">Atlas::Indexer&lt; adouble &gt;</a>, and <a class="el" href="class_atlas_1_1_n_p_v_calculator.html#a37917604cc3c081c02e44b3e62058675">Atlas::NPVCalculator&lt; adouble &gt;</a>.</p>
-
-</div>
-</div>
-<a id="acfa49197bf6806ebcbcd76042b2adf92" name="acfa49197bf6806ebcbcd76042b2adf92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfa49197bf6806ebcbcd76042b2adf92">&#9670;&#160;</a></span>visit() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename adouble &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="class_atlas_1_1_visitor.html">Atlas::Visitor</a>&lt; adouble &gt;::visit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_atlas_1_1_vanilla_swap.html">VanillaSwap</a>&lt; adouble &gt; &amp;&#160;</td>
-          <td class="paramname"><em>inst</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="class_atlas_1_1_indexer.html#a101c239d212d7fd9fd58f09406711bd2">Atlas::Indexer&lt; adouble &gt;</a>, and <a class="el" href="class_atlas_1_1_n_p_v_calculator.html#afb8d41e09c79b8d3074a596c48b2f576">Atlas::NPVCalculator&lt; adouble &gt;</a>.</p>
 
 </div>
 </div>

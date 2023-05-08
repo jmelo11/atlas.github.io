@@ -6,5 +6,6 @@ var searchData=
   ['initialize_3',['initialize',['../struct_atlas_1_1_market_data.html#ab32152224777fb83dcfe98520b8f5dfb',1,'Atlas::MarketData']]],
   ['interestrate_4',['InterestRate',['../class_atlas_1_1_interest_rate.html#af15bc8e4da8724bbad0d72dd056b72da',1,'Atlas::InterestRate::InterestRate()=default'],['../class_atlas_1_1_interest_rate.html#a18419137f5e2cc81f1ac153d0c436979',1,'Atlas::InterestRate::InterestRate(adouble r, DayCounter dc, Compounding comp=Compounding::Simple, Frequency freq=Frequency::Annual)']]],
   ['interests_5',['interests',['../class_atlas_1_1_cashflow_profiler.html#a4ba63fa63a4539f0cd99f5f63c19bb3e',1,'Atlas::CashflowProfiler']]],
-  ['interrupt_6',['interrupt',['../class_atlas_1_1_concurrent_queue.html#ac67d72145951d1c4d85ab258859e6942',1,'Atlas::ConcurrentQueue']]]
+  ['interrupt_6',['interrupt',['../class_atlas_1_1_concurrent_queue.html#ac67d72145951d1c4d85ab258859e6942',1,'Atlas::ConcurrentQueue']]],
+  ['is_5fpaused_7',['is_paused',['../class_b_s_1_1thread__pool.html#adc7938f7b2b9140c3f6e729b48db79b2',1,'BS::thread_pool']]]
 ];

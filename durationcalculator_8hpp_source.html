@@ -124,53 +124,41 @@ $(document).ready(function(){initNavTree('durationcalculator_8hpp_source.html','
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_class" href="class_atlas_1_1_n_p_v_calculator.html">NPVCalculator&lt;adouble&gt;</a> npvCacl(marketData_);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_class" href="class_atlas_1_1_interest_rate.html">InterestRate&lt;adouble&gt;</a> rate = tmpProd.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            adouble rateValue          = rate.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keyword">auto</span> f = [&amp;](adouble r) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                npvCacl.clear();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                tmpProd.rate(r);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                npvCacl.visit(tmpProd);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">return</span> npvCacl.results();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            };</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;adouble, double&gt;) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                adouble npv  = f(rate.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>());</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                adouble npv_ = f(rate.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>() + delta_);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                results_     = (npv_ - npv) / npv / delta_;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="comment">//results_ = derivative(f, wrt(rateValue), at(rateValue)) / 100.0;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        };</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> floatingInstSens(<span class="keyword">const</span> T&amp; inst)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            T tmpProd      = inst;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            adouble spread = tmpProd.spread();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            NPVCalculator&lt;adouble&gt; npvCacl(marketData_);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">auto</span> f = [&amp;](adouble s) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                npvCacl.clear();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                tmpProd.spread(s);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                npvCacl.visit(tmpProd);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">return</span> npvCacl.results();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            };</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;adouble, double&gt;) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                adouble npv  = f(spread);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                adouble npv_ = f(spread + delta_);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                results_     = (npv_ - npv) / npv / delta_;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="comment">//results_ = derivative(f, wrt(spread), at(spread)) / 100.0;</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        };</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">const</span> MarketData&lt;adouble&gt;&amp; marketData_;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">double</span> delta_;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">mutable</span> <span class="keywordtype">double</span> results_ = 0.0;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    };</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// namespace Atlas</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif </span><span class="comment">/* FEEC155C_A524_4B89_99CA_672817BB79CD */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">auto</span> f = [&amp;](adouble r) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                npvCacl.clear();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                tmpProd.rate(r);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                npvCacl.visit(tmpProd);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">return</span> npvCacl.results();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            };        </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            adouble npv  = f(rate.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>());</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            adouble npv_ = f(rate.<a class="code hl_function" href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">rate</a>() + delta_);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            results_     = (npv_ - npv) / npv / delta_;          </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordtype">void</span> floatingInstSens(<span class="keyword">const</span> T&amp; inst)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            T tmpProd      = inst;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            adouble spread = tmpProd.spread();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            NPVCalculator&lt;adouble&gt; npvCacl(marketData_);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">auto</span> f = [&amp;](adouble s) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                npvCacl.clear();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                tmpProd.spread(s);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                npvCacl.visit(tmpProd);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <span class="keywordflow">return</span> npvCacl.results();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            };           </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            adouble npv  = f(spread);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            adouble npv_ = f(spread + delta_);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            results_     = (npv_ - npv) / npv / delta_;          </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">const</span> MarketData&lt;adouble&gt;&amp; marketData_;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">double</span> delta_;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">mutable</span> <span class="keywordtype">double</span> results_ = 0.0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace Atlas</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">/* FEEC155C_A524_4B89_99CA_672817BB79CD */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclass_atlas_1_1_const_visitor_html"><div class="ttname"><a href="class_atlas_1_1_const_visitor.html">Atlas::ConstVisitor</a></div><div class="ttdoc">ConstVisitor class.</div><div class="ttdef"><b>Definition:</b> visitor.hpp:58</div></div>
 <div class="ttc" id="aclass_atlas_1_1_duration_calculator_html"><div class="ttname"><a href="class_atlas_1_1_duration_calculator.html">Atlas::DurationCalculator</a></div><div class="ttdef"><b>Definition:</b> durationcalculator.hpp:12</div></div>
 <div class="ttc" id="aclass_atlas_1_1_duration_calculator_html_a5b9086a1d28da24735e82797dad5cac1"><div class="ttname"><a href="class_atlas_1_1_duration_calculator.html#a5b9086a1d28da24735e82797dad5cac1">Atlas::DurationCalculator::visit</a></div><div class="ttdeci">void visit(const FixedRateInstrument&lt; adouble &gt; &amp;inst) const override</div><div class="ttdef"><b>Definition:</b> durationcalculator.hpp:23</div></div>
@@ -182,7 +170,7 @@ $(document).ready(function(){initNavTree('durationcalculator_8hpp_source.html','
 <div class="ttc" id="aclass_atlas_1_1_floating_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_floating_rate_instrument.html">Atlas::FloatingRateInstrument</a></div><div class="ttdoc">An class for floating, single-legged, rate instruments.</div><div class="ttdef"><b>Definition:</b> floatingrateinstrument.hpp:15</div></div>
 <div class="ttc" id="aclass_atlas_1_1_interest_rate_html"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html">Atlas::InterestRate</a></div><div class="ttdef"><b>Definition:</b> interestrate.hpp:16</div></div>
 <div class="ttc" id="aclass_atlas_1_1_interest_rate_html_ac1a684086c91a29461b73d2de5cd789a"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html#ac1a684086c91a29461b73d2de5cd789a">Atlas::InterestRate::rate</a></div><div class="ttdeci">adouble rate() const</div><div class="ttdef"><b>Definition:</b> interestrate.hpp:34</div></div>
-<div class="ttc" id="aclass_atlas_1_1_n_p_v_calculator_html"><div class="ttname"><a href="class_atlas_1_1_n_p_v_calculator.html">Atlas::NPVCalculator</a></div><div class="ttdoc">A class for calculating the net present value of an instrument.</div><div class="ttdef"><b>Definition:</b> npvcalculator.hpp:18</div></div>
+<div class="ttc" id="aclass_atlas_1_1_n_p_v_calculator_html"><div class="ttname"><a href="class_atlas_1_1_n_p_v_calculator.html">Atlas::NPVCalculator</a></div><div class="ttdoc">A class for calculating the net present value of an instrument.</div><div class="ttdef"><b>Definition:</b> npvcalculator.hpp:19</div></div>
 <div class="ttc" id="aindexer_8hpp_html"><div class="ttname"><a href="indexer_8hpp.html">indexer.hpp</a></div></div>
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
 <div class="ttc" id="anpvcalculator_8hpp_html"><div class="ttname"><a href="npvcalculator_8hpp.html">npvcalculator.hpp</a></div></div>

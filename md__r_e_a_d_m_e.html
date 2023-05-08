@@ -103,9 +103,12 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 <li>Multithreading: contar con una estructura que permita utilizar la librería de forma thread-safe es crucial para poder sacarle el máximo de rendimiento.</li>
 <li>Diferenciación automática: AAD se ha convertido en un estándar para el cálculo de sensibilidades en el mundo financiero, habilitando la posibilidad de contar con riesgos de forma automática sin tener que recalcular todos nuestros instrumentos. Esta funcionalidad es crucial si, por ejemplo, se busca calcular XVAs u otras métricas.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Documentación</h2>
+<p>Es posible encontrar la documentación disponible hasta hoy en <a href="https://jmelo11.github.io/atlasdocs/">https://jmelo11.github.io/atlasdocs/</a></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Roadmap</h1>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Generales</h2>
 <ul>
 <li>[x] Estructura básica de las clases (en desarrollo)</li>
@@ -118,7 +121,7 @@ Generales</h2>
 <li>[ ] Paralelización GPU (depende de factibilidad)</li>
 <li>[ ] Customización instrumentos (incorporar parámetros QL)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Funcionalidades</h2>
 <ul>
 <li>[x] NPV</li>
@@ -126,7 +129,7 @@ Funcionalidades</h2>
 <li>[x] Tasas Par</li>
 <li>[x] ZSpread</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Instrumentos</h2>
 <ul>
 <li>[x] Productos lineales<ul>
@@ -154,20 +157,20 @@ Instrumentos</h2>
 </li>
 <li>[ ] Productos no lineales</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Curvas</h2>
 <ul>
 <li>[x] Interpolación con soporte AD</li>
 <li>[x] Curvas con soporte AD</li>
 <li>[ ] Bootstrap con soporte AD</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Modelos</h2>
 <ul>
 <li>[x] Generación de tasas en base a curvas estáticas</li>
 <li>[ ] LGM para generación de trayectorias de mercado</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Requisitos previos</h2>
 <p>Antes de compilar el proyecto, es necesario instalar las siguientes bibliotecas:</p>
 <ul>
@@ -176,7 +179,7 @@ Requisitos previos</h2>
 <li>XAD: <a href="https://github.com/xcelerit/xad/">https://github.com/xcelerit/xad/</a></li>
 </ul>
 <p>El objetivo futuro es reemplazar estas dependencias por versiones internas del proyecto.</p>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 Estructura de directorios recomendada</h3>
 <p>Para facilitar el proceso de compilación, se sugiere organizar los directorios de la siguiente manera:</p>
 <ul>
@@ -192,17 +195,17 @@ Estructura de directorios recomendada</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 Compilación de QuantLib con CMake</h3>
 <ol type="1">
 <li>Dentro del directorio libs/QuantLib, cree una carpeta llamada build.</li>
 <li>Abra una terminal y navegue hasta la carpeta build recién creada.</li>
 <li>Ejecute los siguientes comandos, reemplazando &lt;path/to/builds/config&gt; y &lt;your/boost/path&gt; con las rutas apropiadas:</li>
 </ol>
-<div class="fragment"><div class="line">cmake .. -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39;</div>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=17 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39; -DQL_BUILD_BENCHMARK=OFF -DQL_BUILD_EXAMPLES=OFF -DQL_BUILD_TEST_SUITE=OFF -DCMAKE_CXX_FLAGS=&quot;/MD /EHsc /MP&quot; -DQL_TAGGED_LAYOUT=OFF</div>
 <div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
-</div><!-- fragment --><p>Donde &lt;config&gt; puede ser Debug o Release, dependiendo de la configuración que desee compilar.</p>
-<h3><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><p>Donde config puede ser Debug o Release, dependiendo de la configuración que desee compilar.</p>
+<h3><a class="anchor" id="autotoc_md11"></a>
 Compilación de XAD con CMake</h3>
 <ol type="1">
 <li>Dentro del directorio libs/XAD, cree una carpeta llamada build.</li>
@@ -210,27 +213,27 @@ Compilación de XAD con CMake</h3>
 <li>Ejecute los siguientes comandos, teniendo en cuenta las siguientes opciones:</li>
 </ol>
 <ul>
-<li>XAD_STATIC_MSVC_RUNTIME: Cambia la biblioteca de tiempo de ejecución en Windows. Si está utilizando Windows y QuantLib tiene el runtime estático, configure esta opción en ON.</li>
+<li>XAD_STATIC_MSVC_RUNTIME: Cambia la biblioteca de tiempo de ejecución en Windows. Si está utilizando Windows y QuantLib tiene el runtime estático, configure esta opción en OFF.</li>
 <li>XAD_SIMD_OPTION: Ajusta la configuración para usar instrucciones de vectorización avanzadas en procesadores Intel. Modifíquelo según las necesidades del usuario.</li>
 </ul>
-<div class="fragment"><div class="line">cmake .. -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39; -DXAD_STATIC_MSVC_RUNTIME=ON</div>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=17 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DXAD_STATIC_MSVC_RUNTIME=OFF -DXAD_SIMD_OPTION=&#39;AVX2&#39; </div>
 <div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
-<div class="line">Donde &lt;config&gt; puede ser Debug o Release.</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
 Instalación de Boost</h3>
 <p>Boost incluye un instalador. Siga las instrucciones en <a href="https://www.boost.org/doc/libs/1_82_0/more/getting_started/windows.html">https://www.boost.org/doc/libs/1_82_0/more/getting_started/windows.html</a> para instalarlo en su sistema.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 Compilación de Atlas</h3>
 <ol type="1">
 <li>Dentro del directorio del proyecto <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>, cree una carpeta llamada build.</li>
 <li>Abra una terminal y navegue hasta la carpeta build recién creada.</li>
 <li>Ejecute los siguientes comandos, reemplazando &lt;path/to/builds/config&gt; y &lt;your/boost/path&gt; con las rutas apropiadas:</li>
 </ol>
-<div class="fragment"><div class="line">cmake .. -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39;</div>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=17 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/builds/config&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39;</div>
 <div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
-Instalación modulo Python.</h3>
-<p>En el caso de querer instalar el paquete desde este repositorio, una vez instaladas las librerias, debe:</p><ol type="1">
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
+Instalación modulo Python</h3>
+<p>En el caso de querer instalar el paquete desde este repositorio, es necesario configurar el archivo <code>setup.py</code>. En este caso, sera necesario tambien contar con pybind11 instalado. Por consistencia se recomienda utilizar CMAKE para esto, ya que de esta forma funcionará el comando <code>find_package</code>. Una vez instalada y seleccionada la opcion <code>BUID_PYTHON=ON</code> al configurar <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>, bastara con:</p>
+<ol type="1">
 <li>Ir con la terminal a la carpeta &lt;python&gt;</li>
 <li>Ejectura el comando <code>pip install .</code></li>
 </ol>

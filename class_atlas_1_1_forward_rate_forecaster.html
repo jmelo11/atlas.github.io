@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9705c635a92505df9bbc5b12e60b7b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6837aa370247fc55fae2886f9050478f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_forward_rate_forecaster.html#a6837aa370247fc55fae2886f9050478f">visit</a> (<a class="el" href="class_atlas_1_1_floating_rate_instrument.html">FloatingRateInstrument</a>&lt; adouble &gt; &amp;inst) override</td></tr>
 <tr class="separator:a6837aa370247fc55fae2886f9050478f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e57472e86e58995f5ccd38e5feebfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_forward_rate_forecaster.html#ab0e57472e86e58995f5ccd38e5feebfc">visit</a> (<a class="el" href="class_atlas_1_1_fix_float_swap.html">FixFloatSwap</a>&lt; adouble &gt; &amp;inst) override</td></tr>
+<tr class="separator:ab0e57472e86e58995f5ccd38e5feebfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_atlas_1_1_visitor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_atlas_1_1_visitor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_atlas_1_1_visitor.html">Atlas::Visitor&lt; adouble &gt;</a></td></tr>
 <tr class="memitem:a205bafa2c1e242a00f8c4a91c955e6d4 inherit pub_methods_class_atlas_1_1_visitor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#a205bafa2c1e242a00f8c4a91c955e6d4">~Visitor</a> ()=default</td></tr>
 <tr class="separator:a205bafa2c1e242a00f8c4a91c955e6d4 inherit pub_methods_class_atlas_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b56c227db7ff32a1084a79662bb56a7 inherit pub_methods_class_atlas_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1194794d7138150733888f836bf26f61 inherit pub_methods_class_atlas_1_1_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#a1194794d7138150733888f836bf26f61">visit</a> (<a class="el" href="class_atlas_1_1_fx_forward.html">FxForward</a>&lt; adouble &gt; &amp;inst)</td></tr>
 <tr class="separator:a1194794d7138150733888f836bf26f61 inherit pub_methods_class_atlas_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa49197bf6806ebcbcd76042b2adf92 inherit pub_methods_class_atlas_1_1_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#acfa49197bf6806ebcbcd76042b2adf92">visit</a> (<a class="el" href="class_atlas_1_1_vanilla_swap.html">VanillaSwap</a>&lt; adouble &gt; &amp;inst)</td></tr>
-<tr class="separator:acfa49197bf6806ebcbcd76042b2adf92 inherit pub_methods_class_atlas_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6620f08a1a07e73b3d5ff14ecc28f6f3 inherit pub_methods_class_atlas_1_1_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_visitor.html#a6620f08a1a07e73b3d5ff14ecc28f6f3">visit</a> (<a class="el" href="class_atlas_1_1_fix_float_swap.html">FixFloatSwap</a>&lt; adouble &gt; &amp;inst)</td></tr>
+<tr class="separator:a6620f08a1a07e73b3d5ff14ecc28f6f3 inherit pub_methods_class_atlas_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9705c635a92505df9bbc5b12e60b7b27" name="a9705c635a92505df9bbc5b12e60b7b27"></a>
@@ -156,8 +158,38 @@ template&lt;typename adouble &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab0e57472e86e58995f5ccd38e5feebfc" name="ab0e57472e86e58995f5ccd38e5feebfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e57472e86e58995f5ccd38e5feebfc">&#9670;&#160;</a></span>visit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename adouble &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_atlas_1_1_forward_rate_forecaster.html">Atlas::ForwardRateForecaster</a>&lt; adouble &gt;::visit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_atlas_1_1_fix_float_swap.html">FixFloatSwap</a>&lt; adouble &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_atlas_1_1_visitor.html#a6620f08a1a07e73b3d5ff14ecc28f6f3">Atlas::Visitor&lt; adouble &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a6837aa370247fc55fae2886f9050478f" name="a6837aa370247fc55fae2886f9050478f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6837aa370247fc55fae2886f9050478f">&#9670;&#160;</a></span>visit()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6837aa370247fc55fae2886f9050478f">&#9670;&#160;</a></span>visit() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

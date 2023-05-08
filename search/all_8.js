@@ -18,5 +18,6 @@ var searchData=
   ['interests_15',['interests',['../class_atlas_1_1_cashflow_profiler.html#a4ba63fa63a4539f0cd99f5f63c19bb3e',1,'Atlas::CashflowProfiler']]],
   ['interpolator_16',['Interpolator',['../class_atlas_1_1_interpolator.html',1,'Atlas']]],
   ['interpolator_2ehpp_17',['interpolator.hpp',['../interpolator_8hpp.html',1,'']]],
-  ['interrupt_18',['interrupt',['../class_atlas_1_1_concurrent_queue.html#ac67d72145951d1c4d85ab258859e6942',1,'Atlas::ConcurrentQueue']]]
+  ['interrupt_18',['interrupt',['../class_atlas_1_1_concurrent_queue.html#ac67d72145951d1c4d85ab258859e6942',1,'Atlas::ConcurrentQueue']]],
+  ['is_5fpaused_19',['is_paused',['../class_b_s_1_1thread__pool.html#adc7938f7b2b9140c3f6e729b48db79b2',1,'BS::thread_pool']]]
 ];

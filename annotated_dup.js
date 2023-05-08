@@ -20,6 +20,7 @@ var annotated_dup =
       [ "FixedRateEqualRedemptionInstrument", "class_atlas_1_1_fixed_rate_equal_redemption_instrument.html", "class_atlas_1_1_fixed_rate_equal_redemption_instrument" ],
       [ "FixedRateInstrument", "class_atlas_1_1_fixed_rate_instrument.html", "class_atlas_1_1_fixed_rate_instrument" ],
       [ "FixedRateLeg", "class_atlas_1_1_fixed_rate_leg.html", "class_atlas_1_1_fixed_rate_leg" ],
+      [ "FixFloatSwap", "class_atlas_1_1_fix_float_swap.html", "class_atlas_1_1_fix_float_swap" ],
       [ "FlatForwardStrategy", "class_atlas_1_1_flat_forward_strategy.html", "class_atlas_1_1_flat_forward_strategy" ],
       [ "FloatingRateBulletInstrument", "class_atlas_1_1_floating_rate_bullet_instrument.html", "class_atlas_1_1_floating_rate_bullet_instrument" ],
       [ "FloatingRateCoupon", "class_atlas_1_1_floating_rate_coupon.html", "class_atlas_1_1_floating_rate_coupon" ],
@@ -54,13 +55,19 @@ var annotated_dup =
       [ "ThreadPool", "class_atlas_1_1_thread_pool.html", "class_atlas_1_1_thread_pool" ],
       [ "Timer", "class_atlas_1_1_timer.html", "class_atlas_1_1_timer" ],
       [ "TwoLegMixin", "class_atlas_1_1_two_leg_mixin.html", "class_atlas_1_1_two_leg_mixin" ],
-      [ "VanillaSwap", "class_atlas_1_1_vanilla_swap.html", "class_atlas_1_1_vanilla_swap" ],
       [ "Visitor", "class_atlas_1_1_visitor.html", "class_atlas_1_1_visitor" ],
       [ "YieldTermStructure", "class_atlas_1_1_yield_term_structure.html", "class_atlas_1_1_yield_term_structure" ],
       [ "YieldTermStructureStrategy", "class_atlas_1_1_yield_term_structure_strategy.html", "class_atlas_1_1_yield_term_structure_strategy" ],
       [ "ZeroCouponInstrument", "class_atlas_1_1_zero_coupon_instrument.html", "class_atlas_1_1_zero_coupon_instrument" ],
       [ "ZeroRateStrategy", "class_atlas_1_1_zero_rate_strategy.html", "class_atlas_1_1_zero_rate_strategy" ],
       [ "ZSpreadCalculator", "class_atlas_1_1_z_spread_calculator.html", "class_atlas_1_1_z_spread_calculator" ]
+    ] ],
+    [ "BS", "namespace_b_s.html", [
+      [ "blocks", "class_b_s_1_1blocks.html", "class_b_s_1_1blocks" ],
+      [ "multi_future", "class_b_s_1_1multi__future.html", "class_b_s_1_1multi__future" ],
+      [ "synced_stream", "class_b_s_1_1synced__stream.html", "class_b_s_1_1synced__stream" ],
+      [ "thread_pool", "class_b_s_1_1thread__pool.html", "class_b_s_1_1thread__pool" ],
+      [ "timer", "class_b_s_1_1timer.html", "class_b_s_1_1timer" ]
     ] ],
     [ "std", "namespacestd.html", [
       [ "hash< Atlas::MarketRequest::DiscountFactor >", "structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_discount_factor_01_4.html", "structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_discount_factor_01_4" ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['std_0',['std',['../namespacestd.html',1,'']]]
+  ['bs_0',['BS',['../namespace_b_s.html',1,'']]]
 ];

@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "BS::blocks< T1, T2, T >", "class_b_s_1_1blocks.html", null ],
     [ "Atlas::Bucket< adouble >", "struct_atlas_1_1_bucket.html", null ],
     [ "Atlas::ConcurrentQueue< T >", "class_atlas_1_1_concurrent_queue.html", null ],
     [ "Atlas::ConcurrentQueue< Task >", "class_atlas_1_1_concurrent_queue.html", null ],
@@ -31,6 +32,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Atlas::Instrument< adouble >", "class_atlas_1_1_instrument.html", [
+      [ "Atlas::FixFloatSwap< adouble >", "class_atlas_1_1_fix_float_swap.html", null ],
       [ "Atlas::FixedRateInstrument< adouble >", "class_atlas_1_1_fixed_rate_instrument.html", [
         [ "Atlas::CustomFixedRateInstrument< adouble >", "class_atlas_1_1_custom_fixed_rate_instrument.html", null ],
         [ "Atlas::EqualPaymentInstrument< adouble >", "class_atlas_1_1_equal_payment_instrument.html", null ],
@@ -43,8 +45,7 @@ var hierarchy =
         [ "Atlas::FloatingRateBulletInstrument< adouble >", "class_atlas_1_1_floating_rate_bullet_instrument.html", null ],
         [ "Atlas::FloatingRateEqualRedemptionInstrument< adouble >", "class_atlas_1_1_floating_rate_equal_redemption_instrument.html", null ]
       ] ],
-      [ "Atlas::FxForward< adouble >", "class_atlas_1_1_fx_forward.html", null ],
-      [ "Atlas::VanillaSwap< adouble >", "class_atlas_1_1_vanilla_swap.html", null ]
+      [ "Atlas::FxForward< adouble >", "class_atlas_1_1_fx_forward.html", null ]
     ] ],
     [ "Atlas::InterestRate< adouble >", "class_atlas_1_1_interest_rate.html", null ],
     [ "Atlas::Interpolator< adouble >", "class_atlas_1_1_interpolator.html", [
@@ -65,6 +66,7 @@ var hierarchy =
       [ "Atlas::StaticYieldModel< adouble >", "class_atlas_1_1_static_yield_model.html", null ]
     ] ],
     [ "Atlas::MonteCarloEngine< adouble >", "class_atlas_1_1_monte_carlo_engine.html", null ],
+    [ "BS::multi_future< T >", "class_b_s_1_1multi__future.html", null ],
     [ "Atlas::NewtonRaphsonSolver", "class_atlas_1_1_newton_raphson_solver.html", null ],
     [ "Atlas::OneLegMixin< adouble, FirstLeg >", "class_atlas_1_1_one_leg_mixin.html", null ],
     [ "Atlas::OneLegMixin< adouble, FixedRateLeg< adouble > >", "class_atlas_1_1_one_leg_mixin.html", [
@@ -79,11 +81,14 @@ var hierarchy =
     [ "Atlas::MarketRequest::Price", "struct_atlas_1_1_market_request_1_1_price.html", null ],
     [ "Atlas::Profile< adouble >", "class_atlas_1_1_profile.html", null ],
     [ "Atlas::RateIndex< adouble >", "class_atlas_1_1_rate_index.html", null ],
+    [ "BS::synced_stream", "class_b_s_1_1synced__stream.html", null ],
+    [ "BS::thread_pool", "class_b_s_1_1thread__pool.html", null ],
     [ "Atlas::ThreadPool", "class_atlas_1_1_thread_pool.html", null ],
     [ "Atlas::Timer", "class_atlas_1_1_timer.html", null ],
+    [ "BS::timer", "class_b_s_1_1timer.html", null ],
     [ "Atlas::TwoLegMixin< FirstLeg, SecondLeg >", "class_atlas_1_1_two_leg_mixin.html", null ],
     [ "Atlas::TwoLegMixin< FixedRateLeg< adouble >, FloatingRateLeg< adouble > >", "class_atlas_1_1_two_leg_mixin.html", [
-      [ "Atlas::VanillaSwap< adouble >", "class_atlas_1_1_vanilla_swap.html", null ]
+      [ "Atlas::FixFloatSwap< adouble >", "class_atlas_1_1_fix_float_swap.html", null ]
     ] ],
     [ "Atlas::Visitor< adouble >", "class_atlas_1_1_visitor.html", [
       [ "Atlas::ForwardRateForecaster< adouble >", "class_atlas_1_1_forward_rate_forecaster.html", null ],
@@ -93,9 +98,7 @@ var hierarchy =
     [ "Atlas::YieldTermStructure< adouble >", "class_atlas_1_1_yield_term_structure.html", null ],
     [ "Atlas::YieldTermStructureStrategy< adouble >", "class_atlas_1_1_yield_term_structure_strategy.html", [
       [ "Atlas::DiscountStrategy< adouble, Interpol >", "class_atlas_1_1_discount_strategy.html", null ],
-      [ "Atlas::FlatForwardStrategy< adouble >", "class_atlas_1_1_flat_forward_strategy.html", null ]
-    ] ],
-    [ "Atlas::YieldTermStructureStrategy< dual >", "class_atlas_1_1_yield_term_structure_strategy.html", [
+      [ "Atlas::FlatForwardStrategy< adouble >", "class_atlas_1_1_flat_forward_strategy.html", null ],
       [ "Atlas::ZeroRateStrategy< adouble, Interpol >", "class_atlas_1_1_zero_rate_strategy.html", null ]
     ] ]
 ];

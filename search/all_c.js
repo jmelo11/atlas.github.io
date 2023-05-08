@@ -20,5 +20,7 @@ var searchData=
   ['model_2ehpp_17',['model.hpp',['../model_8hpp.html',1,'']]],
   ['montecarloengine_18',['MonteCarloEngine',['../class_atlas_1_1_monte_carlo_engine.html',1,'Atlas']]],
   ['month_19',['Month',['../namespace_atlas.html#a95d2f81e1148909d7cb1655eb1af0edc',1,'Atlas']]],
-  ['mxn_20',['MXN',['../namespace_atlas.html#a73ef466ee88db8fe8d60bdc551a0998c',1,'Atlas']]]
+  ['ms_20',['ms',['../class_b_s_1_1timer.html#a69eabae9b119282e3cb1f8a13fa02159',1,'BS::timer']]],
+  ['multi_5ffuture_21',['multi_future',['../class_b_s_1_1multi__future.html',1,'BS::multi_future&lt; T &gt;'],['../class_b_s_1_1multi__future.html#a320812d6a9287fa2aedf3deab6edee1a',1,'BS::multi_future::multi_future()']]],
+  ['mxn_22',['MXN',['../namespace_atlas.html#a73ef466ee88db8fe8d60bdc551a0998c',1,'Atlas']]]
 ];

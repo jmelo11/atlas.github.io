@@ -3,6 +3,7 @@ var class_atlas_1_1_make_leg =
     [ "MakeLeg", "class_atlas_1_1_make_leg.html#a9f628429a54760321ff8551040795452", null ],
     [ "build", "class_atlas_1_1_make_leg.html#af841f99b33ae54c555a9953f09280848", null ],
     [ "calendar", "class_atlas_1_1_make_leg.html#a8edf165414feb8ae1b8e787cef82663e", null ],
+    [ "createRedemptions", "class_atlas_1_1_make_leg.html#a5725437f5c56de4051b41c9ed6cab5a0", null ],
     [ "currency", "class_atlas_1_1_make_leg.html#a8362ff3ebba9b212fa263f5ba0343cd4", null ],
     [ "discountCurveContext", "class_atlas_1_1_make_leg.html#a1cd79e791710dcc417feea2cd213b3ea", null ],
     [ "endDate", "class_atlas_1_1_make_leg.html#a16de6efb11a039404c8aa139aa874f0b", null ],

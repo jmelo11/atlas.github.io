@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['zerocouponinstrument_0',['ZeroCouponInstrument',['../class_atlas_1_1_zero_coupon_instrument.html',1,'Atlas::ZeroCouponInstrument&lt; adouble &gt;'],['../class_atlas_1_1_zero_coupon_instrument.html#aa8271ea9eab9f0b88b5010152f39c09a',1,'Atlas::ZeroCouponInstrument::ZeroCouponInstrument(const Date &amp;startDate, const Date &amp;endDate, double notional, const InterestRate&lt; adouble &gt; &amp;rate)'],['../class_atlas_1_1_zero_coupon_instrument.html#add222faab2129f7f4af1f8486e408b69',1,'Atlas::ZeroCouponInstrument::ZeroCouponInstrument(const Date &amp;startDate, const Date &amp;endDate, double notional, const InterestRate&lt; adouble &gt; &amp;rate, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)']]],
-  ['zerocouponinstrument_2ehpp_1',['zerocouponinstrument.hpp',['../zerocouponinstrument_8hpp.html',1,'']]],
-  ['zeroratecurve_2ehpp_2',['zeroratecurve.hpp',['../zeroratecurve_8hpp.html',1,'']]],
-  ['zeroratestrategy_3',['ZeroRateStrategy',['../class_atlas_1_1_zero_rate_strategy.html',1,'Atlas::ZeroRateStrategy&lt; adouble, Interpol &gt;'],['../class_atlas_1_1_zero_rate_strategy.html#a23440ee4c5c8fefa6c8cd3a44c3353b2',1,'Atlas::ZeroRateStrategy::ZeroRateStrategy()']]],
-  ['zspreadcalculator_4',['ZSpreadCalculator',['../class_atlas_1_1_z_spread_calculator.html',1,'Atlas::ZSpreadCalculator&lt; adouble &gt;'],['../class_atlas_1_1_z_spread_calculator.html#a8a8ba4ce7374a61a471fbbd7e71f54f8',1,'Atlas::ZSpreadCalculator::ZSpreadCalculator()']]],
-  ['zspreadcalculator_2ehpp_5',['zspreadcalculator.hpp',['../zspreadcalculator_8hpp.html',1,'']]]
+  ['yield_0',['yield',['../class_atlas_1_1_static_yield_model.html#a46edd01ee538a8ed1a656339e0da2b95',1,'Atlas::StaticYieldModel::yield(const InterestRate&lt; adouble &gt; &amp;y)'],['../class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce',1,'Atlas::StaticYieldModel::yield() const']]],
+  ['yield_5f_1',['yield_',['../class_atlas_1_1_static_yield_model.html#a1a8265bc5d91b6bcaf66d3c1beec501f',1,'Atlas::StaticYieldModel']]],
+  ['yieldtermstructure_2',['YieldTermStructure',['../class_atlas_1_1_yield_term_structure.html',1,'Atlas::YieldTermStructure&lt; adouble &gt;'],['../class_atlas_1_1_yield_term_structure.html#a8f497531c06480ee1ccda311d2517f82',1,'Atlas::YieldTermStructure::YieldTermStructure(std::unique_ptr&lt; YieldTermStructureStrategy&lt; adouble &gt; &gt; strategy)'],['../class_atlas_1_1_yield_term_structure.html#a84614815319fc17e4e0fc337aa0f1585',1,'Atlas::YieldTermStructure::YieldTermStructure(const YieldTermStructure &amp;other)']]],
+  ['yieldtermstructure_2ehpp_3',['yieldtermstructure.hpp',['../yieldtermstructure_8hpp.html',1,'']]],
+  ['yieldtermstructurestrategy_4',['YieldTermStructureStrategy',['../class_atlas_1_1_yield_term_structure_strategy.html',1,'Atlas']]]
 ];
