@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('staticyieldmodel_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('staticyieldmodel_8hpp_source.html','')
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_b686930ab4f68b5b3ae6496555bbfbc2.html">models</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">staticyieldmodel.hpp</div></div>
 </div><!--header-->
@@ -103,9 +87,9 @@ $(document).ready(function(){initNavTree('staticyieldmodel_8hpp_source.html','')
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> a<span class="keywordtype">double</span>&gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_atlas_1_1_static_yield_model.html">StaticYieldModel</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_atlas_1_1_model.html">Model</a>&lt;adouble&gt; {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>       <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html#a9b00515eb6eeaac0275c89e0252e4e48">   16</a></span>        <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a9b00515eb6eeaac0275c89e0252e4e48">StaticYieldModel</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_atlas_1_1_market_request.html">MarketRequest</a>&amp; marketRequest, <span class="keyword">const</span> <a class="code hl_class" href="class_atlas_1_1_interest_rate.html">InterestRate&lt;adouble&gt;</a>&amp; <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce">yield</a>) : <a class="code hl_class" href="class_atlas_1_1_model.html">Model</a>&lt;adouble&gt;(marketRequest), <a class="code hl_variable" href="class_atlas_1_1_static_yield_model.html#a1a8265bc5d91b6bcaf66d3c1beec501f">yield_</a>(<a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce">yield</a>){};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html#a9b00515eb6eeaac0275c89e0252e4e48">   16</a></span>        <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a9b00515eb6eeaac0275c89e0252e4e48">StaticYieldModel</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_atlas_1_1_market_request.html">MarketRequest</a>&amp; <a class="code hl_function" href="class_atlas_1_1_model.html#a4329ff42f64e57b90a849cbb5f0c8cb7">marketRequest</a>, <span class="keyword">const</span> <a class="code hl_class" href="class_atlas_1_1_interest_rate.html">InterestRate&lt;adouble&gt;</a>&amp; <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce">yield</a>) : <a class="code hl_class" href="class_atlas_1_1_model.html">Model</a>&lt;adouble&gt;(<a class="code hl_function" href="class_atlas_1_1_model.html#a4329ff42f64e57b90a849cbb5f0c8cb7">marketRequest</a>), <a class="code hl_variable" href="class_atlas_1_1_static_yield_model.html#a1a8265bc5d91b6bcaf66d3c1beec501f">yield_</a>(<a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce">yield</a>){};</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html#a4ae7e747f4f195259bdd00813a485837">   18</a></span>        <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a4ae7e747f4f195259bdd00813a485837">StaticYieldModel</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_atlas_1_1_market_request.html">MarketRequest</a>&amp; marketRequest) : <a class="code hl_class" href="class_atlas_1_1_model.html">Model</a>&lt;adouble&gt;(marketRequest){};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html#a4ae7e747f4f195259bdd00813a485837">   18</a></span>        <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a4ae7e747f4f195259bdd00813a485837">StaticYieldModel</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_atlas_1_1_market_request.html">MarketRequest</a>&amp; <a class="code hl_function" href="class_atlas_1_1_model.html#a4329ff42f64e57b90a849cbb5f0c8cb7">marketRequest</a>) : <a class="code hl_class" href="class_atlas_1_1_model.html">Model</a>&lt;adouble&gt;(<a class="code hl_function" href="class_atlas_1_1_model.html#a4329ff42f64e57b90a849cbb5f0c8cb7">marketRequest</a>){};</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_atlas_1_1_static_yield_model.html#a0dbcfa5a754f879c739fd48e0cd43948">   20</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_static_yield_model.html#a0dbcfa5a754f879c739fd48e0cd43948">simulate</a>(<span class="keyword">const</span> std::vector&lt;Date&gt;&amp; evalDates, <a class="code hl_typedef" href="namespace_atlas.html#af265fb6a4fe04f38033903acd75a9ea9">Scenario&lt;adouble&gt;</a>&amp; scenario)<span class="keyword"> const override </span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; evalDate : evalDates) {</div>
@@ -174,9 +158,10 @@ $(document).ready(function(){initNavTree('staticyieldmodel_8hpp_source.html','')
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}  <span class="comment">// namespace Atlas</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif </span><span class="comment">/* AA32C5FD_25FD_4E54_B19F_3D8E3EF02A47 */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_atlas_1_1_interest_rate_html"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html">Atlas::InterestRate</a></div><div class="ttdef"><b>Definition:</b> interestrate.hpp:16</div></div>
-<div class="ttc" id="aclass_atlas_1_1_model_html"><div class="ttname"><a href="class_atlas_1_1_model.html">Atlas::Model</a></div><div class="ttdoc">Model interface.</div><div class="ttdef"><b>Definition:</b> model.hpp:24</div></div>
-<div class="ttc" id="aclass_atlas_1_1_model_html_a11d5b76fa4ef8dda4425a9e24f4b7fda"><div class="ttname"><a href="class_atlas_1_1_model.html#a11d5b76fa4ef8dda4425a9e24f4b7fda">Atlas::Model::marketRequest_</a></div><div class="ttdeci">MarketRequest marketRequest_</div><div class="ttdef"><b>Definition:</b> model.hpp:32</div></div>
+<div class="ttc" id="aclass_atlas_1_1_interest_rate_html"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html">Atlas::InterestRate</a></div><div class="ttdoc">Interest rate class.</div><div class="ttdef"><b>Definition:</b> interestrate.hpp:22</div></div>
+<div class="ttc" id="aclass_atlas_1_1_model_html"><div class="ttname"><a href="class_atlas_1_1_model.html">Atlas::Model</a></div><div class="ttdoc">Model interface.</div><div class="ttdef"><b>Definition:</b> model.hpp:25</div></div>
+<div class="ttc" id="aclass_atlas_1_1_model_html_a11d5b76fa4ef8dda4425a9e24f4b7fda"><div class="ttname"><a href="class_atlas_1_1_model.html#a11d5b76fa4ef8dda4425a9e24f4b7fda">Atlas::Model::marketRequest_</a></div><div class="ttdeci">MarketRequest marketRequest_</div><div class="ttdef"><b>Definition:</b> model.hpp:37</div></div>
+<div class="ttc" id="aclass_atlas_1_1_model_html_a4329ff42f64e57b90a849cbb5f0c8cb7"><div class="ttname"><a href="class_atlas_1_1_model.html#a4329ff42f64e57b90a849cbb5f0c8cb7">Atlas::Model::marketRequest</a></div><div class="ttdeci">const MarketRequest &amp; marketRequest() const</div><div class="ttdef"><b>Definition:</b> model.hpp:35</div></div>
 <div class="ttc" id="aclass_atlas_1_1_model_html_abadc10e5813a84ce3b47c5a2870172f3"><div class="ttname"><a href="class_atlas_1_1_model.html#abadc10e5813a84ce3b47c5a2870172f3">Atlas::Model::marketData</a></div><div class="ttdeci">virtual MarketData&lt; adouble &gt; marketData(const Date &amp;evalDate=Date()) const =0</div></div>
 <div class="ttc" id="aclass_atlas_1_1_static_yield_model_html"><div class="ttname"><a href="class_atlas_1_1_static_yield_model.html">Atlas::StaticYieldModel</a></div><div class="ttdoc">Static yield model. Generates scenarios based on a single yield. Mainly for educational purposes.</div><div class="ttdef"><b>Definition:</b> staticyieldmodel.hpp:14</div></div>
 <div class="ttc" id="aclass_atlas_1_1_static_yield_model_html_a02350cdda221542c0feb1389056307ce"><div class="ttname"><a href="class_atlas_1_1_static_yield_model.html#a02350cdda221542c0feb1389056307ce">Atlas::StaticYieldModel::yield</a></div><div class="ttdeci">InterestRate&lt; adouble &gt; yield() const</div><div class="ttdef"><b>Definition:</b> staticyieldmodel.hpp:35</div></div>
@@ -200,13 +185,9 @@ $(document).ready(function(){initNavTree('staticyieldmodel_8hpp_source.html','')
 <div class="ttc" id="astruct_atlas_1_1_market_request_html_a74dc05e708bf04567cd99fefafa95f22"><div class="ttname"><a href="struct_atlas_1_1_market_request.html#a74dc05e708bf04567cd99fefafa95f22">Atlas::MarketRequest::fwds</a></div><div class="ttdeci">std::vector&lt; ForwardRate &gt; fwds</div><div class="ttdef"><b>Definition:</b> marketrequest.hpp:78</div></div>
 <div class="ttc" id="astruct_atlas_1_1_market_request_html_af22d92ae1a4b60432b07a430b598e344"><div class="ttname"><a href="struct_atlas_1_1_market_request.html#af22d92ae1a4b60432b07a430b598e344">Atlas::MarketRequest::dfs</a></div><div class="ttdeci">std::vector&lt; DiscountFactor &gt; dfs</div><div class="ttdef"><b>Definition:</b> marketrequest.hpp:77</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_b686930ab4f68b5b3ae6496555bbfbc2.html">models</a></li><li class="navelem"><a class="el" href="staticyieldmodel_8hpp.html">staticyieldmodel.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

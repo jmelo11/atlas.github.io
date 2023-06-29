@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('indexable_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('indexable_8hpp_source.html',''); initR
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_101425624bef299f3128fbcc58d2b4cf.html">fundation</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">indexable.hpp</div></div>
 </div><!--header-->
@@ -98,52 +82,55 @@ $(document).ready(function(){initNavTree('indexable_8hpp_source.html',''); initR
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_atlas.html">Atlas</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_atlas_1_1_indexable.html">Indexable</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>       <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">   15</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">~Indexable</a>(){};</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">   21</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">dfIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[0]; }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">   27</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">dfIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[0] = idx; }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">   33</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">fwdIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[1]; }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">   39</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">fwdIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[1] = idx; }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">   45</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">priceIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[2]; }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">   51</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">priceIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[2] = idx; }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">   57</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">fxIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[3]; }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">   63</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">fxIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[3] = idx; }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>       <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">size_t</span> idx_[4]; </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_atlas_1_1_indexable.html">Indexable</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>       <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">   13</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">~Indexable</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">   19</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">dfIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[0]; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">   25</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">dfIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[0] = idx; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">   31</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">fwdIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[1]; }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">   37</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">fwdIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[1] = idx; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">   43</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">priceIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[2]; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">   49</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">priceIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[2] = idx; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">   55</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">fxIdx</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idx_[3]; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">   61</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">fxIdx</a>(<span class="keywordtype">size_t</span> idx) { idx_[3] = idx; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">   67</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">isIndexed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isIndexed_; }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace Atlas</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">/* D41E427D_25EB_4AB1_89A1_415A80BBF4BF */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html"><div class="ttname"><a href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></div><div class="ttdef"><b>Definition:</b> indexable.hpp:13</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a2ebb7c64ed13e2d4bd7c67c177ea302f"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">Atlas::Indexable::fxIdx</a></div><div class="ttdeci">size_t fxIdx() const</div><div class="ttdoc">Returns the index of the fx price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:57</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a36453e97eaf4761d4adbcedd5c53c589"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">Atlas::Indexable::priceIdx</a></div><div class="ttdeci">void priceIdx(size_t idx)</div><div class="ttdef"><b>Definition:</b> indexable.hpp:51</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a41cd3e13bf77727bdffae887c76f3960"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">Atlas::Indexable::fwdIdx</a></div><div class="ttdeci">void fwdIdx(size_t idx)</div><div class="ttdef"><b>Definition:</b> indexable.hpp:39</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a4fa9ca22ae473d9db3973a6be271859e"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">Atlas::Indexable::dfIdx</a></div><div class="ttdeci">size_t dfIdx() const</div><div class="ttdef"><b>Definition:</b> indexable.hpp:21</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a7243ee72a5fed09f380832b5f5dad3e8"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">Atlas::Indexable::priceIdx</a></div><div class="ttdeci">size_t priceIdx() const</div><div class="ttdef"><b>Definition:</b> indexable.hpp:45</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_a8ec2384db9ee418923dd68ab9a452dfc"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">Atlas::Indexable::fwdIdx</a></div><div class="ttdeci">size_t fwdIdx() const</div><div class="ttdef"><b>Definition:</b> indexable.hpp:33</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_ad51adcc4b5852793ea936d1aae6737dc"><div class="ttname"><a href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">Atlas::Indexable::~Indexable</a></div><div class="ttdeci">virtual ~Indexable()</div><div class="ttdef"><b>Definition:</b> indexable.hpp:15</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_ade668ba64b5e6055332b6cceaf877bae"><div class="ttname"><a href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">Atlas::Indexable::fxIdx</a></div><div class="ttdeci">void fxIdx(size_t idx)</div><div class="ttdoc">Sets the index of the fx price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:63</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexable_html_af910d6be011944d9675a3329c9629d4b"><div class="ttname"><a href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">Atlas::Indexable::dfIdx</a></div><div class="ttdeci">void dfIdx(size_t idx)</div><div class="ttdef"><b>Definition:</b> indexable.hpp:27</div></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">   73</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">isIndexed</a>(<span class="keywordtype">bool</span> <a class="code hl_function" href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">isIndexed</a>) { isIndexed_ = <a class="code hl_function" href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">isIndexed</a>; }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>       <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">bool</span> isIndexed_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">size_t</span> idx_[4]  = {SIZE_MAX, SIZE_MAX, SIZE_MAX, SIZE_MAX};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}  <span class="comment">// namespace Atlas</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">/* D41E427D_25EB_4AB1_89A1_415A80BBF4BF */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html"><div class="ttname"><a href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></div><div class="ttdoc">The Indexable class represents an object that can be indexed in multiple dimensions....</div><div class="ttdef"><b>Definition:</b> indexable.hpp:11</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a136b1ac911546cded86d15afb1a00e60"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">Atlas::Indexable::isIndexed</a></div><div class="ttdeci">void isIndexed(bool isIndexed)</div><div class="ttdoc">Sets the object as indexed.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:73</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a13826d18ebf48eb59aca69d11dba14a0"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">Atlas::Indexable::isIndexed</a></div><div class="ttdeci">bool isIndexed() const</div><div class="ttdoc">Returns true if the object is indexed.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:67</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a2ebb7c64ed13e2d4bd7c67c177ea302f"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">Atlas::Indexable::fxIdx</a></div><div class="ttdeci">size_t fxIdx() const</div><div class="ttdoc">Returns the index of the fx price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:55</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a36453e97eaf4761d4adbcedd5c53c589"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">Atlas::Indexable::priceIdx</a></div><div class="ttdeci">void priceIdx(size_t idx)</div><div class="ttdoc">Sets the index of the price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:49</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a41cd3e13bf77727bdffae887c76f3960"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">Atlas::Indexable::fwdIdx</a></div><div class="ttdeci">void fwdIdx(size_t idx)</div><div class="ttdoc">Sets the index of the forward rate.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:37</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a4fa9ca22ae473d9db3973a6be271859e"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">Atlas::Indexable::dfIdx</a></div><div class="ttdeci">size_t dfIdx() const</div><div class="ttdoc">Returns the index of the discount factor.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:19</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a7243ee72a5fed09f380832b5f5dad3e8"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">Atlas::Indexable::priceIdx</a></div><div class="ttdeci">size_t priceIdx() const</div><div class="ttdoc">Returns the index of the related price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:43</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_a8ec2384db9ee418923dd68ab9a452dfc"><div class="ttname"><a href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">Atlas::Indexable::fwdIdx</a></div><div class="ttdeci">size_t fwdIdx() const</div><div class="ttdoc">Returns the index of the forward rate.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:31</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_aa9dee563eafdf88bba62d6f07c386521"><div class="ttname"><a href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">Atlas::Indexable::~Indexable</a></div><div class="ttdeci">virtual ~Indexable()=default</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_ade668ba64b5e6055332b6cceaf877bae"><div class="ttname"><a href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">Atlas::Indexable::fxIdx</a></div><div class="ttdeci">void fxIdx(size_t idx)</div><div class="ttdoc">Sets the index of the fx price.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:61</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexable_html_af910d6be011944d9675a3329c9629d4b"><div class="ttname"><a href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">Atlas::Indexable::dfIdx</a></div><div class="ttdeci">void dfIdx(size_t idx)</div><div class="ttdoc">Sets the index of the discount factor.</div><div class="ttdef"><b>Definition:</b> indexable.hpp:25</div></div>
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_101425624bef299f3128fbcc58d2b4cf.html">fundation</a></li><li class="navelem"><a class="el" href="indexable_8hpp.html">indexable.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

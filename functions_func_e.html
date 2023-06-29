@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_e.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -94,21 +74,19 @@ $(document).ready(function(){initNavTree('functions_func_e.html',''); initResiza
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>empty()&#160;:&#160;<a class="el" href="class_atlas_1_1_concurrent_queue.html#a0ea8d02f950526ff55a8a3a6baa1d886">Atlas::ConcurrentQueue&lt; T &gt;</a></li>
-<li>enableExtrapolation()&#160;:&#160;<a class="el" href="class_atlas_1_1_discount_strategy.html#ace89fb08a5db081b147139ec9f8a96f4">Atlas::DiscountStrategy&lt; adouble, Interpol &gt;</a>, <a class="el" href="class_atlas_1_1_linear_interpolator.html#a1607f2343ad2e1acb34ca6c19bf79d4c">Atlas::LinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_log_linear_interpolator.html#af308b330350975cf0b727f75ecb7deb0">Atlas::LogLinearInterpolator&lt; adouble &gt;</a></li>
+<li>enableExtrapolation()&#160;:&#160;<a class="el" href="class_atlas_1_1_discount_strategy.html#a0d077a240a9f30fa0a3d0cd2d508eb2c">Atlas::DiscountStrategy&lt; adouble, Interpol &gt;</a>, <a class="el" href="class_atlas_1_1_linear_interpolator.html#a9ae7894d7f57ae1f00649ae5f5a10488">Atlas::LinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_log_linear_interpolator.html#a88a0fb821beca716512429244b0ec17b">Atlas::LogLinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_zero_rate_strategy.html#a03ce9df6cf51dac1ac194d7c500aee25">Atlas::ZeroRateStrategy&lt; adouble, Interpol &gt;</a></li>
 <li>end()&#160;:&#160;<a class="el" href="class_b_s_1_1blocks.html#a0f0e08f9eff06a0d8e3b05bf59833c7b">BS::blocks&lt; T1, T2, T &gt;</a></li>
 <li>endDate()&#160;:&#160;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">Atlas::Coupon&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">Atlas::Instrument&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_make_leg.html#a16de6efb11a039404c8aa139aa874f0b">Atlas::MakeLeg&lt; adouble, LegType &gt;</a></li>
-<li>EqualPaymentInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_equal_payment_instrument.html#a9ca4ff2da00aa10b36dd4b367588dbc2">Atlas::EqualPaymentInstrument&lt; adouble &gt;</a></li>
+<li>EqualPaymentInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_equal_payment_instrument.html#aee529f3811e13d9054b0f3b9ff6b768e">Atlas::EqualPaymentInstrument&lt; adouble &gt;</a></li>
 <li>exchange()&#160;:&#160;<a class="el" href="class_atlas_1_1_exchange_rate_manager.html#ae128d924bb54836997827caba1f7740f">Atlas::ExchangeRateManager&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_market_store.html#af1a0f7bb7966a5a265c2c1767cc79747">Atlas::MarketStore&lt; adouble &gt;</a></li>
+<li>ExchangeManagerSetup()&#160;:&#160;<a class="el" href="struct_exchange_manager_setup.html#a5ba9035891c9811c5d2ff6bd279d4363">ExchangeManagerSetup</a></li>
 <li>ExchangeRate()&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#a19eb77b641aafabcc660e99481e85099">Atlas::MarketRequest::ExchangeRate</a></li>
 <li>ExchangeRateManager()&#160;:&#160;<a class="el" href="class_atlas_1_1_exchange_rate_manager.html#aae22b89a89e3177d16e14fcf4fbb153c">Atlas::ExchangeRateManager&lt; adouble &gt;</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

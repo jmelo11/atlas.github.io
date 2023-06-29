@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_leg.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_leg.html
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">FloatingRateLeg</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Atlas::FloatingRateLeg&lt; adouble &gt; Member List</div></div>
 </div><!--header-->
@@ -103,9 +87,9 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_leg.html
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html#a46314f266553c2404c7b628dc8a350ae">discountCurveContext</a>(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">Atlas::FloatingRateLeg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html#acf01b80aee801cd9d210dce853b51eff">FloatingRateLeg</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">Atlas::FloatingRateLeg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html#a9fb9c93e6ffd5535df8868ef5453a9b3">FloatingRateLeg</a>(std::vector&lt; FloatingRateCoupon&lt; adouble &gt; &gt; &amp;coupons, std::vector&lt; Redemption&lt; adouble &gt; &gt; &amp;redemptions, bool sort=false)</td><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">Atlas::FloatingRateLeg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html#ab5ed8cd095902ad30825238a1055d95f">forecastCurveContext</a>(const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp;forecastCurveContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">Atlas::FloatingRateLeg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a1bee043fce895f1270652ae7ac527e06">Leg</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#ac89589ef91493b3791bfed0ff8dcdb2f">Leg</a>(std::vector&lt; Redemption&lt; adouble &gt; &gt; &amp;redemptions, bool sort=false)</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a1bee043fce895f1270652ae7ac527e06">Leg</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#ac89589ef91493b3791bfed0ff8dcdb2f">Leg</a>(std::vector&lt; Redemption&lt; adouble &gt; &gt; &amp;redemptions, bool sort=false)</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html#af6279a13b1619ac572dc4e58a701a10a">rateIndexContext</a>(const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp;rateIndexContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">Atlas::FloatingRateLeg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a7b73a97299695133b2b34015782218fd">redemptions</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a1608a2f8ea4bed8a0152ea6f6b8f1756">redemptions</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a2be59c09dd53ebea1a980cc74a676af3">redemptions_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -115,12 +99,9 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_leg.html
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a58f6cef33970d1de084044220995dc49">sortRedemptions</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_leg.html#a2e7097cff0ac6aeb1a51945aa0868c11">~Leg</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_leg.html">Atlas::Leg&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

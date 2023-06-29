@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_instrument.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,12 +68,17 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_instrume
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_floating_rate_instrument.html">FloatingRateInstrument</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_atlas_1_1_floating_rate_instrument-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Atlas::FloatingRateInstrument&lt; adouble &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Atlas::FloatingRateInstrument&lt; adouble &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___instruments.html">Instruments</a> &raquo; <a class="el" href="group___floating_rate_instruments.html">Floating Rate Instruments</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -159,24 +143,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a908ba47c78283fb47b69f726c4d799d0 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a908ba47c78283fb47b69f726c4d799d0">OneLegMixin</a> (const <a class="el" href="class_atlas_1_1_floating_rate_leg.html">FloatingRateLeg</a>&lt; adouble &gt; &amp;leg)</td></tr>
 <tr class="separator:a908ba47c78283fb47b69f726c4d799d0 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c1fc1edb2367e6ca21820e32afc9f3 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_atlas_1_1_floating_rate_leg.html">FloatingRateLeg</a>&lt; adouble &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">leg</a> () const</td></tr>
+<tr class="memdesc:a87c1fc1edb2367e6ca21820e32afc9f3 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the leg of the instrument.  <br /></td></tr>
 <tr class="separator:a87c1fc1edb2367e6ca21820e32afc9f3 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb54a8735bc4da45db6422366bd3a31 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">FloatingRateLeg</a>&lt; adouble &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a3fb54a8735bc4da45db6422366bd3a31">leg</a> ()</td></tr>
+<tr class="memdesc:a3fb54a8735bc4da45db6422366bd3a31 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the leg of the instrument.  <br /></td></tr>
 <tr class="separator:a3fb54a8735bc4da45db6422366bd3a31 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55797194d1cde55f143d50d29e567b46 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a55797194d1cde55f143d50d29e567b46">discountCurveContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
 <tr class="memdesc:a55797194d1cde55f143d50d29e567b46 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the discount curve context of the instrument.  <br /></td></tr>
 <tr class="separator:a55797194d1cde55f143d50d29e567b46 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b63aea9fd8305096343ff023e919898 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a7b63aea9fd8305096343ff023e919898">forecastCurveContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
-<tr class="memdesc:a7b63aea9fd8305096343ff023e919898 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rate index / forecast curve of the instrument.  <br /></td></tr>
-<tr class="separator:a7b63aea9fd8305096343ff023e919898 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb9eae581f169dbab49c0dc43d6926b inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#adeb9eae581f169dbab49c0dc43d6926b">rateIndexContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
+<tr class="memdesc:adeb9eae581f169dbab49c0dc43d6926b inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rate index / forecast curve of the instrument.  <br /></td></tr>
+<tr class="separator:adeb9eae581f169dbab49c0dc43d6926b inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d8bb1831fe247da8aa96d105580a71 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_cashflow.html">Cashflow</a>&lt; adouble &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">disbursement</a> ()</td></tr>
 <tr class="memdesc:a50d8bb1831fe247da8aa96d105580a71 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the disbursement of the instrument.  <br /></td></tr>
 <tr class="separator:a50d8bb1831fe247da8aa96d105580a71 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07ddb75c0760f950ea31c592f6d9670 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_cashflow.html">Cashflow</a>&lt; adouble &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#ad07ddb75c0760f950ea31c592f6d9670">disbursement</a> () const</td></tr>
+<tr class="memdesc:ad07ddb75c0760f950ea31c592f6d9670 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the disbursement of the instrument.  <br /></td></tr>
+<tr class="separator:ad07ddb75c0760f950ea31c592f6d9670 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75909b7f068091484d3bc4bf1ea2d7f inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#aa75909b7f068091484d3bc4bf1ea2d7f">disbursement</a> (const <a class="el" href="class_atlas_1_1_cashflow.html">Cashflow</a>&lt; adouble &gt; &amp;disbursement)</td></tr>
 <tr class="memdesc:aa75909b7f068091484d3bc4bf1ea2d7f inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the disbursement of the instrument.  <br /></td></tr>
 <tr class="separator:aa75909b7f068091484d3bc4bf1ea2d7f inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b8fde09e2f5ce3f60aeb39b0fc33dd inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a43b8fde09e2f5ce3f60aeb39b0fc33dd">currency</a> (const <a class="el" href="namespace_atlas.html#a0460108d7fd212c5d29b38a81d7c2a36">Currency</a> &amp;currency)</td></tr>
 <tr class="memdesc:a43b8fde09e2f5ce3f60aeb39b0fc33dd inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the currency of the instrument.  <br /></td></tr>
 <tr class="separator:a43b8fde09e2f5ce3f60aeb39b0fc33dd inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91dcbd5c6503993bded56d2afca05ae6 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a91dcbd5c6503993bded56d2afca05ae6">applyCcy</a> (bool apply)</td></tr>
+<tr class="memdesc:a91dcbd5c6503993bded56d2afca05ae6 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to apply the currency of each cashflow.  <br /></td></tr>
+<tr class="separator:a91dcbd5c6503993bded56d2afca05ae6 inherit pub_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -194,6 +186,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a263e481a2c2d2a35bae4bad581b4520c inherit pro_attribs_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56dd8fc92921a5d4224ec3c16b19e65 inherit pro_attribs_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_floating_rate_leg.html">FloatingRateLeg</a>&lt; adouble &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#ab56dd8fc92921a5d4224ec3c16b19e65">leg_</a></td></tr>
 <tr class="separator:ab56dd8fc92921a5d4224ec3c16b19e65 inherit pro_attribs_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_atlas_1_1_one_leg_mixin"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_atlas_1_1_one_leg_mixin')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, FloatingRateLeg&lt; adouble &gt; &gt;</a></td></tr>
+<tr class="memitem:a6f53fd9991ed37abba64406bfcaab415 inherit pro_methods_class_atlas_1_1_one_leg_mixin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a6f53fd9991ed37abba64406bfcaab415">reset</a> ()</td></tr>
+<tr class="separator:a6f53fd9991ed37abba64406bfcaab415 inherit pro_methods_class_atlas_1_1_one_leg_mixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename adouble&gt;<br />
@@ -466,13 +464,9 @@ template&lt;typename adouble &gt; </div>
 <li>include/atlas/instruments/floatingrate/<a class="el" href="floatingrateinstrument_8hpp_source.html">floatingrateinstrument.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_floating_rate_instrument.html">FloatingRateInstrument</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

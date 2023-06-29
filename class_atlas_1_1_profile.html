@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_profile.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_profile.html',''); ini
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_profile.html">Profile</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,17 +84,17 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_profile.html',''); ini
 <p>A profile is a collection of buckets.  
  <a href="class_atlas_1_1_profile.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="buckets_8hpp_source.html">buckets.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="profile_8hpp_source.html">profile.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6850e97e2b5917eedb8ea5d486e5ebe7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#a6850e97e2b5917eedb8ea5d486e5ebe7">Profile</a> (<a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> <a class="el" href="class_atlas_1_1_profile.html#a470b67100046bbb3330e489bf5f02a88">referenceDate</a>)</td></tr>
-<tr class="separator:a6850e97e2b5917eedb8ea5d486e5ebe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd921319953d203604d47979bcc36399"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#afd921319953d203604d47979bcc36399">Profile</a> (<a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> <a class="el" href="class_atlas_1_1_profile.html#a50496913fa6a619831013ce4bd68a1f8">refDate</a>)</td></tr>
+<tr class="separator:afd921319953d203604d47979bcc36399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b56d46fb21fcc72a926816050a87164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_profile.html">Profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#a4b56d46fb21fcc72a926816050a87164">operator+</a> (const <a class="el" href="class_atlas_1_1_profile.html">Profile</a> &amp;lhs)</td></tr>
 <tr class="separator:a4b56d46fb21fcc72a926816050a87164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470b67100046bbb3330e489bf5f02a88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#a470b67100046bbb3330e489bf5f02a88">referenceDate</a> () const</td></tr>
-<tr class="memdesc:a470b67100046bbb3330e489bf5f02a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the reference date of the profile.  <br /></td></tr>
-<tr class="separator:a470b67100046bbb3330e489bf5f02a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50496913fa6a619831013ce4bd68a1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#a50496913fa6a619831013ce4bd68a1f8">refDate</a> () const</td></tr>
+<tr class="memdesc:a50496913fa6a619831013ce4bd68a1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the reference date of the profile.  <br /></td></tr>
+<tr class="separator:a50496913fa6a619831013ce4bd68a1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f5ee03eb5fa7e6e0e4ca229f1aa544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_profile.html#a36f5ee03eb5fa7e6e0e4ca229f1aa544">addNewBucket</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end)</td></tr>
 <tr class="memdesc:a36f5ee03eb5fa7e6e0e4ca229f1aa544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new bucket to the profile.  <br /></td></tr>
 <tr class="separator:a36f5ee03eb5fa7e6e0e4ca229f1aa544"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,13 +119,13 @@ class Atlas::Profile&lt; adouble &gt;</div><p>A profile is a collection of bucke
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">referenceDate</td><td>reference date for the profile </td></tr>
+    <tr><td class="paramname">refDate</td><td>reference date for the profile </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6850e97e2b5917eedb8ea5d486e5ebe7" name="a6850e97e2b5917eedb8ea5d486e5ebe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6850e97e2b5917eedb8ea5d486e5ebe7">&#9670;&#160;</a></span>Profile()</h2>
+<a id="afd921319953d203604d47979bcc36399" name="afd921319953d203604d47979bcc36399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd921319953d203604d47979bcc36399">&#9670;&#160;</a></span>Profile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +139,7 @@ template&lt;class adouble &gt; </div>
           <td class="memname"><a class="el" href="class_atlas_1_1_profile.html">Atlas::Profile</a>&lt; adouble &gt;::Profile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td>
-          <td class="paramname"><em>referenceDate</em></td><td>)</td>
+          <td class="paramname"><em>refDate</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -335,8 +319,8 @@ template&lt;class adouble &gt; </div>
 
 </div>
 </div>
-<a id="a470b67100046bbb3330e489bf5f02a88" name="a470b67100046bbb3330e489bf5f02a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a470b67100046bbb3330e489bf5f02a88">&#9670;&#160;</a></span>referenceDate()</h2>
+<a id="a50496913fa6a619831013ce4bd68a1f8" name="a50496913fa6a619831013ce4bd68a1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50496913fa6a619831013ce4bd68a1f8">&#9670;&#160;</a></span>refDate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +331,7 @@ template&lt;class adouble &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> <a class="el" href="class_atlas_1_1_profile.html">Atlas::Profile</a>&lt; adouble &gt;::referenceDate </td>
+          <td class="memname"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> <a class="el" href="class_atlas_1_1_profile.html">Atlas::Profile</a>&lt; adouble &gt;::refDate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -366,16 +350,12 @@ template&lt;class adouble &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/atlas/data/<a class="el" href="buckets_8hpp_source.html">buckets.hpp</a></li>
+<li>include/atlas/data/<a class="el" href="profile_8hpp_source.html">profile.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_profile.html">Profile</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

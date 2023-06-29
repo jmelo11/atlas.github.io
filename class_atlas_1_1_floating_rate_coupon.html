@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_coupon.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,14 +68,22 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_floating_rate_coupon.h
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html">FloatingRateCoupon</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_atlas_1_1_floating_rate_coupon-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Atlas::FloatingRateCoupon&lt; adouble &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Atlas::FloatingRateCoupon&lt; adouble &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___cashflows.html">Cashflows</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class representing a floating rate coupon.  
+ <a href="class_atlas_1_1_floating_rate_coupon.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="floatingratecoupon_8hpp_source.html">floatingratecoupon.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -105,79 +92,106 @@ Inheritance diagram for Atlas::FloatingRateCoupon&lt; adouble &gt;:</div>
  <div class="center">
   <img src="class_atlas_1_1_floating_rate_coupon.png" usemap="#Atlas::FloatingRateCoupon_3C_20adouble_20_3E_map" alt=""/>
   <map id="Atlas::FloatingRateCoupon_3C_20adouble_20_3E_map" name="Atlas::FloatingRateCoupon_3C_20adouble_20_3E_map">
-<area href="class_atlas_1_1_coupon.html" title="coupon is a cashflow that is paid periodically, and is based on a notional amount." alt="Atlas::Coupon&lt; adouble &gt;" shape="rect" coords="0,112,229,136"/>
-<area href="class_atlas_1_1_cashflow.html" title="A class representing a cashflow." alt="Atlas::Cashflow&lt; adouble &gt;" shape="rect" coords="0,56,229,80"/>
-<area href="class_atlas_1_1_indexable.html" alt="Atlas::Indexable" shape="rect" coords="0,0,229,24"/>
+<area href="class_atlas_1_1_coupon.html" title="Coupon is a cashflow that is paid periodically, and is based on a notional amount." alt="Atlas::Coupon&lt; adouble &gt;" shape="rect" coords="0,112,229,136"/>
+<area href="class_atlas_1_1_cashflow.html" title="Base class representing a simple cashflow." alt="Atlas::Cashflow&lt; adouble &gt;" shape="rect" coords="0,56,229,80"/>
+<area href="class_atlas_1_1_indexable.html" title="The Indexable class represents an object that can be indexed in multiple dimensions...." alt="Atlas::Indexable" shape="rect" coords="0,0,229,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2afa27e79c6de9b152aa9c4f2c8c2e35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a2afa27e79c6de9b152aa9c4f2c8c2e35">FloatingRateCoupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>, adouble <a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af9a209b441992dbb7495d871ebbaf784">spread</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a97df7b839d6498565faf2c9c398482af">forecastCurveContext</a>)</td></tr>
-<tr class="separator:a2afa27e79c6de9b152aa9c4f2c8c2e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5abdd438401934e05c93edee37888d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ab5abdd438401934e05c93edee37888d7">FloatingRateCoupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>, adouble <a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af9a209b441992dbb7495d871ebbaf784">spread</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a97df7b839d6498565faf2c9c398482af">forecastCurveContext</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>)</td></tr>
-<tr class="separator:ab5abdd438401934e05c93edee37888d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec718288d684a78c26574ab38efe32b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#aec718288d684a78c26574ab38efe32b3">FloatingRateCoupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>, adouble <a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af9a209b441992dbb7495d871ebbaf784">spread</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ad1a46fdf7af1e6f4a7246b3cbfe40f2e">rateIndexContext</a>)</td></tr>
+<tr class="separator:aec718288d684a78c26574ab38efe32b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e4114655e4410dc285ef05d1bbcbc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a72e4114655e4410dc285ef05d1bbcbc3">FloatingRateCoupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>, adouble <a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af9a209b441992dbb7495d871ebbaf784">spread</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ad1a46fdf7af1e6f4a7246b3cbfe40f2e">rateIndexContext</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>)</td></tr>
+<tr class="memdesc:a72e4114655e4410dc285ef05d1bbcbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Floating Rate <a class="el" href="class_atlas_1_1_coupon.html" title="Coupon is a cashflow that is paid periodically, and is based on a notional amount.">Coupon</a> object.  <br /></td></tr>
+<tr class="separator:a72e4114655e4410dc285ef05d1bbcbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a209b441992dbb7495d871ebbaf784"><td class="memItemLeft" align="right" valign="top">adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af9a209b441992dbb7495d871ebbaf784">spread</a> () const</td></tr>
+<tr class="memdesc:af9a209b441992dbb7495d871ebbaf784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the spread of the coupon.  <br /></td></tr>
 <tr class="separator:af9a209b441992dbb7495d871ebbaf784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6465f7a42b2683d764979d4aa9d68953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a6465f7a42b2683d764979d4aa9d68953">spread</a> (adouble spread)</td></tr>
+<tr class="memdesc:a6465f7a42b2683d764979d4aa9d68953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the spread of the coupon.  <br /></td></tr>
 <tr class="separator:a6465f7a42b2683d764979d4aa9d68953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7118341b0c97b7e7481cbf414b23897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ac7118341b0c97b7e7481cbf414b23897">fixing</a> (adouble fixing)</td></tr>
+<tr class="memdesc:ac7118341b0c97b7e7481cbf414b23897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fixing of the coupon.  <br /></td></tr>
 <tr class="separator:ac7118341b0c97b7e7481cbf414b23897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb034aa9004869606e5768a3703a24ed"><td class="memItemLeft" align="right" valign="top">adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#abb034aa9004869606e5768a3703a24ed">fixing</a> () const</td></tr>
+<tr class="memdesc:abb034aa9004869606e5768a3703a24ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixing of the coupon.  <br /></td></tr>
 <tr class="separator:abb034aa9004869606e5768a3703a24ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97df7b839d6498565faf2c9c398482af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a97df7b839d6498565faf2c9c398482af">forecastCurveContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
-<tr class="separator:a97df7b839d6498565faf2c9c398482af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a46fdf7af1e6f4a7246b3cbfe40f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ad1a46fdf7af1e6f4a7246b3cbfe40f2e">rateIndexContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
+<tr class="separator:ad1a46fdf7af1e6f4a7246b3cbfe40f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b225969eac87152b9ea5d7c9412e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_atlas.html#a9452ee1caa72c7e09eb613f53d884189">DayCounter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a63b225969eac87152b9ea5d7c9412e3c">dayCounter</a> () const override</td></tr>
+<tr class="memdesc:a63b225969eac87152b9ea5d7c9412e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the day counter of the coupon.  <br /></td></tr>
 <tr class="separator:a63b225969eac87152b9ea5d7c9412e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f1bb3312d0c5ab7b0fc90083525920f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a0f1bb3312d0c5ab7b0fc90083525920f">accruedPeriod</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end) const override</td></tr>
+<tr class="memdesc:a0f1bb3312d0c5ab7b0fc90083525920f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrued period of the coupon.  <br /></td></tr>
 <tr class="separator:a0f1bb3312d0c5ab7b0fc90083525920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db0082876f70594c25dfbd15a080277"><td class="memItemLeft" align="right" valign="top">adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a5db0082876f70594c25dfbd15a080277">accruedAmount</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end) const override</td></tr>
+<tr class="memdesc:a5db0082876f70594c25dfbd15a080277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrued amount of the coupon.  <br /></td></tr>
 <tr class="separator:a5db0082876f70594c25dfbd15a080277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad197ae062814398ef7580e55cb30ba6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ad197ae062814398ef7580e55cb30ba6d">hasForecastContext</a> () const</td></tr>
-<tr class="memdesc:ad197ae062814398ef7580e55cb30ba6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the coupon has a forecast CurveContext.  <br /></td></tr>
-<tr class="separator:ad197ae062814398ef7580e55cb30ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fecb2eb2b887dd6b862b6b151e11f0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af6fecb2eb2b887dd6b862b6b151e11f0">forecastContextIdx</a> () const</td></tr>
-<tr class="memdesc:af6fecb2eb2b887dd6b862b6b151e11f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the forecast curve context idx.  <br /></td></tr>
-<tr class="separator:af6fecb2eb2b887dd6b862b6b151e11f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19dd6bad0a4fc4e19034f5b140e13972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a19dd6bad0a4fc4e19034f5b140e13972">hasRateIndexContext</a> () const</td></tr>
+<tr class="memdesc:a19dd6bad0a4fc4e19034f5b140e13972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the coupon has a forecast CurveContext.  <br /></td></tr>
+<tr class="separator:a19dd6bad0a4fc4e19034f5b140e13972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9deb2b6b5174e45194c3f7615728efb9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a9deb2b6b5174e45194c3f7615728efb9">rateIndexContextIdx</a> () const</td></tr>
+<tr class="memdesc:a9deb2b6b5174e45194c3f7615728efb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the forecast curve context idx.  <br /></td></tr>
+<tr class="separator:a9deb2b6b5174e45194c3f7615728efb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc314090b11e56d5e5cc1591c49cefa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#acc314090b11e56d5e5cc1591c49cefa1">hasFixingSet</a> () const</td></tr>
+<tr class="memdesc:acc314090b11e56d5e5cc1591c49cefa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the fixing rate has been set.  <br /></td></tr>
+<tr class="separator:acc314090b11e56d5e5cc1591c49cefa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af546f926ec01c76582486060a3b9c6d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af546f926ec01c76582486060a3b9c6d8">hasFixingSet</a> (bool <a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ac7118341b0c97b7e7481cbf414b23897">fixing</a>)</td></tr>
+<tr class="memdesc:af546f926ec01c76582486060a3b9c6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the fixing has been set.  <br /></td></tr>
+<tr class="separator:af546f926ec01c76582486060a3b9c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_atlas_1_1_coupon"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_atlas_1_1_coupon')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td></tr>
 <tr class="memitem:a898617672131520d58e2a906f843dbcf inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a898617672131520d58e2a906f843dbcf">Coupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>)</td></tr>
-<tr class="memdesc:a898617672131520d58e2a906f843dbcf inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_coupon.html" title="coupon is a cashflow that is paid periodically, and is based on a notional amount.">Coupon</a> object.  <br /></td></tr>
+<tr class="memdesc:a898617672131520d58e2a906f843dbcf inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_coupon.html" title="Coupon is a cashflow that is paid periodically, and is based on a notional amount.">Coupon</a> object.  <br /></td></tr>
 <tr class="separator:a898617672131520d58e2a906f843dbcf inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572913e99b4765d6075b6eb920665f91 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a572913e99b4765d6075b6eb920665f91">Coupon</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>, double <a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>)</td></tr>
+<tr class="memdesc:a572913e99b4765d6075b6eb920665f91 inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_coupon.html" title="Coupon is a cashflow that is paid periodically, and is based on a notional amount.">Coupon</a> object.  <br /></td></tr>
 <tr class="separator:a572913e99b4765d6075b6eb920665f91 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9313acc1cbbb072ac53c2805ec9ac4ae inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a9313acc1cbbb072ac53c2805ec9ac4ae">~Coupon</a> ()</td></tr>
 <tr class="separator:a9313acc1cbbb072ac53c2805ec9ac4ae inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e81220885389f3dc1341539994ccfd2 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a> () const</td></tr>
+<tr class="memdesc:a7e81220885389f3dc1341539994ccfd2 inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the notional amount of the coupon.  <br /></td></tr>
 <tr class="separator:a7e81220885389f3dc1341539994ccfd2 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8666508ffb1a33f8963e2bb6fe26a624 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a> () const</td></tr>
+<tr class="memdesc:a8666508ffb1a33f8963e2bb6fe26a624 inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrual start date of the coupon.  <br /></td></tr>
 <tr class="separator:a8666508ffb1a33f8963e2bb6fe26a624 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54d69223f1e22be302e08b50a103928a inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a> () const</td></tr>
+<tr class="memdesc:a54d69223f1e22be302e08b50a103928a inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrual end date of the coupon.  <br /></td></tr>
 <tr class="separator:a54d69223f1e22be302e08b50a103928a inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1793ee7d4225cc52104e51f8556245 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_atlas.html#a9452ee1caa72c7e09eb613f53d884189">DayCounter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a5d1793ee7d4225cc52104e51f8556245">dayCounter</a> () const =0</td></tr>
+<tr class="memdesc:a5d1793ee7d4225cc52104e51f8556245 inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the day counter of the coupon.  <br /></td></tr>
 <tr class="separator:a5d1793ee7d4225cc52104e51f8556245 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58e2178e8506a7d2b43d7682c247d58 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#ae58e2178e8506a7d2b43d7682c247d58">accruedPeriod</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end) const =0</td></tr>
-<tr class="separator:ae58e2178e8506a7d2b43d7682c247d58 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610514a287b8a5548abc73b01900c035 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a610514a287b8a5548abc73b01900c035">accruedAmount</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end) const =0</td></tr>
-<tr class="separator:a610514a287b8a5548abc73b01900c035 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1303b917b835b9dd4e2b56a7ba21b7 inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#abe1303b917b835b9dd4e2b56a7ba21b7">accruedPeriod</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;refStart, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;refEnd) const =0</td></tr>
+<tr class="memdesc:abe1303b917b835b9dd4e2b56a7ba21b7 inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrual period of the coupon.  <br /></td></tr>
+<tr class="separator:abe1303b917b835b9dd4e2b56a7ba21b7 inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413fa1f13564c63d0a3a3f6dca1f6bce inherit pub_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">virtual adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a413fa1f13564c63d0a3a3f6dca1f6bce">accruedAmount</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;refStart, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;refEnd) const =0</td></tr>
+<tr class="memdesc:a413fa1f13564c63d0a3a3f6dca1f6bce inherit pub_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accrued amount of the coupon.  <br /></td></tr>
+<tr class="separator:a413fa1f13564c63d0a3a3f6dca1f6bce inherit pub_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_atlas_1_1_cashflow"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_atlas_1_1_cashflow')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td></tr>
 <tr class="memitem:aa09f2bea56d812f3e42a688e69819ee6 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#aa09f2bea56d812f3e42a688e69819ee6">Cashflow</a> ()=default</td></tr>
 <tr class="separator:aa09f2bea56d812f3e42a688e69819ee6 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7048a3904f27ac77aa14a134461e9728 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a7048a3904f27ac77aa14a134461e9728">Cashflow</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>)</td></tr>
-<tr class="memdesc:a7048a3904f27ac77aa14a134461e9728 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_cashflow.html" title="A class representing a cashflow.">Cashflow</a> object.  <br /></td></tr>
+<tr class="memdesc:a7048a3904f27ac77aa14a134461e9728 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_cashflow.html" title="Base class representing a simple cashflow.">Cashflow</a> object.  <br /></td></tr>
 <tr class="separator:a7048a3904f27ac77aa14a134461e9728 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc81093eed09d778268b952021d38c96 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#abc81093eed09d778268b952021d38c96">Cashflow</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a1eeb374df93d1e32212a53190730fe6a">paymentDate</a>, adouble <a class="el" href="class_atlas_1_1_cashflow.html#a2161615ad65ac66fbbb364f38dfdcf7b">amount</a>)</td></tr>
+<tr class="memdesc:abc81093eed09d778268b952021d38c96 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_cashflow.html" title="Base class representing a simple cashflow.">Cashflow</a> object.  <br /></td></tr>
 <tr class="separator:abc81093eed09d778268b952021d38c96 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47363aad4621b04197c8cbf24a2bb077 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a47363aad4621b04197c8cbf24a2bb077">Cashflow</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a1eeb374df93d1e32212a53190730fe6a">paymentDate</a>, adouble <a class="el" href="class_atlas_1_1_cashflow.html#a2161615ad65ac66fbbb364f38dfdcf7b">amount</a>, const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;<a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>)</td></tr>
+<tr class="memdesc:a47363aad4621b04197c8cbf24a2bb077 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_atlas_1_1_cashflow.html" title="Base class representing a simple cashflow.">Cashflow</a> object.  <br /></td></tr>
 <tr class="separator:a47363aad4621b04197c8cbf24a2bb077 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a8bfc45f137aeabb3d578fc27e5427 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#ab5a8bfc45f137aeabb3d578fc27e5427">~Cashflow</a> ()</td></tr>
 <tr class="separator:ab5a8bfc45f137aeabb3d578fc27e5427 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2161615ad65ac66fbbb364f38dfdcf7b inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">virtual adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a2161615ad65ac66fbbb364f38dfdcf7b">amount</a> () const</td></tr>
+<tr class="memdesc:a2161615ad65ac66fbbb364f38dfdcf7b inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the amount (total payment) of the cashflow.  <br /></td></tr>
 <tr class="separator:a2161615ad65ac66fbbb364f38dfdcf7b inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eeb374df93d1e32212a53190730fe6a inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a1eeb374df93d1e32212a53190730fe6a">paymentDate</a> () const</td></tr>
+<tr class="memdesc:a1eeb374df93d1e32212a53190730fe6a inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the payment date of the cashflow.  <br /></td></tr>
 <tr class="separator:a1eeb374df93d1e32212a53190730fe6a inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1a55fe576e20b114ef75f45d5dae9b inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a6d1a55fe576e20b114ef75f45d5dae9b">hasOcurred</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;date) const</td></tr>
+<tr class="memdesc:a6d1a55fe576e20b114ef75f45d5dae9b inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the cashflow has occurred at a given a past date.  <br /></td></tr>
 <tr class="separator:a6d1a55fe576e20b114ef75f45d5dae9b inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65fac87ecd77664c1b090769038ec1d7 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a> (const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_yield_term_structure.html">YieldTermStructure</a>&lt; adouble &gt; &gt; &amp;context)</td></tr>
+<tr class="memdesc:a65fac87ecd77664c1b090769038ec1d7 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the discount curve context.  <br /></td></tr>
 <tr class="separator:a65fac87ecd77664c1b090769038ec1d7 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8efe920eb093280f9cf762f8592380a inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#ad8efe920eb093280f9cf762f8592380a">hasDiscountContext</a> () const</td></tr>
 <tr class="memdesc:ad8efe920eb093280f9cf762f8592380a inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the cashflow has a discount curve context.  <br /></td></tr>
@@ -186,28 +200,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af77fefe868c1af4d88ab4147e4d49cf3 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the discount curve context.  <br /></td></tr>
 <tr class="separator:af77fefe868c1af4d88ab4147e4d49cf3 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34edbd9696da2099754df4c27d79f128 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a34edbd9696da2099754df4c27d79f128">currency</a> (const <a class="el" href="namespace_atlas.html#a0460108d7fd212c5d29b38a81d7c2a36">Currency</a> &amp;ccy)</td></tr>
-<tr class="memdesc:a34edbd9696da2099754df4c27d79f128 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the currency context.  <br /></td></tr>
+<tr class="memdesc:a34edbd9696da2099754df4c27d79f128 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the currency of the cashflow.  <br /></td></tr>
 <tr class="separator:a34edbd9696da2099754df4c27d79f128 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8dadeab8dd5e1c5f464a5885be2abc4 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#ab8dadeab8dd5e1c5f464a5885be2abc4">currencyCode</a> () const</td></tr>
+<tr class="memdesc:ab8dadeab8dd5e1c5f464a5885be2abc4 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the currency code.  <br /></td></tr>
 <tr class="separator:ab8dadeab8dd5e1c5f464a5885be2abc4 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046318687be0373b18734f7790257902 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a046318687be0373b18734f7790257902">applyCcy</a> () const</td></tr>
+<tr class="memdesc:a046318687be0373b18734f7790257902 inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns applyCcy_ flag. This flag is used in pricing, to transform the cashflow amount to the store base currency.  <br /></td></tr>
 <tr class="separator:a046318687be0373b18734f7790257902 inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f661f2342df76365a1e1cfe4a4c72dc inherit pub_methods_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a3f661f2342df76365a1e1cfe4a4c72dc">applyCcy</a> (bool applyCcy)</td></tr>
+<tr class="memdesc:a3f661f2342df76365a1e1cfe4a4c72dc inherit pub_methods_class_atlas_1_1_cashflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the applyCcy_ flag. This flag is used in pricing, to transform the cashflow amount to the store base currency.  <br /></td></tr>
 <tr class="separator:a3f661f2342df76365a1e1cfe4a4c72dc inherit pub_methods_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_atlas_1_1_indexable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_atlas_1_1_indexable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td></tr>
-<tr class="memitem:ad51adcc4b5852793ea936d1aae6737dc inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">~Indexable</a> ()</td></tr>
-<tr class="separator:ad51adcc4b5852793ea936d1aae6737dc inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9dee563eafdf88bba62d6f07c386521 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">~Indexable</a> ()=default</td></tr>
+<tr class="separator:aa9dee563eafdf88bba62d6f07c386521 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa9ca22ae473d9db3973a6be271859e inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">dfIdx</a> () const</td></tr>
+<tr class="memdesc:a4fa9ca22ae473d9db3973a6be271859e inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the discount factor.  <br /></td></tr>
 <tr class="separator:a4fa9ca22ae473d9db3973a6be271859e inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af910d6be011944d9675a3329c9629d4b inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">dfIdx</a> (size_t idx)</td></tr>
+<tr class="memdesc:af910d6be011944d9675a3329c9629d4b inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the index of the discount factor.  <br /></td></tr>
 <tr class="separator:af910d6be011944d9675a3329c9629d4b inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec2384db9ee418923dd68ab9a452dfc inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">fwdIdx</a> () const</td></tr>
+<tr class="memdesc:a8ec2384db9ee418923dd68ab9a452dfc inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the forward rate.  <br /></td></tr>
 <tr class="separator:a8ec2384db9ee418923dd68ab9a452dfc inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cd3e13bf77727bdffae887c76f3960 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">fwdIdx</a> (size_t idx)</td></tr>
+<tr class="memdesc:a41cd3e13bf77727bdffae887c76f3960 inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the index of the forward rate.  <br /></td></tr>
 <tr class="separator:a41cd3e13bf77727bdffae887c76f3960 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7243ee72a5fed09f380832b5f5dad3e8 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">priceIdx</a> () const</td></tr>
+<tr class="memdesc:a7243ee72a5fed09f380832b5f5dad3e8 inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the related price.  <br /></td></tr>
 <tr class="separator:a7243ee72a5fed09f380832b5f5dad3e8 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36453e97eaf4761d4adbcedd5c53c589 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">priceIdx</a> (size_t idx)</td></tr>
+<tr class="memdesc:a36453e97eaf4761d4adbcedd5c53c589 inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the index of the price.  <br /></td></tr>
 <tr class="separator:a36453e97eaf4761d4adbcedd5c53c589 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebb7c64ed13e2d4bd7c67c177ea302f inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">fxIdx</a> () const</td></tr>
 <tr class="memdesc:a2ebb7c64ed13e2d4bd7c67c177ea302f inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the fx price.  <br /></td></tr>
@@ -215,9 +238,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade668ba64b5e6055332b6cceaf877bae inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">fxIdx</a> (size_t idx)</td></tr>
 <tr class="memdesc:ade668ba64b5e6055332b6cceaf877bae inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the index of the fx price.  <br /></td></tr>
 <tr class="separator:ade668ba64b5e6055332b6cceaf877bae inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13826d18ebf48eb59aca69d11dba14a0 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">isIndexed</a> () const</td></tr>
+<tr class="memdesc:a13826d18ebf48eb59aca69d11dba14a0 inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the object is indexed.  <br /></td></tr>
+<tr class="separator:a13826d18ebf48eb59aca69d11dba14a0 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136b1ac911546cded86d15afb1a00e60 inherit pub_methods_class_atlas_1_1_indexable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">isIndexed</a> (bool isIndexed)</td></tr>
+<tr class="memdesc:a136b1ac911546cded86d15afb1a00e60 inherit pub_methods_class_atlas_1_1_indexable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the object as indexed.  <br /></td></tr>
+<tr class="separator:a136b1ac911546cded86d15afb1a00e60 inherit pub_methods_class_atlas_1_1_indexable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_atlas_1_1_coupon"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_atlas_1_1_coupon')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td></tr>
+<tr class="memitem:a0f834eeb548bec491e8062853c9333c2 inherit pro_methods_class_atlas_1_1_coupon"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a>, <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_coupon.html#a0f834eeb548bec491e8062853c9333c2">checkDates</a> (const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;start, const <a class="el" href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Date</a> &amp;end) const</td></tr>
+<tr class="memdesc:a0f834eeb548bec491e8062853c9333c2 inherit pro_methods_class_atlas_1_1_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check dates used in accruals.  <br /></td></tr>
+<tr class="separator:a0f834eeb548bec491e8062853c9333c2 inherit pro_methods_class_atlas_1_1_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_atlas_1_1_cashflow"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_atlas_1_1_cashflow')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td></tr>
 <tr class="memitem:a75d9d0b4f2b50a817e4dca443d877988 inherit pro_attribs_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">adouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a75d9d0b4f2b50a817e4dca443d877988">amount_</a> = 0</td></tr>
 <tr class="separator:a75d9d0b4f2b50a817e4dca443d877988 inherit pro_attribs_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,9 +265,19 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a276a890ddc304134a1947ddc7d2b77ab inherit pro_attribs_class_atlas_1_1_cashflow"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_cashflow.html#a276a890ddc304134a1947ddc7d2b77ab">discountContextIdx_</a></td></tr>
 <tr class="separator:a276a890ddc304134a1947ddc7d2b77ab inherit pro_attribs_class_atlas_1_1_cashflow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2afa27e79c6de9b152aa9c4f2c8c2e35" name="a2afa27e79c6de9b152aa9c4f2c8c2e35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2afa27e79c6de9b152aa9c4f2c8c2e35">&#9670;&#160;</a></span>FloatingRateCoupon() <span class="overload">[1/2]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename adouble&gt;<br />
+class Atlas::FloatingRateCoupon&lt; adouble &gt;</div><p>A class representing a floating rate coupon. </p>
+<p>A floating rate coupon has a start date, an end date, a notional amount, a spread, and a rate index</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">adouble</td><td>The type of the floating point number used in the coupon </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aec718288d684a78c26574ab38efe32b3" name="aec718288d684a78c26574ab38efe32b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec718288d684a78c26574ab38efe32b3">&#9670;&#160;</a></span>FloatingRateCoupon() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +315,7 @@ template&lt;typename adouble &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>forecastCurveContext</em>&#160;</td>
+          <td class="paramname"><em>rateIndexContext</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,15 +335,15 @@ template&lt;typename adouble &gt; </div>
     <tr><td class="paramname">endDate</td><td>The end date of the coupon </td></tr>
     <tr><td class="paramname">notional</td><td>The notional amount of the coupon </td></tr>
     <tr><td class="paramname">spread</td><td>The spread of the coupon </td></tr>
-    <tr><td class="paramname">forecastCurveContext</td><td>The forecast CurveContext of the coupon </td></tr>
+    <tr><td class="paramname">rateIndexContext</td><td>The forecast CurveContext of the coupon </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab5abdd438401934e05c93edee37888d7" name="ab5abdd438401934e05c93edee37888d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5abdd438401934e05c93edee37888d7">&#9670;&#160;</a></span>FloatingRateCoupon() <span class="overload">[2/2]</span></h2>
+<a id="a72e4114655e4410dc285ef05d1bbcbc3" name="a72e4114655e4410dc285ef05d1bbcbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e4114655e4410dc285ef05d1bbcbc3">&#9670;&#160;</a></span>FloatingRateCoupon() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +381,7 @@ template&lt;typename adouble &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>forecastCurveContext</em>, </td>
+          <td class="paramname"><em>rateIndexContext</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -358,13 +401,15 @@ template&lt;typename adouble &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Construct a new Floating Rate <a class="el" href="class_atlas_1_1_coupon.html" title="Coupon is a cashflow that is paid periodically, and is based on a notional amount.">Coupon</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">startDate</td><td>The start date of the coupon </td></tr>
     <tr><td class="paramname">endDate</td><td>The end date of the coupon </td></tr>
     <tr><td class="paramname">notional</td><td>The notional amount of the coupon </td></tr>
     <tr><td class="paramname">spread</td><td>The spread of the coupon </td></tr>
-    <tr><td class="paramname">forecastCurveContext</td><td>The forecast CurveContext of the coupon </td></tr>
+    <tr><td class="paramname">rateIndexContext</td><td>The forecast CurveContext of the coupon </td></tr>
     <tr><td class="paramname">discountCurveContext</td><td>The discount CurveContext of the coupon </td></tr>
   </table>
   </dd>
@@ -409,7 +454,17 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_atlas_1_1_coupon.html#a610514a287b8a5548abc73b01900c035">Atlas::Coupon&lt; adouble &gt;</a>.</p>
+<p>Gets the accrued amount of the coupon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>The start date of the coupon </td></tr>
+    <tr><td class="paramname">end</td><td>The end date of the coupon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The accrued amount of the coupon </dd></dl>
+
+<p>Implements <a class="el" href="class_atlas_1_1_coupon.html#a413fa1f13564c63d0a3a3f6dca1f6bce">Atlas::Coupon&lt; adouble &gt;</a>.</p>
 
 </div>
 </div>
@@ -448,7 +503,9 @@ template&lt;typename adouble &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the accrued period of the coupon </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Gets the accrued period of the coupon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>The start date of the coupon </td></tr>
     <tr><td class="paramname">end</td><td>The end date of the coupon </td></tr>
@@ -457,7 +514,7 @@ template&lt;typename adouble &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The accrued period of the coupon </dd></dl>
 
-<p>Implements <a class="el" href="class_atlas_1_1_coupon.html#ae58e2178e8506a7d2b43d7682c247d58">Atlas::Coupon&lt; adouble &gt;</a>.</p>
+<p>Implements <a class="el" href="class_atlas_1_1_coupon.html#abe1303b917b835b9dd4e2b56a7ba21b7">Atlas::Coupon&lt; adouble &gt;</a>.</p>
 
 </div>
 </div>
@@ -485,6 +542,9 @@ template&lt;typename adouble &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the day counter of the coupon. </p>
+<dl class="section return"><dt>Returns</dt><dd>The day counter of the coupon </dd></dl>
 
 <p>Implements <a class="el" href="class_atlas_1_1_coupon.html#a5d1793ee7d4225cc52104e51f8556245">Atlas::Coupon&lt; adouble &gt;</a>.</p>
 
@@ -515,6 +575,9 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the fixing of the coupon. </p>
+<dl class="section return"><dt>Returns</dt><dd>The fixing of the coupon </dd></dl>
+
 </div>
 </div>
 <a id="ac7118341b0c97b7e7481cbf414b23897" name="ac7118341b0c97b7e7481cbf414b23897"></a>
@@ -543,10 +606,18 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the fixing of the coupon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fixing</td><td>The fixing of the coupon </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="af6fecb2eb2b887dd6b862b6b151e11f0" name="af6fecb2eb2b887dd6b862b6b151e11f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6fecb2eb2b887dd6b862b6b151e11f0">&#9670;&#160;</a></span>forecastContextIdx()</h2>
+<a id="acc314090b11e56d5e5cc1591c49cefa1" name="acc314090b11e56d5e5cc1591c49cefa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc314090b11e56d5e5cc1591c49cefa1">&#9670;&#160;</a></span>hasFixingSet() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +628,7 @@ template&lt;typename adouble &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::forecastContextIdx </td>
+          <td class="memname">bool <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::hasFixingSet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -570,13 +641,13 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the forecast curve context idx. </p>
-<dl class="section return"><dt>Returns</dt><dd>size_t The forecast curve context idx </dd></dl>
+<p>Checks if the fixing rate has been set. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If the fixing rate has been set, false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="a97df7b839d6498565faf2c9c398482af" name="a97df7b839d6498565faf2c9c398482af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97df7b839d6498565faf2c9c398482af">&#9670;&#160;</a></span>forecastCurveContext()</h2>
+<a id="af546f926ec01c76582486060a3b9c6d8" name="af546f926ec01c76582486060a3b9c6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af546f926ec01c76582486060a3b9c6d8">&#9670;&#160;</a></span>hasFixingSet() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,7 +658,73 @@ template&lt;typename adouble &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::forecastCurveContext </td>
+          <td class="memname">void <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::hasFixingSet </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fixing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the fixing has been set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fixing</td><td>The fixing rate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19dd6bad0a4fc4e19034f5b140e13972" name="a19dd6bad0a4fc4e19034f5b140e13972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19dd6bad0a4fc4e19034f5b140e13972">&#9670;&#160;</a></span>hasRateIndexContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename adouble &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::hasRateIndexContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the coupon has a forecast CurveContext. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If the coupon has a forecast CurveContext </dd></dl>
+
+</div>
+</div>
+<a id="ad1a46fdf7af1e6f4a7246b3cbfe40f2e" name="ad1a46fdf7af1e6f4a7246b3cbfe40f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a46fdf7af1e6f4a7246b3cbfe40f2e">&#9670;&#160;</a></span>rateIndexContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename adouble &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::rateIndexContext </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_atlas_1_1_context.html">Context</a>&lt; <a class="el" href="class_atlas_1_1_rate_index.html">RateIndex</a>&lt; adouble &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
@@ -603,8 +740,8 @@ template&lt;typename adouble &gt; </div>
 
 </div>
 </div>
-<a id="ad197ae062814398ef7580e55cb30ba6d" name="ad197ae062814398ef7580e55cb30ba6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad197ae062814398ef7580e55cb30ba6d">&#9670;&#160;</a></span>hasForecastContext()</h2>
+<a id="a9deb2b6b5174e45194c3f7615728efb9" name="a9deb2b6b5174e45194c3f7615728efb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9deb2b6b5174e45194c3f7615728efb9">&#9670;&#160;</a></span>rateIndexContextIdx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -615,7 +752,7 @@ template&lt;typename adouble &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::hasForecastContext </td>
+          <td class="memname">size_t <a class="el" href="class_atlas_1_1_floating_rate_coupon.html">Atlas::FloatingRateCoupon</a>&lt; adouble &gt;::rateIndexContextIdx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -628,8 +765,8 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the coupon has a forecast CurveContext. </p>
-<dl class="section return"><dt>Returns</dt><dd>true If the coupon has a forecast CurveContext </dd></dl>
+<p>Gets the forecast curve context idx. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t The forecast curve context idx </dd></dl>
 
 </div>
 </div>
@@ -657,6 +794,9 @@ template&lt;typename adouble &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns the spread of the coupon. </p>
+<dl class="section return"><dt>Returns</dt><dd>The spread of the coupon </dd></dl>
 
 </div>
 </div>
@@ -686,19 +826,23 @@ template&lt;typename adouble &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the spread of the coupon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spread</td><td>The spread of the coupon </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/atlas/cashflows/<a class="el" href="floatingratecoupon_8hpp_source.html">floatingratecoupon.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_floating_rate_coupon.html">FloatingRateCoupon</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

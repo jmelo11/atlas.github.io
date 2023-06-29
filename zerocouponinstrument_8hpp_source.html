@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('zerocouponinstrument_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('zerocouponinstrument_8hpp_source.html'
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_a0ac0b12ee9f70c670c7ebeee346b59d.html">instruments</a></li><li class="navelem"><a class="el" href="dir_2b38b95aab4bb49276fcb2423cbbb7b9.html">fixedrate</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">zerocouponinstrument.hpp</div></div>
 </div><!--header-->
@@ -125,20 +109,20 @@ $(document).ready(function(){initNavTree('zerocouponinstrument_8hpp_source.html'
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}  <span class="comment">// namespace Atlas</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">/* B50701D3_345F_46BA_A774_CC39E13E6595 */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_atlas_1_1_cashflow_html"><div class="ttname"><a href="class_atlas_1_1_cashflow.html">Atlas::Cashflow</a></div><div class="ttdoc">A class representing a cashflow.</div><div class="ttdef"><b>Definition:</b> cashflow.hpp:22</div></div>
-<div class="ttc" id="aclass_atlas_1_1_context_html"><div class="ttname"><a href="class_atlas_1_1_context.html">Atlas::Context</a></div><div class="ttdoc">A context is a wrapper around an object of type T. It is used to store the object in a context manage...</div><div class="ttdef"><b>Definition:</b> context.hpp:19</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fixed_rate_coupon_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_coupon.html">Atlas::FixedRateCoupon</a></div><div class="ttdoc">Fixed rate coupon class.</div><div class="ttdef"><b>Definition:</b> fixedratecoupon.hpp:14</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html">Atlas::FixedRateInstrument</a></div><div class="ttdoc">An class for fixed-rate-single-legged instruments.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:16</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html_a73bb06e3260e941c8139d7c49e4bcbb5"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html#a73bb06e3260e941c8139d7c49e4bcbb5">Atlas::FixedRateInstrument::rate</a></div><div class="ttdeci">InterestRate&lt; adouble &gt; rate() const</div><div class="ttdoc">Returns the rate of the instrument.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:67</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html_adbcc9693adc351ed9cc7d10e8e7a0077"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html#adbcc9693adc351ed9cc7d10e8e7a0077">Atlas::FixedRateInstrument::rate_</a></div><div class="ttdeci">InterestRate&lt; adouble &gt; rate_</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:111</div></div>
-<div class="ttc" id="aclass_atlas_1_1_instrument_html_a0309a49e77b71a8bfb7bf287be24c99c"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a0309a49e77b71a8bfb7bf287be24c99c">Atlas::Instrument::startDate</a></div><div class="ttdeci">Date startDate() const</div><div class="ttdoc">Returns the start date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:43</div></div>
-<div class="ttc" id="aclass_atlas_1_1_instrument_html_a27758814f8df1184d0db8944f189c2b3"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">Atlas::Instrument::endDate</a></div><div class="ttdeci">Date endDate() const</div><div class="ttdoc">Returns the end date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:50</div></div>
-<div class="ttc" id="aclass_atlas_1_1_instrument_html_acb809efe67db9b92f304faef8a51b74c"><div class="ttname"><a href="class_atlas_1_1_instrument.html#acb809efe67db9b92f304faef8a51b74c">Atlas::Instrument::notional</a></div><div class="ttdeci">double notional() const</div><div class="ttdoc">Returns the notional of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:57</div></div>
-<div class="ttc" id="aclass_atlas_1_1_interest_rate_html"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html">Atlas::InterestRate</a></div><div class="ttdef"><b>Definition:</b> interestrate.hpp:16</div></div>
-<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a50d8bb1831fe247da8aa96d105580a71"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::disbursement</a></div><div class="ttdeci">Cashflow&lt; adouble &gt; &amp; disbursement()</div><div class="ttdoc">Returns the disbursement of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:56</div></div>
-<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a55797194d1cde55f143d50d29e567b46"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a55797194d1cde55f143d50d29e567b46">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::discountCurveContext</a></div><div class="ttdeci">void discountCurveContext(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;context)</div><div class="ttdoc">Sets the discount curve context of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:34</div></div>
-<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a87c1fc1edb2367e6ca21820e32afc9f3"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::leg</a></div><div class="ttdeci">const FixedRateLeg&lt; adouble &gt; &amp; leg() const</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:25</div></div>
-<div class="ttc" id="aclass_atlas_1_1_yield_term_structure_html"><div class="ttname"><a href="class_atlas_1_1_yield_term_structure.html">Atlas::YieldTermStructure</a></div><div class="ttdoc">A yield term structure. The strategy pattern is used to allow for different implementations of the yi...</div><div class="ttdef"><b>Definition:</b> yieldtermstructure.hpp:43</div></div>
+<div class="ttc" id="aclass_atlas_1_1_cashflow_html"><div class="ttname"><a href="class_atlas_1_1_cashflow.html">Atlas::Cashflow</a></div><div class="ttdoc">Base class representing a simple cashflow.</div><div class="ttdef"><b>Definition:</b> cashflow.hpp:26</div></div>
+<div class="ttc" id="aclass_atlas_1_1_context_html"><div class="ttname"><a href="class_atlas_1_1_context.html">Atlas::Context</a></div><div class="ttdoc">A context is a wrapper around an object of type T. It is used to store the object in a context manage...</div><div class="ttdef"><b>Definition:</b> context.hpp:20</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fixed_rate_coupon_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_coupon.html">Atlas::FixedRateCoupon</a></div><div class="ttdoc">Fixed rate coupon class.</div><div class="ttdef"><b>Definition:</b> fixedratecoupon.hpp:17</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html">Atlas::FixedRateInstrument</a></div><div class="ttdoc">An class for fixed-rate-single-legged instruments.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:24</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html_a73bb06e3260e941c8139d7c49e4bcbb5"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html#a73bb06e3260e941c8139d7c49e4bcbb5">Atlas::FixedRateInstrument::rate</a></div><div class="ttdeci">InterestRate&lt; adouble &gt; rate() const</div><div class="ttdoc">Returns the rate of the instrument.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:75</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html_adbcc9693adc351ed9cc7d10e8e7a0077"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html#adbcc9693adc351ed9cc7d10e8e7a0077">Atlas::FixedRateInstrument::rate_</a></div><div class="ttdeci">InterestRate&lt; adouble &gt; rate_</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:119</div></div>
+<div class="ttc" id="aclass_atlas_1_1_instrument_html_a0309a49e77b71a8bfb7bf287be24c99c"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a0309a49e77b71a8bfb7bf287be24c99c">Atlas::Instrument::startDate</a></div><div class="ttdeci">Date startDate() const</div><div class="ttdoc">Returns the start date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:46</div></div>
+<div class="ttc" id="aclass_atlas_1_1_instrument_html_a27758814f8df1184d0db8944f189c2b3"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">Atlas::Instrument::endDate</a></div><div class="ttdeci">Date endDate() const</div><div class="ttdoc">Returns the end date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:53</div></div>
+<div class="ttc" id="aclass_atlas_1_1_instrument_html_acb809efe67db9b92f304faef8a51b74c"><div class="ttname"><a href="class_atlas_1_1_instrument.html#acb809efe67db9b92f304faef8a51b74c">Atlas::Instrument::notional</a></div><div class="ttdeci">double notional() const</div><div class="ttdoc">Returns the notional of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:60</div></div>
+<div class="ttc" id="aclass_atlas_1_1_interest_rate_html"><div class="ttname"><a href="class_atlas_1_1_interest_rate.html">Atlas::InterestRate</a></div><div class="ttdoc">Interest rate class.</div><div class="ttdef"><b>Definition:</b> interestrate.hpp:22</div></div>
+<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a50d8bb1831fe247da8aa96d105580a71"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::disbursement</a></div><div class="ttdeci">Cashflow&lt; adouble &gt; &amp; disbursement()</div><div class="ttdoc">Returns the disbursement of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:69</div></div>
+<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a55797194d1cde55f143d50d29e567b46"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a55797194d1cde55f143d50d29e567b46">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::discountCurveContext</a></div><div class="ttdeci">void discountCurveContext(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;context)</div><div class="ttdoc">Sets the discount curve context of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:46</div></div>
+<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a87c1fc1edb2367e6ca21820e32afc9f3"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">Atlas::OneLegMixin&lt; adouble, FixedRateLeg&lt; adouble &gt; &gt;::leg</a></div><div class="ttdeci">const FixedRateLeg&lt; adouble &gt; &amp; leg() const</div><div class="ttdoc">Returns the leg of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:32</div></div>
+<div class="ttc" id="aclass_atlas_1_1_yield_term_structure_html"><div class="ttname"><a href="class_atlas_1_1_yield_term_structure.html">Atlas::YieldTermStructure</a></div><div class="ttdoc">A yield term structure. The strategy pattern is used to allow for different implementations of the yi...</div><div class="ttdef"><b>Definition:</b> yieldtermstructure.hpp:44</div></div>
 <div class="ttc" id="aclass_atlas_1_1_zero_coupon_instrument_html"><div class="ttname"><a href="class_atlas_1_1_zero_coupon_instrument.html">Atlas::ZeroCouponInstrument</a></div><div class="ttdoc">A class for zero coupon instruments.</div><div class="ttdef"><b>Definition:</b> zerocouponinstrument.hpp:14</div></div>
 <div class="ttc" id="aclass_atlas_1_1_zero_coupon_instrument_html_aa8271ea9eab9f0b88b5010152f39c09a"><div class="ttname"><a href="class_atlas_1_1_zero_coupon_instrument.html#aa8271ea9eab9f0b88b5010152f39c09a">Atlas::ZeroCouponInstrument::ZeroCouponInstrument</a></div><div class="ttdeci">ZeroCouponInstrument(const Date &amp;startDate, const Date &amp;endDate, double notional, const InterestRate&lt; adouble &gt; &amp;rate)</div><div class="ttdoc">Construct a new Zero Coupon Instrument object.</div><div class="ttdef"><b>Definition:</b> zerocouponinstrument.hpp:24</div></div>
 <div class="ttc" id="aclass_atlas_1_1_zero_coupon_instrument_html_add222faab2129f7f4af1f8486e408b69"><div class="ttname"><a href="class_atlas_1_1_zero_coupon_instrument.html#add222faab2129f7f4af1f8486e408b69">Atlas::ZeroCouponInstrument::ZeroCouponInstrument</a></div><div class="ttdeci">ZeroCouponInstrument(const Date &amp;startDate, const Date &amp;endDate, double notional, const InterestRate&lt; adouble &gt; &amp;rate, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)</div><div class="ttdoc">Construct a new Zero Coupon Instrument object.</div><div class="ttdef"><b>Definition:</b> zerocouponinstrument.hpp:44</div></div>
@@ -146,13 +130,9 @@ $(document).ready(function(){initNavTree('zerocouponinstrument_8hpp_source.html'
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
 <div class="ttc" id="anamespace_atlas_html_a92ed70fca8f58a348fe1d28f4ebba77a"><div class="ttname"><a href="namespace_atlas.html#a92ed70fca8f58a348fe1d28f4ebba77a">Atlas::Date</a></div><div class="ttdeci">QuantLib::Date Date</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_a0ac0b12ee9f70c670c7ebeee346b59d.html">instruments</a></li><li class="navelem"><a class="el" href="dir_2b38b95aab4bb49276fcb2423cbbb7b9.html">fixedrate</a></li><li class="navelem"><a class="el" href="zerocouponinstrument_8hpp.html">zerocouponinstrument.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

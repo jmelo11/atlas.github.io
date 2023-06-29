@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('linearinterpolation_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('linearinterpolation_8hpp_source.html',
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_e7b248ecfd7e87247a4e2066ada20afb.html">others</a></li><li class="navelem"><a class="el" href="dir_1dfc4c1475363924f4eaa436385db952.html">interpolations</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">linearinterpolation.hpp</div></div>
 </div><!--header-->
@@ -114,7 +98,7 @@ $(document).ready(function(){initNavTree('linearinterpolation_8hpp_source.html',
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_atlas_1_1_linear_interpolator.html#a63be65a9af2bd0e833262c9ba3559b90">   20</a></span>        adouble <a class="code hl_function" href="class_atlas_1_1_linear_interpolator.html#a63be65a9af2bd0e833262c9ba3559b90">operator()</a>(<span class="keywordtype">double</span> x)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> linearInterpolation(x); }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_atlas_1_1_linear_interpolator.html#a1607f2343ad2e1acb34ca6c19bf79d4c">   22</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_linear_interpolator.html#a1607f2343ad2e1acb34ca6c19bf79d4c">enableExtrapolation</a>() { extrapolate_ = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_atlas_1_1_linear_interpolator.html#a9ae7894d7f57ae1f00649ae5f5a10488">   22</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_linear_interpolator.html#a9ae7894d7f57ae1f00649ae5f5a10488">enableExtrapolation</a>(<span class="keywordtype">bool</span> e) { extrapolate_ = e; }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>       <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        adouble linearInterpolation(<span class="keywordtype">double</span> x)<span class="keyword"> const </span>{</div>
@@ -145,20 +129,16 @@ $(document).ready(function(){initNavTree('linearinterpolation_8hpp_source.html',
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">/* F2F7D698_D5F3_4B89_8FE9_DFD5F75622BE */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclass_atlas_1_1_interpolator_html"><div class="ttname"><a href="class_atlas_1_1_interpolator.html">Atlas::Interpolator</a></div><div class="ttdef"><b>Definition:</b> interpolator.hpp:7</div></div>
 <div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html">Atlas::LinearInterpolator</a></div><div class="ttdef"><b>Definition:</b> linearinterpolation.hpp:11</div></div>
-<div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html_a1607f2343ad2e1acb34ca6c19bf79d4c"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html#a1607f2343ad2e1acb34ca6c19bf79d4c">Atlas::LinearInterpolator::enableExtrapolation</a></div><div class="ttdeci">void enableExtrapolation()</div><div class="ttdef"><b>Definition:</b> linearinterpolation.hpp:22</div></div>
 <div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html_a1b60904ee71ef195e1535e39612c050b"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html#a1b60904ee71ef195e1535e39612c050b">Atlas::LinearInterpolator::LinearInterpolator</a></div><div class="ttdeci">LinearInterpolator()=default</div></div>
 <div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html_a63be65a9af2bd0e833262c9ba3559b90"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html#a63be65a9af2bd0e833262c9ba3559b90">Atlas::LinearInterpolator::operator()</a></div><div class="ttdeci">adouble operator()(double x) const override</div><div class="ttdef"><b>Definition:</b> linearinterpolation.hpp:20</div></div>
+<div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html_a9ae7894d7f57ae1f00649ae5f5a10488"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html#a9ae7894d7f57ae1f00649ae5f5a10488">Atlas::LinearInterpolator::enableExtrapolation</a></div><div class="ttdeci">void enableExtrapolation(bool e)</div><div class="ttdef"><b>Definition:</b> linearinterpolation.hpp:22</div></div>
 <div class="ttc" id="aclass_atlas_1_1_linear_interpolator_html_ac4cb212ae9c83aa02345d7a2cadf3fd8"><div class="ttname"><a href="class_atlas_1_1_linear_interpolator.html#ac4cb212ae9c83aa02345d7a2cadf3fd8">Atlas::LinearInterpolator::LinearInterpolator</a></div><div class="ttdeci">LinearInterpolator(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; adouble &gt; &amp;y, bool extrapolate=false)</div><div class="ttdef"><b>Definition:</b> linearinterpolation.hpp:15</div></div>
 <div class="ttc" id="ainterpolator_8hpp_html"><div class="ttname"><a href="interpolator_8hpp.html">interpolator.hpp</a></div></div>
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_e7b248ecfd7e87247a4e2066ada20afb.html">others</a></li><li class="navelem"><a class="el" href="dir_1dfc4c1475363924f4eaa436385db952.html">interpolations</a></li><li class="navelem"><a class="el" href="linearinterpolation_8hpp.html">linearinterpolation.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['zerocouponinstrument_0',['ZeroCouponInstrument',['../class_atlas_1_1_zero_coupon_instrument.html',1,'Atlas']]],
-  ['zeroratestrategy_1',['ZeroRateStrategy',['../class_atlas_1_1_zero_rate_strategy.html',1,'Atlas']]],
-  ['zspreadcalculator_2',['ZSpreadCalculator',['../class_atlas_1_1_z_spread_calculator.html',1,'Atlas']]]
+  ['yieldtermstructure_0',['YieldTermStructure',['../class_atlas_1_1_yield_term_structure.html',1,'Atlas']]],
+  ['yieldtermstructurestrategy_1',['YieldTermStructureStrategy',['../class_atlas_1_1_yield_term_structure_strategy.html',1,'Atlas']]]
 ];

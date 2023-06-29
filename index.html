@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atlas: Main Page</title>
+<title>Atlas: Atlas: Libreria Financiera</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,17 +69,153 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Atlas Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title"><a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>: Libreria Financiera </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> El objetivo de <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a> es convertirse en una alternativa real a las herramientas financieras existentes en el mercado, ofreciendo un mayor rendimiento, simplicidad y alcance.</p>
+<ul>
+<li>Performance: En cuanto al rendimiento, hasta el día de hoy, la única alternativa utilizable en sistemas productivos es QuantLib, que cuenta con un sinfín de herramientas para valorizar diversos instrumentos. Sin embargo, es importante mencionar que QuantLib no está pensada a ser rápida (no cuenta con multithreading por defecto, por ejemplo), sino que se enfoca en la flexibilidad. Creemos que hay un espacio en el mercado donde <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a> puede diferenciarse al reducir el alcance de herramientas disponibles y enfocarse en la velocidad, construyéndose desde un inicio con ese objetivo.</li>
+<li>Simplicidad: La simplicidad es otro aspecto clave de <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>. Se busca tener una herramienta sencilla pero práctica, para que los usuarios puedan aprender a usarla fácilmente, y lo suficientemente flexible para implementar los instrumentos financieros más avanzados del mercado.</li>
+</ul>
+<p>Algunas características técnicas que se buscan incorporar en <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a> son:</p>
+<ul>
+<li>Multithreading: contar con una estructura que permita utilizar la librería de forma thread-safe es crucial para poder sacarle el máximo de rendimiento.</li>
+<li>Diferenciación automática: AAD se ha convertido en un estándar para el cálculo de sensibilidades en el mundo financiero, habilitando la posibilidad de contar con riesgos de forma automática sin tener que recalcular todos nuestros instrumentos. Esta funcionalidad es crucial si, por ejemplo, se busca calcular XVAs u otras métricas.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Documentación</h1>
+<p>Es posible encontrar la documentación disponible hasta hoy en <a href="https://jmelo11.github.io/atlasdocs/">https://jmelo11.github.io/atlasdocs/</a></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Roadmap</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Generales</h2>
+<ul>
+<li>[x] Estructura básica de las clases (en desarrollo)</li>
+<li>[x] Diferenciacion automatica</li>
+<li>[x] Paralelización CPU</li>
+<li>[x] Port a Python</li>
+<li>[ ] Compresión de portafolio</li>
+<li>[x] Transformación a moneda local</li>
+<li>[x] Precisión monedas</li>
+<li>[ ] Paralelización GPU (depende de factibilidad)</li>
+<li>[ ] Customización instrumentos (incorporar parámetros QL)</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Funcionalidades</h2>
+<ul>
+<li>[x] NPV</li>
+<li>[x] Sensibilidades (ej. Duracion)</li>
+<li>[x] Tasas Par</li>
+<li>[x] ZSpread</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Instrumentos</h2>
+<ul>
+<li>[x] Productos lineales<ul>
+<li>[x] Loans<ul>
+<li>[x] Loans tasa fija (bullet)</li>
+<li>[x] Loans tasa fija (cuotas iguales)</li>
+<li>[x] Loans tasa fija (perfil de pagos custom)</li>
+<li>[x] Loans tasa flotante (bullet)</li>
+<li>[x] Loans tasa flotante (perfil de pagos custom)</li>
+<li>[x] Loans tasa mixta</li>
+</ul>
+</li>
+<li>[ ] Derivados<ul>
+<li>[x] Forward</li>
+<li>[ ] Swaps vanilla</li>
+<li>[ ] Xccy</li>
+</ul>
+</li>
+<li>[ ] OIS</li>
+<li>[ ] Renta Fija<ul>
+<li>[ ] Instrumentos con convenciones de mercados</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] Productos no lineales</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Curvas</h2>
+<ul>
+<li>[x] Interpolación con soporte AD</li>
+<li>[x] Curvas con soporte AD</li>
+<li>[ ] Bootstrap con soporte AD</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Modelos</h2>
+<ul>
+<li>[x] Generación de tasas en base a curvas estáticas</li>
+<li>[ ] LGM para generación de trayectorias de mercado</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Requisitos previos</h2>
+<p>Antes de compilar el proyecto, es necesario instalar las siguientes bibliotecas:</p>
+<ul>
+<li>Boost: <a href="https://www.boost.org/">https://www.boost.org/</a></li>
+<li>QuantLib: <a href="https://github.com/lballabio/quantlib">https://github.com/lballabio/quantlib</a></li>
+</ul>
+<p>El objetivo futuro es reemplazar estas dependencias por versiones internas del proyecto.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Estructura de directorios recomendada</h3>
+<p>Para facilitar el proceso de compilación, se sugiere organizar los directorios de la siguiente manera:</p>
+<ul>
+<li>builds<ul>
+<li>release</li>
+<li>debug</li>
+</ul>
+</li>
+<li>libs<ul>
+<li>QuantLib</li>
+<li>boost</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Compilación de QuantLib con CMake (Windows)</h3>
+<ol type="1">
+<li>Dentro del directorio libs/QuantLib, cree una carpeta llamada build.</li>
+<li>Abra una terminal y navegue hasta la carpeta build recién creada.</li>
+<li>Ejecute los siguientes comandos, reemplazando &lt;path/to/installed/libs&gt; y &lt;your/boost/path&gt; con las rutas apropiadas:</li>
+</ol>
+<h4><a class="anchor" id="autotoc_md11"></a>
+Debug</h4>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/installed/libs&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39; -DQL_BUILD_BENCHMARK=OFF -DQL_BUILD_EXAMPLES=OFF -DQL_BUILD_TEST_SUITE=OFF -DCMAKE_CXX_FLAGS=&quot;/MDd /EHsc /MP&quot; -DQL_TAGGED_LAYOUT=OFF -DCMAKE_MSVC_RUNTIME_LIBRARY=&quot;MultiThreadedDebugDLL&quot;</div>
+<div class="line"> </div>
+<div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md12"></a>
+Release</h4>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/installed/libs&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39; -DQL_BUILD_BENCHMARK=OFF -DQL_BUILD_EXAMPLES=OFF -DQL_BUILD_TEST_SUITE=OFF -DCMAKE_CXX_FLAGS=&quot;/MD /EHsc /MP&quot; -DQL_TAGGED_LAYOUT=OFF -DCMAKE_MSVC_RUNTIME_LIBRARY=&quot;MultiThreadedDLL&quot;</div>
+<div class="line"> </div>
+<div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
+</div><!-- fragment --><p>Donde config puede ser Debug o Release, dependiendo de la configuración que desee compilar.</p>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Instalación de Boost</h3>
+<p>Boost incluye un instalador. Siga las instrucciones en <a href="https://www.boost.org/doc/libs/1_82_0/more/getting_started/windows.html">https://www.boost.org/doc/libs/1_82_0/more/getting_started/windows.html</a> para instalarlo en su sistema.</p>
+<h3><a class="anchor" id="autotoc_md14"></a>
+Compilación de Atlas</h3>
+<ol type="1">
+<li>Dentro del directorio del proyecto <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>, cree una carpeta llamada build.</li>
+<li>Abra una terminal y navegue hasta la carpeta build recién creada.</li>
+<li>Ejecute los siguientes comandos, reemplazando <code>path/to/installed/libds</code> y <code>your/boost/path</code> con las rutas apropiadas:</li>
+</ol>
+<div class="fragment"><div class="line">cmake -S .. -B . -DCMAKE_CXX_STANDARD=20 -DCMAKE_PREFIX_PATH=&#39;&lt;path/to/installed/libs&gt;&#39; -DBoost_INCLUDE_DIR=&#39;&lt;your/boost/path&gt;&#39;</div>
+<div class="line">cmake --build . --target INSTALL --config &lt;config&gt;</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
+Instalación modulo Python</h3>
+<p>En el caso de querer instalar el paquete desde este repositorio, es necesario configurar el archivo <code>setup.py</code>. En este caso, sera necesario tambien contar con pybind11 instalado. Por consistencia se recomienda utilizar CMAKE para esto, ya que de esta forma funcionará el comando <code>find_package</code>. Una vez instalada y seleccionada la opcion <code>BUID_PYTHON=ON</code> al configurar <a class="el" href="namespace_atlas.html" title="Atlas namespace.">Atlas</a>, bastara con:</p>
+<ol type="1">
+<li>Ir con la terminal a la carpeta <code>python</code></li>
+<li>Ejectura el comando <code>pip install .</code></li>
+</ol>
+<p>Tambien es posible instalar el paquete estandar a travez de PYPI: <code>pip instal atlas-finance</code> </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

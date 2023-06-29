@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('pricefloatinginstrument_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('pricefloatinginstrument_8hpp_source.ht
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">pricefloatinginstrument.hpp</div></div>
 </div><!--header-->
@@ -131,13 +115,13 @@ $(document).ready(function(){initNavTree('pricefloatinginstrument_8hpp_source.ht
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_a6fb028b4770547275dff61c79925a40d"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a6fb028b4770547275dff61c79925a40d">Atlas::Indexer::visit</a></div><div class="ttdeci">void visit(FixedRateInstrument&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Indexes the cashflows of a fixed rate instrument.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:30</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_ae329c8378c214b84ec15a636922aa714"><div class="ttname"><a href="class_atlas_1_1_indexer.html#ae329c8378c214b84ec15a636922aa714">Atlas::Indexer::request</a></div><div class="ttdeci">MarketRequest request()</div><div class="ttdoc">Get the Request object.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:118</div></div>
 <div class="ttc" id="aclass_atlas_1_1_market_store_html"><div class="ttname"><a href="class_atlas_1_1_market_store.html">Atlas::MarketStore</a></div><div class="ttdoc">A class representing a set of market information and market-related objects like curves,...</div><div class="ttdef"><b>Definition:</b> marketstore.hpp:18</div></div>
-<div class="ttc" id="aclass_atlas_1_1_market_store_html_a87e68536ddf370513769257adbefa45b"><div class="ttname"><a href="class_atlas_1_1_market_store.html#a87e68536ddf370513769257adbefa45b">Atlas::MarketStore::rateIndexContext</a></div><div class="ttdeci">const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp; rateIndexContext(const std::string &amp;name) const</div><div class="ttdoc">gets the rate index context with the given name</div><div class="ttdef"><b>Definition:</b> marketstore.hpp:79</div></div>
-<div class="ttc" id="aclass_atlas_1_1_market_store_html_aee1be7d73d56756f305bbd267b7eacdc"><div class="ttname"><a href="class_atlas_1_1_market_store.html#aee1be7d73d56756f305bbd267b7eacdc">Atlas::MarketStore::curveContext</a></div><div class="ttdeci">const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp; curveContext(size_t idx) const</div><div class="ttdoc">gets the curve context with the given index</div><div class="ttdef"><b>Definition:</b> marketstore.hpp:63</div></div>
+<div class="ttc" id="aclass_atlas_1_1_market_store_html_a87e68536ddf370513769257adbefa45b"><div class="ttname"><a href="class_atlas_1_1_market_store.html#a87e68536ddf370513769257adbefa45b">Atlas::MarketStore::rateIndexContext</a></div><div class="ttdeci">const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp; rateIndexContext(const std::string &amp;name) const</div><div class="ttdoc">gets the rate index context with the given name</div><div class="ttdef"><b>Definition:</b> marketstore.hpp:82</div></div>
+<div class="ttc" id="aclass_atlas_1_1_market_store_html_aee1be7d73d56756f305bbd267b7eacdc"><div class="ttname"><a href="class_atlas_1_1_market_store.html#aee1be7d73d56756f305bbd267b7eacdc">Atlas::MarketStore::curveContext</a></div><div class="ttdeci">const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp; curveContext(size_t idx) const</div><div class="ttdoc">gets the curve context with the given index</div><div class="ttdef"><b>Definition:</b> marketstore.hpp:66</div></div>
 <div class="ttc" id="aclass_atlas_1_1_n_p_v_calculator_html"><div class="ttname"><a href="class_atlas_1_1_n_p_v_calculator.html">Atlas::NPVCalculator</a></div><div class="ttdoc">A class for calculating the net present value of an instrument.</div><div class="ttdef"><b>Definition:</b> npvcalculator.hpp:19</div></div>
 <div class="ttc" id="aclass_atlas_1_1_n_p_v_calculator_html_a27f14dc70ce1c44703e0255c967b37a5"><div class="ttname"><a href="class_atlas_1_1_n_p_v_calculator.html#a27f14dc70ce1c44703e0255c967b37a5">Atlas::NPVCalculator::visit</a></div><div class="ttdeci">void visit(FixedRateInstrument&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Visit a fixed rate instrument.</div><div class="ttdef"><b>Definition:</b> npvcalculator.hpp:46</div></div>
 <div class="ttc" id="aclass_atlas_1_1_n_p_v_calculator_html_a40dd24090988bd256b045265fa5239e2"><div class="ttname"><a href="class_atlas_1_1_n_p_v_calculator.html#a40dd24090988bd256b045265fa5239e2">Atlas::NPVCalculator::results</a></div><div class="ttdeci">adouble results() const</div><div class="ttdoc">Returns the net present value of the instrument.</div><div class="ttdef"><b>Definition:</b> npvcalculator.hpp:39</div></div>
-<div class="ttc" id="aclass_atlas_1_1_spot_market_data_model_html"><div class="ttname"><a href="class_atlas_1_1_spot_market_data_model.html">Atlas::SpotMarketDataModel</a></div><div class="ttdoc">MarketDataModel is a model that uses a set of curves and spot currencies to calculate the market data...</div><div class="ttdef"><b>Definition:</b> spotmarketdatamodel.hpp:23</div></div>
-<div class="ttc" id="aclass_atlas_1_1_spot_market_data_model_html_a1d91effbf70c3871f50fbc60ca70e3be"><div class="ttname"><a href="class_atlas_1_1_spot_market_data_model.html#a1d91effbf70c3871f50fbc60ca70e3be">Atlas::SpotMarketDataModel::marketData</a></div><div class="ttdeci">MarketData&lt; adouble &gt; marketData(const Date &amp;evalDate=Date()) const override</div><div class="ttdoc">Simulate the market data for a given scenario.</div><div class="ttdef"><b>Definition:</b> spotmarketdatamodel.hpp:34</div></div>
+<div class="ttc" id="aclass_atlas_1_1_spot_market_data_model_html"><div class="ttname"><a href="class_atlas_1_1_spot_market_data_model.html">Atlas::SpotMarketDataModel</a></div><div class="ttdoc">SpotMarketDataModel is a model that uses a set of curves and spot currencies to calculate the market ...</div><div class="ttdef"><b>Definition:</b> spotmarketdatamodel.hpp:24</div></div>
+<div class="ttc" id="aclass_atlas_1_1_spot_market_data_model_html_a1d91effbf70c3871f50fbc60ca70e3be"><div class="ttname"><a href="class_atlas_1_1_spot_market_data_model.html#a1d91effbf70c3871f50fbc60ca70e3be">Atlas::SpotMarketDataModel::marketData</a></div><div class="ttdeci">MarketData&lt; adouble &gt; marketData(const Date &amp;evalDate=Date()) const override</div><div class="ttdoc">Simulate the market data for a given scenario.</div><div class="ttdef"><b>Definition:</b> spotmarketdatamodel.hpp:35</div></div>
 <div class="ttc" id="acreatestore_8hpp_html"><div class="ttname"><a href="createstore_8hpp.html">createstore.hpp</a></div></div>
 <div class="ttc" id="acreatestore_8hpp_html_a5b5b7a6199d151a666c94ee2569eaef9"><div class="ttname"><a href="createstore_8hpp.html#a5b5b7a6199d151a666c94ee2569eaef9">NumType</a></div><div class="ttdeci">double NumType</div><div class="ttdef"><b>Definition:</b> createstore.hpp:8</div></div>
 <div class="ttc" id="afloatingratebulletinstrument_8hpp_html"><div class="ttname"><a href="floatingratebulletinstrument_8hpp.html">floatingratebulletinstrument.hpp</a></div></div>
@@ -149,13 +133,9 @@ $(document).ready(function(){initNavTree('pricefloatinginstrument_8hpp_source.ht
 <div class="ttc" id="astruct_atlas_1_1_market_data_html"><div class="ttname"><a href="struct_atlas_1_1_market_data.html">Atlas::MarketData</a></div><div class="ttdoc">A struct representing market data used for financial calculations.</div><div class="ttdef"><b>Definition:</b> marketdata.hpp:19</div></div>
 <div class="ttc" id="astruct_atlas_1_1_market_request_html"><div class="ttname"><a href="struct_atlas_1_1_market_request.html">Atlas::MarketRequest</a></div><div class="ttdoc">A struct representing a market request.</div><div class="ttdef"><b>Definition:</b> marketrequest.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="pricefloatinginstrument_8hpp.html">pricefloatinginstrument.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

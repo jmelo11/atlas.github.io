@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_f.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -93,30 +73,34 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>Fast&#160;:&#160;<a class="el" href="class_atlas_1_1_equal_payment_instrument.html#aebdefcd9d8462828d11fa8861be57fe5ac43847986c0ce1069dc53817b8ca7065">Atlas::EqualPaymentInstrument&lt; adouble &gt;</a></li>
 <li>firstLeg()&#160;:&#160;<a class="el" href="class_atlas_1_1_two_leg_mixin.html#a9b3e3eefe4fe8b44c61260ad78946f7e">Atlas::TwoLegMixin&lt; FirstLeg, SecondLeg &gt;</a></li>
 <li>firstLeg_&#160;:&#160;<a class="el" href="class_atlas_1_1_two_leg_mixin.html#aa464e3e9fc9cfa22a637c303b0630cb5">Atlas::TwoLegMixin&lt; FirstLeg, SecondLeg &gt;</a></li>
 <li>FixedRateBulletInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_bullet_instrument.html#a54a18f42de19333a67224e51c4a92be4">Atlas::FixedRateBulletInstrument&lt; adouble &gt;</a></li>
+<li>FixedRateCashAccount()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_cash_account.html#a31fcaa9ef9c6e7e77ab0de10364f79f7">Atlas::FixedRateCashAccount&lt; adouble &gt;</a></li>
 <li>FixedRateCoupon()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_coupon.html#adc5befae58e18b32b10b7d2a34372564">Atlas::FixedRateCoupon&lt; adouble &gt;</a></li>
 <li>FixedRateEqualRedemptionInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_equal_redemption_instrument.html#a3988574f591abeffc2f884b09a997f23">Atlas::FixedRateEqualRedemptionInstrument&lt; adouble &gt;</a></li>
 <li>FixedRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_instrument.html#a7602f11d9395679e78290aadf365afb8">Atlas::FixedRateInstrument&lt; adouble &gt;</a></li>
 <li>FixedRateLeg()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_leg.html#a7ad7bba64bf31c22299169acfeedb3bc">Atlas::FixedRateLeg&lt; adouble &gt;</a></li>
-<li>FixFloatSwap()&#160;:&#160;<a class="el" href="class_atlas_1_1_fix_float_swap.html#a8dfbf4c1ac7eaf4ce3b451b70a10e6af">Atlas::FixFloatSwap&lt; adouble &gt;</a></li>
+<li>FixFloatSwap()&#160;:&#160;<a class="el" href="class_atlas_1_1_fix_float_swap.html#ac578d9e444710c1f473eab6c2f8450f6">Atlas::FixFloatSwap&lt; adouble &gt;</a></li>
 <li>fixing()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#ac7118341b0c97b7e7481cbf414b23897">Atlas::FloatingRateCoupon&lt; adouble &gt;</a></li>
 <li>fixingFrequency()&#160;:&#160;<a class="el" href="class_atlas_1_1_rate_index.html#ae4727a033ea40d8526caaac8757584a4">Atlas::RateIndex&lt; adouble &gt;</a></li>
+<li>FixingVisitor()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixing_visitor.html#a32beb160a36e85f505ded311ddd301a6">Atlas::FixingVisitor&lt; adouble &gt;</a></li>
+<li>fixPaymentFrequency()&#160;:&#160;<a class="el" href="class_atlas_1_1_fix_float_swap.html#a17119c25f607392693b431d57d9ff515">Atlas::FixFloatSwap&lt; adouble &gt;</a></li>
 <li>FlatForwardStrategy()&#160;:&#160;<a class="el" href="class_atlas_1_1_flat_forward_strategy.html#a52d7b9535aed9414fc7aa2dd4a87e763">Atlas::FlatForwardStrategy&lt; adouble &gt;</a></li>
 <li>FloatingRateBulletInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_bullet_instrument.html#abcfa248404b3317faca69e491d432632">Atlas::FloatingRateBulletInstrument&lt; adouble &gt;</a></li>
-<li>FloatingRateCoupon()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a2afa27e79c6de9b152aa9c4f2c8c2e35">Atlas::FloatingRateCoupon&lt; adouble &gt;</a></li>
+<li>FloatingRateCoupon()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#aec718288d684a78c26574ab38efe32b3">Atlas::FloatingRateCoupon&lt; adouble &gt;</a></li>
 <li>FloatingRateEqualRedemptionInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_equal_redemption_instrument.html#adaaa2f19d5b2dd09546e2523a4fe9393">Atlas::FloatingRateEqualRedemptionInstrument&lt; adouble &gt;</a></li>
 <li>FloatingRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_instrument.html#a54d3c3e5fa365fc31d1e193f35af4017">Atlas::FloatingRateInstrument&lt; adouble &gt;</a></li>
 <li>FloatingRateLeg()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_leg.html#acf01b80aee801cd9d210dce853b51eff">Atlas::FloatingRateLeg&lt; adouble &gt;</a></li>
+<li>floatPaymentFrequency()&#160;:&#160;<a class="el" href="class_atlas_1_1_fix_float_swap.html#a814892150c6a9e52e05e3e02afe9b1b6">Atlas::FixFloatSwap&lt; adouble &gt;</a></li>
 <li>flush&#160;:&#160;<a class="el" href="class_b_s_1_1synced__stream.html#a3b910c58a651f2a60061d18ce4fbc20b">BS::synced_stream</a></li>
-<li>forecastContextIdx()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#af6fecb2eb2b887dd6b862b6b151e11f0">Atlas::FloatingRateCoupon&lt; adouble &gt;</a></li>
-<li>forecastCurveContext()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_coupon.html#a97df7b839d6498565faf2c9c398482af">Atlas::FloatingRateCoupon&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_floating_rate_leg.html#ab5ed8cd095902ad30825238a1055d95f">Atlas::FloatingRateLeg&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_leg2.html#a5ef1a964ff3f20e2f55761f1c2713245">Atlas::Leg2&lt; adouble, Flow &gt;</a>, <a class="el" href="class_atlas_1_1_one_leg_mixin.html#a7b63aea9fd8305096343ff023e919898">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
+<li>forecastTermStructure&#160;:&#160;<a class="el" href="struct_test_setup.html#a375c314cc76cb7e720efc1a7d18218c8">TestSetup&lt; adouble &gt;</a></li>
 <li>forwardRate()&#160;:&#160;<a class="el" href="class_atlas_1_1_discount_strategy.html#a9155244fab2176b3dfc27835b6d99a6e">Atlas::DiscountStrategy&lt; adouble, Interpol &gt;</a>, <a class="el" href="class_atlas_1_1_flat_forward_strategy.html#a3f43a6a10141698abbfbb1ff59bbb81c">Atlas::FlatForwardStrategy&lt; adouble &gt;</a></li>
 <li>ForwardRate()&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#a59b15a4070f9f299ca32b8a9f6f4401f">Atlas::MarketRequest::ForwardRate</a></li>
 <li>forwardRate()&#160;:&#160;<a class="el" href="class_atlas_1_1_yield_term_structure.html#ac096f7a11eb81cbe12502823d4cfb411">Atlas::YieldTermStructure&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_yield_term_structure_strategy.html#a2a74188f4f071a07c169a2a63e445ae0">Atlas::YieldTermStructureStrategy&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_zero_rate_strategy.html#ae1da0e2cd38711ac68afb67c776385f8">Atlas::ZeroRateStrategy&lt; adouble, Interpol &gt;</a></li>
 <li>ForwardRateForecaster()&#160;:&#160;<a class="el" href="class_atlas_1_1_forward_rate_forecaster.html#a9705c635a92505df9bbc5b12e60b7b27">Atlas::ForwardRateForecaster&lt; adouble &gt;</a></li>
-<li>frequency()&#160;:&#160;<a class="el" href="class_atlas_1_1_interest_rate.html#a41aef00eb46b02c6bce55bba88137033">Atlas::InterestRate&lt; adouble &gt;</a></li>
+<li>frequency()&#160;:&#160;<a class="el" href="class_atlas_1_1_interest_rate.html#a41aef00eb46b02c6bce55bba88137033">Atlas::InterestRate&lt; adouble &gt;</a>, <a class="el" href="struct_test_setup.html#abdb3212f8b173d7d89b8aa1dfcd680ee">TestSetup&lt; adouble &gt;</a></li>
 <li>fwdIdx()&#160;:&#160;<a class="el" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">Atlas::Indexable</a></li>
 <li>fwdPrice()&#160;:&#160;<a class="el" href="class_atlas_1_1_fx_forward.html#a5058f719356a97a9736f8c6a7451319a">Atlas::FxForward&lt; adouble &gt;</a></li>
 <li>fwds&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#aeb21eb6aa01c073e27c9ba3743df2bb3">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#a74dc05e708bf04567cd99fefafa95f22">Atlas::MarketRequest</a></li>
@@ -125,12 +109,9 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>fxs&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#a8d56d9c97da663c5e8a8d1046eb17cfd">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#a83b5d0770835ed9c4836fb6028eaa1ef">Atlas::MarketRequest</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

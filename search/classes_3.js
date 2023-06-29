@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['equalpaymentinstrument_0',['EqualPaymentInstrument',['../class_atlas_1_1_equal_payment_instrument.html',1,'Atlas']]],
-  ['exchangerate_1',['ExchangeRate',['../struct_atlas_1_1_market_request_1_1_exchange_rate.html',1,'Atlas::MarketRequest']]],
-  ['exchangeratemanager_2',['ExchangeRateManager',['../class_atlas_1_1_exchange_rate_manager.html',1,'Atlas']]]
+  ['discountfactor_0',['DiscountFactor',['../struct_atlas_1_1_market_request_1_1_discount_factor.html',1,'Atlas::MarketRequest']]],
+  ['discountstrategy_1',['DiscountStrategy',['../class_atlas_1_1_discount_strategy.html',1,'Atlas']]],
+  ['durationcalculator_2',['DurationCalculator',['../class_atlas_1_1_duration_calculator.html',1,'Atlas']]]
 ];

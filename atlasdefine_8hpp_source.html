@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('atlasdefine_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('atlasdefine_8hpp_source.html',''); ini
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">atlasdefine.hpp</div></div>
 </div><!--header-->
@@ -101,39 +85,32 @@ $(document).ready(function(){initNavTree('atlasdefine_8hpp_source.html',''); ini
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#undef __ARM_NEON__</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;XAD/XAD.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// #include &lt;autodiff/forward/dual.hpp&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// #include &lt;autodiff/forward/dual/eigen.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_atlas.html">Atlas</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// using dual = autodiff::dual;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespace_atlas.html#a9ecbb690937ed1b6f3e446221845b2c6">   15</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_atlas.html#a9ecbb690937ed1b6f3e446221845b2c6">dual</a> = xad::AD;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespace_atlas.html#aa7ca93d7d723f473849d1c0c1c15aca9">   16</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_atlas.html#aa7ca93d7d723f473849d1c0c1c15aca9">fwdDual</a> = xad::FReal&lt;double&gt;;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespace_atlas.html#a7a783cba734f2894c29e15b1aa6da254">   18</a></span>    <span class="keyword">typedef</span> xad::adj&lt;double&gt; <a class="code hl_typedef" href="namespace_atlas.html#a7a783cba734f2894c29e15b1aa6da254">mode</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespace_atlas.html#afc3fd5516d149a3f79118fde37ce755c">   19</a></span>    <span class="keyword">typedef</span> mode::tape_type <a class="code hl_typedef" href="namespace_atlas.html#afc3fd5516d149a3f79118fde37ce755c">tape_type</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespace_atlas.html#aafb6f7475660472b2b36207afa28d365">   21</a></span>    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="namespace_atlas.html#aafb6f7475660472b2b36207afa28d365">val</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_atlas.html#a9ecbb690937ed1b6f3e446221845b2c6">dual</a>&amp; x) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> x.value();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// #include &lt;autodiff/forward/dual.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// #include &lt;autodiff/forward/dual/eigen.hpp&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_atlas.html">Atlas</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespace_atlas.html#a5f9a06a9999a8981a7eed91055b1883c">   14</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_atlas.html#a5f9a06a9999a8981a7eed91055b1883c">dual</a> = double;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespace_atlas.html#a2682a7dd86591c5b05584b1810b31354">   17</a></span>    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="namespace_atlas.html#a2682a7dd86591c5b05584b1810b31354">val</a>(<span class="keyword">const</span> T&amp; x) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;T, double&gt;) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> x.value();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    };</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}  <span class="comment">// namespace Atlas</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">/* AF67A639_F380_427B_88DD_9765B0579217 */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
-<div class="ttc" id="anamespace_atlas_html_a7a783cba734f2894c29e15b1aa6da254"><div class="ttname"><a href="namespace_atlas.html#a7a783cba734f2894c29e15b1aa6da254">Atlas::mode</a></div><div class="ttdeci">xad::adj&lt; double &gt; mode</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:18</div></div>
-<div class="ttc" id="anamespace_atlas_html_a9ecbb690937ed1b6f3e446221845b2c6"><div class="ttname"><a href="namespace_atlas.html#a9ecbb690937ed1b6f3e446221845b2c6">Atlas::dual</a></div><div class="ttdeci">xad::AD dual</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:15</div></div>
-<div class="ttc" id="anamespace_atlas_html_aa7ca93d7d723f473849d1c0c1c15aca9"><div class="ttname"><a href="namespace_atlas.html#aa7ca93d7d723f473849d1c0c1c15aca9">Atlas::fwdDual</a></div><div class="ttdeci">xad::FReal&lt; double &gt; fwdDual</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:16</div></div>
-<div class="ttc" id="anamespace_atlas_html_aafb6f7475660472b2b36207afa28d365"><div class="ttname"><a href="namespace_atlas.html#aafb6f7475660472b2b36207afa28d365">Atlas::val</a></div><div class="ttdeci">double val(const dual &amp;x)</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:21</div></div>
-<div class="ttc" id="anamespace_atlas_html_afc3fd5516d149a3f79118fde37ce755c"><div class="ttname"><a href="namespace_atlas.html#afc3fd5516d149a3f79118fde37ce755c">Atlas::tape_type</a></div><div class="ttdeci">mode::tape_type tape_type</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:19</div></div>
+<div class="ttc" id="anamespace_atlas_html_a2682a7dd86591c5b05584b1810b31354"><div class="ttname"><a href="namespace_atlas.html#a2682a7dd86591c5b05584b1810b31354">Atlas::val</a></div><div class="ttdeci">double val(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:17</div></div>
+<div class="ttc" id="anamespace_atlas_html_a5f9a06a9999a8981a7eed91055b1883c"><div class="ttname"><a href="namespace_atlas.html#a5f9a06a9999a8981a7eed91055b1883c">Atlas::dual</a></div><div class="ttdeci">double dual</div><div class="ttdef"><b>Definition:</b> atlasdefine.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="atlasdefine_8hpp.html">atlasdefine.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_fx_forward.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_fx_forward.html',''); 
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_fx_forward.html">FxForward</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Atlas::FxForward&lt; adouble &gt; Member List</div></div>
 </div><!--header-->
@@ -98,39 +82,39 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_fx_forward.html',''); 
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#ad6c0e4f1aea4d36cd21907a2c75d5f85">accept</a>(Visitor&lt; adouble &gt; &amp;v) override</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#a5ebff6774ecb1c697954950bf24b4bd4">accept</a>(ConstVisitor&lt; adouble &gt; &amp;v) const override</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#aecccf7a62ae9d9ea997bed7b997bba95ac96fbf5407003c323dad34d61ff05325">BUY</a> enum value</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a43b8fde09e2f5ce3f60aeb39b0fc33dd">currency</a>(const Currency &amp;currency)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">disbursement</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a91dcbd5c6503993bded56d2afca05ae6">applyCcy</a>(bool apply)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#aecccf7a62ae9d9ea997bed7b997bba95ac96fbf5407003c323dad34d61ff05325">BUY</a> enum value</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a43b8fde09e2f5ce3f60aeb39b0fc33dd">currency</a>(const Currency &amp;currency)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">disbursement</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#ad07ddb75c0760f950ea31c592f6d9670">disbursement</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#aa75909b7f068091484d3bc4bf1ea2d7f">disbursement</a>(const Cashflow&lt; adouble &gt; &amp;disbursement)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a263e481a2c2d2a35bae4bad581b4520c">disbursement_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a55797194d1cde55f143d50d29e567b46">discountCurveContext</a>(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;context)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">endDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a7acf4077aa2d099214e8dee433d34c84">endDate_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a7b63aea9fd8305096343ff023e919898">forecastCurveContext</a>(const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp;context)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#a5058f719356a97a9736f8c6a7451319a">fwdPrice</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#a3f3d0467ff1a03e4ca8c3ac67a82b827">fwdPrice</a>(adouble fwdPrice)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#ac06b8f7928dd553c59fb8a32be7e87f2">FxForward</a>(const Date &amp;startDate, const Date &amp;endDate, adouble fwdPrice, const Currency &amp;ccy1, const Currency &amp;ccy2, double notionalInSecondCcy, Side side)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#acafdd88caa2ae15bf58ef3fdd9dfa31f">FxForward</a>(const Date &amp;startDate, const Date &amp;endDate, adouble fwdPrice, const Currency &amp;curr1, const Currency &amp;curr2, double notionalInSecondCcy, Side side, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurve)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">leg</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a3fb54a8735bc4da45db6422366bd3a31">leg</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#ab56dd8fc92921a5d4224ec3c16b19e65">leg_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#acb809efe67db9b92f304faef8a51b74c">notional</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a6b6f772709fc232c7458ddbf7ce6bc62">notional_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a4ebf0c3e10e58b7360fa70620baceb25">OneLegMixin</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a908ba47c78283fb47b69f726c4d799d0">OneLegMixin</a>(const Leg&lt; adouble &gt; &amp;leg)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#aecccf7a62ae9d9ea997bed7b997bba95a8d3f08cdf1aaa0a6eb6f4f8c9faa2605">SELL</a> enum value</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#ab1347a254f8bb088e08420816aaed378">side</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#a5058f719356a97a9736f8c6a7451319a">fwdPrice</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#a3f3d0467ff1a03e4ca8c3ac67a82b827">fwdPrice</a>(adouble fwdPrice)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#ac06b8f7928dd553c59fb8a32be7e87f2">FxForward</a>(const Date &amp;startDate, const Date &amp;endDate, adouble fwdPrice, const Currency &amp;ccy1, const Currency &amp;ccy2, double notionalInSecondCcy, Side side)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#acafdd88caa2ae15bf58ef3fdd9dfa31f">FxForward</a>(const Date &amp;startDate, const Date &amp;endDate, adouble fwdPrice, const Currency &amp;curr1, const Currency &amp;curr2, double notionalInSecondCcy, Side side, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurve)</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">leg</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a3fb54a8735bc4da45db6422366bd3a31">leg</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#ab56dd8fc92921a5d4224ec3c16b19e65">leg_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#acb809efe67db9b92f304faef8a51b74c">notional</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a6b6f772709fc232c7458ddbf7ce6bc62">notional_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a4ebf0c3e10e58b7360fa70620baceb25">OneLegMixin</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a908ba47c78283fb47b69f726c4d799d0">OneLegMixin</a>(const Leg&lt; adouble &gt; &amp;leg)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#adeb9eae581f169dbab49c0dc43d6926b">rateIndexContext</a>(const Context&lt; RateIndex&lt; adouble &gt; &gt; &amp;context)</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html#a6f53fd9991ed37abba64406bfcaab415">reset</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_one_leg_mixin.html">Atlas::OneLegMixin&lt; adouble, Leg&lt; adouble &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#aecccf7a62ae9d9ea997bed7b997bba95a8d3f08cdf1aaa0a6eb6f4f8c9faa2605">SELL</a> enum value</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#aecccf7a62ae9d9ea997bed7b997bba95">Side</a> enum name</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a0309a49e77b71a8bfb7bf287be24c99c">startDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a5c2489855686263c2727003291248150">startDate_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a6d4756886ef720ded4b12d6f5d1dc5e0">~Instrument</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html#ab1347a254f8bb088e08420816aaed378">side</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_fx_forward.html">Atlas::FxForward&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a0309a49e77b71a8bfb7bf287be24c99c">startDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a5c2489855686263c2727003291248150">startDate_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html#a6d4756886ef720ded4b12d6f5d1dc5e0">~Instrument</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_instrument.html">Atlas::Instrument&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

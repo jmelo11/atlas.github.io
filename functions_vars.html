@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_vars.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,6 +75,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
 <li>amount_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#a75d9d0b4f2b50a817e4dca443d877988">Atlas::Cashflow&lt; adouble &gt;</a></li>
 <li>applyCcy_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#a9641d305f2b9dc08c3324054239fc528">Atlas::Cashflow&lt; adouble &gt;</a></li>
+<li>atlasFixBond&#160;:&#160;<a class="el" href="struct_test_setup.html#ab368ec3c5ae0274fba113091d42c35f5">TestSetup&lt; adouble &gt;</a></li>
+<li>atlasFloatBond&#160;:&#160;<a class="el" href="struct_test_setup.html#a31c4c62b5d9180e555179e4248d2ee51">TestSetup&lt; adouble &gt;</a></li>
+<li>atlasRate&#160;:&#160;<a class="el" href="struct_test_setup.html#a37459e16404fa144a6dcad4f1389ee3b">TestSetup&lt; adouble &gt;</a></li>
 </ul>
 
 
@@ -102,29 +85,42 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>ccy1_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#a8a923d20122f1c176b4df80339203cdc">Atlas::MarketRequest::ExchangeRate</a></li>
 <li>ccy2_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#ab78631ebb7f44817dfce9868e2ff6f0a">Atlas::MarketRequest::ExchangeRate</a></li>
 <li>ccyCode_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#ae3637686a25c36b0811fe08dff39af75">Atlas::Cashflow&lt; adouble &gt;</a></li>
-<li>coupons_&#160;:&#160;<a class="el" href="class_atlas_1_1_leg2.html#a5d4b4d389b842370612eedaec671f23d">Atlas::Leg2&lt; adouble, Flow &gt;</a></li>
+<li>clpCurveRate&#160;:&#160;<a class="el" href="struct_test_setup.html#afe414986081fabf83b5e5a2cbea4f800">TestSetup&lt; adouble &gt;</a></li>
+<li>clpDiscountingTermStructure&#160;:&#160;<a class="el" href="struct_test_setup.html#a5f101c189ac0bd76b2c1ea0365e678ef">TestSetup&lt; adouble &gt;</a></li>
+<li>compounding&#160;:&#160;<a class="el" href="struct_test_setup.html#a678d0fa4a67fc91caafc54cba29df9f6">TestSetup&lt; adouble &gt;</a></li>
 <li>curve_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_discount_factor.html#afb4be8d7a3487f8d1795498b41233e39">Atlas::MarketRequest::DiscountFactor</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#a0d9220b8b2e7dce0707e13dcd6feb81e">Atlas::MarketRequest::ForwardRate</a></li>
+<li>curveCompounding&#160;:&#160;<a class="el" href="struct_test_setup.html#adb180ca62c5df71990172399f351a007">TestSetup&lt; adouble &gt;</a></li>
+<li>curveDayCounter&#160;:&#160;<a class="el" href="struct_test_setup.html#aed1e13a11612a5c85a036ef0eed1aa00">TestSetup&lt; adouble &gt;</a></li>
+<li>curveFrequency&#160;:&#160;<a class="el" href="struct_test_setup.html#ae7d954d1828e7da82fd2c2ff857097a2">TestSetup&lt; adouble &gt;</a></li>
+<li>curveRate&#160;:&#160;<a class="el" href="struct_test_setup.html#aae37677183d089be1bb13cbd39658f15">TestSetup&lt; adouble &gt;</a></li>
+<li>curveRefDate&#160;:&#160;<a class="el" href="struct_test_setup.html#afea293b17418d8a3be7685cff9716af3">TestSetup&lt; adouble &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>date_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_discount_factor.html#a834027b86e4916d50c3892c155c44b8e">Atlas::MarketRequest::DiscountFactor</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#afce6e31a0b034171acd1eacbf0ab6387">Atlas::MarketRequest::ExchangeRate</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_price.html#a50023feb54abb9c198791f6e1f20ef6b">Atlas::MarketRequest::Price</a></li>
+<li>dayCounter&#160;:&#160;<a class="el" href="struct_test_setup.html#aca9c7e424c76120bc70a2cff522a7964">TestSetup&lt; adouble &gt;</a></li>
 <li>dfs&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#ae2b06ded92be363cc5f5d68517ceccd4">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#af22d92ae1a4b60432b07a430b598e344">Atlas::MarketRequest</a></li>
 <li>disbursement_&#160;:&#160;<a class="el" href="class_atlas_1_1_one_leg_mixin.html#a263e481a2c2d2a35bae4bad581b4520c">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
 <li>discountContextIdx_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#a276a890ddc304134a1947ddc7d2b77ab">Atlas::Cashflow&lt; adouble &gt;</a></li>
+<li>discountingTermStructure&#160;:&#160;<a class="el" href="struct_test_setup.html#a9c78ef2008fde9f36a24a75f70968167">TestSetup&lt; adouble &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>end_&#160;:&#160;<a class="el" href="struct_atlas_1_1_bucket.html#a96db75bf3bffef4e0cf3af234c48c84f">Atlas::Bucket&lt; adouble &gt;</a></li>
+<li>endDate&#160;:&#160;<a class="el" href="struct_test_setup.html#a83e17035263ac2f153de4e1b983790d8">TestSetup&lt; adouble &gt;</a></li>
 <li>endDate_&#160;:&#160;<a class="el" href="class_atlas_1_1_instrument.html#a7acf4077aa2d099214e8dee433d34c84">Atlas::Instrument&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#a0bd95fdd7b4716770f73b6c9e21cf1e0">Atlas::MarketRequest::ForwardRate</a></li>
 <li>endl&#160;:&#160;<a class="el" href="class_b_s_1_1synced__stream.html#a25e44d2af0173f7148b7cd2c6b9bb1ab">BS::synced_stream</a></li>
+<li>evalDate&#160;:&#160;<a class="el" href="struct_test_setup.html#a7f9fe535cc5867acf66958c336da7f2f">TestSetup&lt; adouble &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>firstLeg_&#160;:&#160;<a class="el" href="class_atlas_1_1_two_leg_mixin.html#aa464e3e9fc9cfa22a637c303b0630cb5">Atlas::TwoLegMixin&lt; FirstLeg, SecondLeg &gt;</a></li>
 <li>flush&#160;:&#160;<a class="el" href="class_b_s_1_1synced__stream.html#a3b910c58a651f2a60061d18ce4fbc20b">BS::synced_stream</a></li>
+<li>forecastTermStructure&#160;:&#160;<a class="el" href="struct_test_setup.html#a375c314cc76cb7e720efc1a7d18218c8">TestSetup&lt; adouble &gt;</a></li>
+<li>frequency&#160;:&#160;<a class="el" href="struct_test_setup.html#abdb3212f8b173d7d89b8aa1dfcd680ee">TestSetup&lt; adouble &gt;</a></li>
 <li>fwds&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#aeb21eb6aa01c073e27c9ba3743df2bb3">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#a74dc05e708bf04567cd99fefafa95f22">Atlas::MarketRequest</a></li>
 <li>fxs&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#a8d56d9c97da663c5e8a8d1046eb17cfd">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#a83b5d0770835ed9c4836fb6028eaa1ef">Atlas::MarketRequest</a></li>
 </ul>
@@ -135,18 +131,25 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </ul>
 
 
+<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>indexFrequency&#160;:&#160;<a class="el" href="struct_test_setup.html#a6f068ec4e8352d51d0f1387fc120e929">TestSetup&lt; adouble &gt;</a></li>
+</ul>
+
+
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>leg_&#160;:&#160;<a class="el" href="class_atlas_1_1_one_leg_mixin.html#ab56dd8fc92921a5d4224ec3c16b19e65">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>manager&#160;:&#160;<a class="el" href="struct_exchange_manager_setup.html#a110c31ed4e43c425e5ace6a96c057c33">ExchangeManagerSetup</a></li>
 <li>marketRequest_&#160;:&#160;<a class="el" href="class_atlas_1_1_model.html#a11d5b76fa4ef8dda4425a9e24f4b7fda">Atlas::Model&lt; adouble &gt;</a></li>
 <li>marketStore_&#160;:&#160;<a class="el" href="class_atlas_1_1_spot_market_data_model.html#a52d125ad3ef1e4fa3a43611abf73b7d7">Atlas::SpotMarketDataModel&lt; adouble &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
+<li>notional&#160;:&#160;<a class="el" href="struct_test_setup.html#aa04e992cbf403b962c7770652f542db1">TestSetup&lt; adouble &gt;</a></li>
 <li>notional_&#160;:&#160;<a class="el" href="class_atlas_1_1_instrument.html#a6b6f772709fc232c7458ddbf7ce6bc62">Atlas::Instrument&lt; adouble &gt;</a></li>
 <li>numerarie&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#aa12560518fe3779296315d6253350e83">Atlas::MarketData&lt; adouble &gt;</a></li>
 </ul>
@@ -154,14 +157,24 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>paymentDate_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#ab71bda8b24c41b24e1eba760dafcd226">Atlas::Cashflow&lt; adouble &gt;</a></li>
+<li>paymentFrequency&#160;:&#160;<a class="el" href="struct_test_setup.html#aa6d46d32ff128e89e55979dc2ac25ad9">TestSetup&lt; adouble &gt;</a></li>
 <li>price_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_price.html#a5c00f0bc98ba05e5bd7f61955ad3abf7">Atlas::MarketRequest::Price</a></li>
 <li>prices&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#ab9aee9037c626cdc8d60498750ffa3af">Atlas::MarketData&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request.html#a93a43e5d00da2eb64e6b943647564198">Atlas::MarketRequest</a></li>
 </ul>
 
 
+<h3><a id="index_q" name="index_q"></a>- q -</h3><ul>
+<li>qlFixBond&#160;:&#160;<a class="el" href="struct_test_setup.html#ab4cedb744c936def5ebdc11a602dd838">TestSetup&lt; adouble &gt;</a></li>
+<li>qlFloatBond&#160;:&#160;<a class="el" href="struct_test_setup.html#a45808110e9896d914482d61290e6bca1">TestSetup&lt; adouble &gt;</a></li>
+<li>qlIndex&#160;:&#160;<a class="el" href="struct_test_setup.html#a2aad2ab6a7ff4335f39770580f02326d">TestSetup&lt; adouble &gt;</a></li>
+<li>qlRate&#160;:&#160;<a class="el" href="struct_test_setup.html#a744faf2ddd47d2be1b394e39e899476f">TestSetup&lt; adouble &gt;</a></li>
+</ul>
+
+
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>rate&#160;:&#160;<a class="el" href="struct_test_setup.html#aec3cff9e1d1e5ceaf7172984101dcdb1">TestSetup&lt; adouble &gt;</a></li>
 <li>rate_&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_instrument.html#adbcc9693adc351ed9cc7d10e8e7a0077">Atlas::FixedRateInstrument&lt; adouble &gt;</a></li>
-<li>redemptions_&#160;:&#160;<a class="el" href="class_atlas_1_1_leg2.html#a0cd1e000a73edc96564dc3895d198959">Atlas::Leg2&lt; adouble, Flow &gt;</a>, <a class="el" href="class_atlas_1_1_leg.html#a2be59c09dd53ebea1a980cc74a676af3">Atlas::Leg&lt; adouble &gt;</a></li>
+<li>redemptions_&#160;:&#160;<a class="el" href="class_atlas_1_1_leg.html#a2be59c09dd53ebea1a980cc74a676af3">Atlas::Leg&lt; adouble &gt;</a></li>
 <li>refDate&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_data.html#a194c2947df23fe762a0144e874c0afa9">Atlas::MarketData&lt; adouble &gt;</a></li>
 <li>refDate_&#160;:&#160;<a class="el" href="class_atlas_1_1_yield_term_structure_strategy.html#a05462cb6ce0dc3f7915be919dabf9ebf">Atlas::YieldTermStructureStrategy&lt; adouble &gt;</a></li>
 </ul>
@@ -169,9 +182,17 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>secondLeg_&#160;:&#160;<a class="el" href="class_atlas_1_1_two_leg_mixin.html#a4e931cd41454c6349b1523e3dab232d4">Atlas::TwoLegMixin&lt; FirstLeg, SecondLeg &gt;</a></li>
+<li>spread&#160;:&#160;<a class="el" href="struct_test_setup.html#aad737446f8be4a9c03d038e2d84f1501">TestSetup&lt; adouble &gt;</a></li>
 <li>spread_&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_instrument.html#a9f91f999c3a7f5e618b3fca8690605bd">Atlas::FloatingRateInstrument&lt; adouble &gt;</a></li>
 <li>start_&#160;:&#160;<a class="el" href="struct_atlas_1_1_bucket.html#a7ec2aba3bb8251fbb364f8f54be5dbe3">Atlas::Bucket&lt; adouble &gt;</a></li>
+<li>startDate&#160;:&#160;<a class="el" href="struct_test_setup.html#a00f038b2f81538ee183a83791f0b7eee">TestSetup&lt; adouble &gt;</a></li>
 <li>startDate_&#160;:&#160;<a class="el" href="class_atlas_1_1_instrument.html#a5c2489855686263c2727003291248150">Atlas::Instrument&lt; adouble &gt;</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#a92da95e79f639c6aff75bb92acfdcbaa">Atlas::MarketRequest::ForwardRate</a></li>
+<li>store&#160;:&#160;<a class="el" href="struct_test_setup.html#a0171c719bb53646a48ac5f2ffd8fa41a">TestSetup&lt; adouble &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>usdCurveRate&#160;:&#160;<a class="el" href="struct_test_setup.html#ac0a972c694be5527d95eb701e4a373e5">TestSetup&lt; adouble &gt;</a></li>
 </ul>
 
 
@@ -184,12 +205,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>yield_&#160;:&#160;<a class="el" href="class_atlas_1_1_static_yield_model.html#a1a8265bc5d91b6bcaf66d3c1beec501f">Atlas::StaticYieldModel&lt; adouble &gt;</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

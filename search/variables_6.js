@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['leg_5f_0',['leg_',['../class_atlas_1_1_one_leg_mixin.html#ab56dd8fc92921a5d4224ec3c16b19e65',1,'Atlas::OneLegMixin']]]
+  ['indexfrequency_0',['indexFrequency',['../struct_test_setup.html#a6f068ec4e8352d51d0f1387fc120e929',1,'TestSetup']]]
 ];

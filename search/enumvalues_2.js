@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['recieve_0',['RECIEVE',['../class_atlas_1_1_fix_float_swap.html#ac57d6d24389a00fffe4fdb9b7218ca81a7ee9d63651ba2c2b2654493f30077552',1,'Atlas::FixFloatSwap']]]
+  ['fast_0',['Fast',['../class_atlas_1_1_equal_payment_instrument.html#aebdefcd9d8462828d11fa8861be57fe5ac43847986c0ce1069dc53817b8ca7065',1,'Atlas::EqualPaymentInstrument']]]
 ];

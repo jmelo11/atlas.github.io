@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_c.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,40 +75,50 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>calculateNotionals()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_instrument.html#a16ee209e394d5dc9f065de8798751ec3">Atlas::FixedRateInstrument&lt; adouble &gt;</a></li>
 <li>calendar()&#160;:&#160;<a class="el" href="class_atlas_1_1_make_leg.html#a8edf165414feb8ae1b8e787cef82663e">Atlas::MakeLeg&lt; adouble, LegType &gt;</a></li>
+<li>CashAccount()&#160;:&#160;<a class="el" href="class_atlas_1_1_cash_account.html#abd2ce0536bc39c6f2b900338f116d462">Atlas::CashAccount&lt; adouble, LegType &gt;</a></li>
 <li>Cashflow()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#aa09f2bea56d812f3e42a688e69819ee6">Atlas::Cashflow&lt; adouble &gt;</a></li>
-<li>CashflowProfiler()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow_profiler.html#a4c588cea847d38117775c0903ece6fb0">Atlas::CashflowProfiler&lt; adouble &gt;</a></li>
+<li>CashflowProfiler()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow_profiler.html#ab9902c1a7dc78a1965cc6499e3b757f6">Atlas::CashflowProfiler&lt; adouble &gt;</a></li>
 <li>ccy1_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#a8a923d20122f1c176b4df80339203cdc">Atlas::MarketRequest::ExchangeRate</a></li>
 <li>ccy2_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#ab78631ebb7f44817dfce9868e2ff6f0a">Atlas::MarketRequest::ExchangeRate</a></li>
 <li>ccyCode_&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#ae3637686a25c36b0811fe08dff39af75">Atlas::Cashflow&lt; adouble &gt;</a></li>
+<li>checkDates()&#160;:&#160;<a class="el" href="class_atlas_1_1_coupon.html#a0f834eeb548bec491e8062853c9333c2">Atlas::Coupon&lt; adouble &gt;</a></li>
 <li>clear()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow_profiler.html#a32a5eba1544043aea1049cffbb73c12f">Atlas::CashflowProfiler&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_concurrent_queue.html#aa77323e5785ad4b337f6bea28e977aca">Atlas::ConcurrentQueue&lt; T &gt;</a>, <a class="el" href="class_atlas_1_1_duration_calculator.html#abba4fbca399ee381f09f77a12ea57c0d">Atlas::DurationCalculator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_indexer.html#a027cb65cfee4f1e2277c8339fa4153a0">Atlas::Indexer&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_n_p_v_calculator.html#a26e9711988936c3fd91cc86a8cc93433">Atlas::NPVCalculator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_par_solver.html#a1092b2ca84e64eba2aa62978bf04bcef">Atlas::ParSolver&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_z_spread_calculator.html#a367664c877cdd76597ac7fd9caebaf6e">Atlas::ZSpreadCalculator&lt; adouble &gt;</a></li>
 <li>clearSimFixings()&#160;:&#160;<a class="el" href="class_atlas_1_1_rate_index.html#a2800d801c78bdd762c5ae97bca096675">Atlas::RateIndex&lt; adouble &gt;</a></li>
 <li>clone()&#160;:&#160;<a class="el" href="class_atlas_1_1_context_manager.html#a10490c629b95d7305189090add97fe62">Atlas::ContextManager&lt; T &gt;</a>, <a class="el" href="class_atlas_1_1_discount_strategy.html#aca2a8d60551cc6510ecacca808f6c3ee">Atlas::DiscountStrategy&lt; adouble, Interpol &gt;</a>, <a class="el" href="class_atlas_1_1_exchange_rate_manager.html#a0cc6189391e9cc0a7edfce0e88db31bb">Atlas::ExchangeRateManager&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_flat_forward_strategy.html#a6045249686acd1c99835627717ad5257">Atlas::FlatForwardStrategy&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_market_store.html#a446b103105d579bcc7de8f74fef5351d">Atlas::MarketStore&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_rate_index.html#aa1f9491e48b372572ca66fffd49fcbcd">Atlas::RateIndex&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_yield_term_structure.html#a0afaa0b5508f8f6122b97982cc9dd045">Atlas::YieldTermStructure&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_yield_term_structure_strategy.html#adafec691780aa7ac0507121d3c715dbd">Atlas::YieldTermStructureStrategy&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_zero_rate_strategy.html#aff3164a39f1cd6b94676169e1b5c9567">Atlas::ZeroRateStrategy&lt; adouble, Interpol &gt;</a></li>
 <li>cloneFromStore()&#160;:&#160;<a class="el" href="class_atlas_1_1_market_store.html#a98b95188283883e9be6a127983fc8753">Atlas::MarketStore&lt; adouble &gt;</a></li>
+<li>clpCurveRate&#160;:&#160;<a class="el" href="struct_test_setup.html#afe414986081fabf83b5e5a2cbea4f800">TestSetup&lt; adouble &gt;</a></li>
+<li>clpDiscountingTermStructure&#160;:&#160;<a class="el" href="struct_test_setup.html#a5f101c189ac0bd76b2c1ea0365e678ef">TestSetup&lt; adouble &gt;</a></li>
 <li>compoundFactor()&#160;:&#160;<a class="el" href="class_atlas_1_1_interest_rate.html#af7ccd8f8c6bd705fdb8df1230a56d195">Atlas::InterestRate&lt; adouble &gt;</a></li>
-<li>compounding()&#160;:&#160;<a class="el" href="class_atlas_1_1_interest_rate.html#adeb4a45c4c69bcf96d64df24ff21a8ea">Atlas::InterestRate&lt; adouble &gt;</a></li>
+<li>compounding()&#160;:&#160;<a class="el" href="class_atlas_1_1_interest_rate.html#adeb4a45c4c69bcf96d64df24ff21a8ea">Atlas::InterestRate&lt; adouble &gt;</a>, <a class="el" href="struct_test_setup.html#a678d0fa4a67fc91caafc54cba29df9f6">TestSetup&lt; adouble &gt;</a></li>
 <li>ConcurrentQueue()&#160;:&#160;<a class="el" href="class_atlas_1_1_concurrent_queue.html#ae9bac2cb27f68891c99db4b154d4bcfa">Atlas::ConcurrentQueue&lt; T &gt;</a></li>
 <li>Context()&#160;:&#160;<a class="el" href="class_atlas_1_1_context.html#a4cb662c7bcbd09e7a205899a4add4fe5">Atlas::Context&lt; T &gt;</a></li>
 <li>ContextManager()&#160;:&#160;<a class="el" href="class_atlas_1_1_context_manager.html#a82e01dc9d9088bed701d4ae922d568ef">Atlas::ContextManager&lt; T &gt;</a></li>
 <li>ContextManager&lt; T &gt;&#160;:&#160;<a class="el" href="class_atlas_1_1_context.html#a7f63737eb2fb277257208412e25edb97">Atlas::Context&lt; T &gt;</a></li>
 <li>Coupon()&#160;:&#160;<a class="el" href="class_atlas_1_1_coupon.html#a898617672131520d58e2a906f843dbcf">Atlas::Coupon&lt; adouble &gt;</a></li>
-<li>coupons()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_leg.html#a1da8a2bc760c5e5b7425af2f02b34994">Atlas::FixedRateLeg&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_floating_rate_leg.html#a7b922fbc1fc221b91a1d9edba474af3e">Atlas::FloatingRateLeg&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_leg2.html#a773b07ed53cba9a05886b94c54c35a8b">Atlas::Leg2&lt; adouble, Flow &gt;</a></li>
-<li>coupons_&#160;:&#160;<a class="el" href="class_atlas_1_1_leg2.html#a5d4b4d389b842370612eedaec671f23d">Atlas::Leg2&lt; adouble, Flow &gt;</a></li>
+<li>coupons()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_leg.html#a1da8a2bc760c5e5b7425af2f02b34994">Atlas::FixedRateLeg&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_floating_rate_leg.html#a7b922fbc1fc221b91a1d9edba474af3e">Atlas::FloatingRateLeg&lt; adouble &gt;</a></li>
 <li>createContext()&#160;:&#160;<a class="el" href="class_atlas_1_1_context_manager.html#a69440046ed33024f4827f81f2872816d">Atlas::ContextManager&lt; T &gt;</a></li>
+<li>createCoupons()&#160;:&#160;<a class="el" href="class_atlas_1_1_cash_account.html#a4f7b54574c3773cac6bd7c35f92405bb">Atlas::CashAccount&lt; adouble, LegType &gt;</a>, <a class="el" href="class_atlas_1_1_fixed_rate_cash_account.html#a12a2091385345f2ae01336bd5139ba07">Atlas::FixedRateCashAccount&lt; adouble &gt;</a></li>
+<li>createCurves()&#160;:&#160;<a class="el" href="struct_test_setup.html#a417f32aa6a9ef6b136c153f57bfbc971">TestSetup&lt; adouble &gt;</a></li>
+<li>createInstrumentRates()&#160;:&#160;<a class="el" href="struct_test_setup.html#a89c4c9dbc2cc144b68136b58f2093aae">TestSetup&lt; adouble &gt;</a></li>
+<li>createInstruments()&#160;:&#160;<a class="el" href="struct_test_setup.html#afbc5ae779be710fa717cb412dc15a6ed">TestSetup&lt; adouble &gt;</a></li>
+<li>createQuantLibIndex()&#160;:&#160;<a class="el" href="struct_test_setup.html#afa9924bc3d30960238b3314ba01a937d">TestSetup&lt; adouble &gt;</a></li>
 <li>createRedemptions()&#160;:&#160;<a class="el" href="class_atlas_1_1_make_leg.html#a5725437f5c56de4051b41c9ed6cab5a0">Atlas::MakeLeg&lt; adouble, LegType &gt;</a></li>
-<li>currency()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#a34edbd9696da2099754df4c27d79f128">Atlas::Cashflow&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_make_leg.html#a8362ff3ebba9b212fa263f5ba0343cd4">Atlas::MakeLeg&lt; adouble, LegType &gt;</a>, <a class="el" href="class_atlas_1_1_one_leg_mixin.html#a43b8fde09e2f5ce3f60aeb39b0fc33dd">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
+<li>currency()&#160;:&#160;<a class="el" href="class_atlas_1_1_cash_account.html#a93744116e21492f8e66e07a6022a1627">Atlas::CashAccount&lt; adouble, LegType &gt;</a>, <a class="el" href="class_atlas_1_1_cashflow.html#a34edbd9696da2099754df4c27d79f128">Atlas::Cashflow&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_make_leg.html#a8362ff3ebba9b212fa263f5ba0343cd4">Atlas::MakeLeg&lt; adouble, LegType &gt;</a>, <a class="el" href="class_atlas_1_1_one_leg_mixin.html#a43b8fde09e2f5ce3f60aeb39b0fc33dd">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
 <li>currencyCode()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#ab8dadeab8dd5e1c5f464a5885be2abc4">Atlas::Cashflow&lt; adouble &gt;</a></li>
 <li>curve_&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_discount_factor.html#afb4be8d7a3487f8d1795498b41233e39">Atlas::MarketRequest::DiscountFactor</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#a0d9220b8b2e7dce0707e13dcd6feb81e">Atlas::MarketRequest::ForwardRate</a></li>
+<li>curveCompounding&#160;:&#160;<a class="el" href="struct_test_setup.html#adb180ca62c5df71990172399f351a007">TestSetup&lt; adouble &gt;</a></li>
 <li>curveContext()&#160;:&#160;<a class="el" href="class_atlas_1_1_market_store.html#aee1be7d73d56756f305bbd267b7eacdc">Atlas::MarketStore&lt; adouble &gt;</a></li>
+<li>curveDayCounter&#160;:&#160;<a class="el" href="struct_test_setup.html#aed1e13a11612a5c85a036ef0eed1aa00">TestSetup&lt; adouble &gt;</a></li>
+<li>curveFrequency&#160;:&#160;<a class="el" href="struct_test_setup.html#ae7d954d1828e7da82fd2c2ff857097a2">TestSetup&lt; adouble &gt;</a></li>
+<li>curveRate&#160;:&#160;<a class="el" href="struct_test_setup.html#aae37677183d089be1bb13cbd39658f15">TestSetup&lt; adouble &gt;</a></li>
+<li>curveRefDate&#160;:&#160;<a class="el" href="struct_test_setup.html#afea293b17418d8a3be7685cff9716af3">TestSetup&lt; adouble &gt;</a></li>
 <li>CustomFixedRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_custom_fixed_rate_instrument.html#a46a30e742e99b34798fbbdbf82a7f31d">Atlas::CustomFixedRateInstrument&lt; adouble &gt;</a></li>
 <li>CustomFloatingRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_custom_floating_rate_instrument.html#ae2c24fcb1a9108d70a25ee88fd5f31e6">Atlas::CustomFloatingRateInstrument&lt; adouble &gt;</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

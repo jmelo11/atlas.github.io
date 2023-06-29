@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_a53b472716e5ae16db1319bb27f60f9a.html">visitors</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">indexer.hpp</div></div>
 </div><!--header-->
@@ -99,8 +83,8 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="marketdata_8hpp.html">atlas/data/marketdata.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="fixfloatswap_8hpp.html">atlas/instruments/derivatives/fixfloatswap.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="fxforward_8hpp.html">atlas/instruments/derivatives/fxforward.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;atlas/instruments/fixedrateinstrument.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;atlas/instruments/floatingrateinstrument.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="fixedrateinstrument_8hpp.html">atlas/instruments/fixedrate/fixedrateinstrument.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="floatingrateinstrument_8hpp.html">atlas/instruments/floatingrate/floatingrateinstrument.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="visitor_8hpp.html">atlas/visitors/visitor.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;set&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
@@ -110,8 +94,8 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> a<span class="keywordtype">double</span>&gt;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexer.html">   21</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_atlas_1_1_indexer.html">Indexer</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_atlas_1_1_visitor.html">Visitor</a>&lt;adouble&gt; {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>       <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexer.html#a08d10435109b34d246926a9377370e83">   23</a></span>        <a class="code hl_function" href="class_atlas_1_1_indexer.html#a08d10435109b34d246926a9377370e83">Indexer</a>(){};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexer.html#aff543f741252d9331082d61457af13b8">   23</a></span>        <a class="code hl_function" href="class_atlas_1_1_indexer.html#aff543f741252d9331082d61457af13b8">Indexer</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_atlas_1_1_indexer.html#a6fb028b4770547275dff61c79925a40d">   30</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_atlas_1_1_indexer.html#a6fb028b4770547275dff61c79925a40d">visit</a>(<a class="code hl_class" href="class_atlas_1_1_fixed_rate_instrument.html">FixedRateInstrument&lt;adouble&gt;</a>&amp; inst)<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            indexCashflow(inst.<a class="code hl_function" href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">disbursement</a>());</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            indexExchangeRate(inst.<a class="code hl_function" href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">disbursement</a>(), <span class="keyword">false</span>);</div>
@@ -212,8 +196,8 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="comment">// fwd rate</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;Flow, FloatingRateCoupon&lt;adouble&gt;&gt;) {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="keywordflow">if</span> (!cashflow.hasForecastContext()) { <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Cashflow does not have a forecast curve context.&quot;</span>); }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keywordtype">size_t</span> curveIdx = cashflow.forecastContextIdx();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="keywordflow">if</span> (!cashflow.hasRateIndexContext()) { <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Cashflow does not have a forecast curve context.&quot;</span>); }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keywordtype">size_t</span> curveIdx = cashflow.rateIndexContextIdx();</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                MarketRequest::ForwardRate fwd(cashflow.startDate(), cashflow.endDate(), curveIdx);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keywordflow">if</span> (fwdsMap_.find(fwd) == fwdsMap_.end()) {</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    fwdsVector_.push_back(fwd);</div>
@@ -261,26 +245,28 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}  <span class="comment">// namespace Atlas</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#endif </span><span class="comment">/* EDA3136B_5C3D_4D8A_8F4A_AE6D1B5AC406 */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_atlas_1_1_fix_float_swap_html"><div class="ttname"><a href="class_atlas_1_1_fix_float_swap.html">Atlas::FixFloatSwap</a></div><div class="ttdef"><b>Definition:</b> fixfloatswap.hpp:11</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html">Atlas::FixedRateInstrument</a></div><div class="ttdoc">An class for fixed-rate-single-legged instruments.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:16</div></div>
-<div class="ttc" id="aclass_atlas_1_1_floating_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_floating_rate_instrument.html">Atlas::FloatingRateInstrument</a></div><div class="ttdoc">An class for floating, single-legged, rate instruments.</div><div class="ttdef"><b>Definition:</b> floatingrateinstrument.hpp:15</div></div>
-<div class="ttc" id="aclass_atlas_1_1_fx_forward_html"><div class="ttname"><a href="class_atlas_1_1_fx_forward.html">Atlas::FxForward</a></div><div class="ttdoc">FxForward instrument.</div><div class="ttdef"><b>Definition:</b> fxforward.hpp:16</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fix_float_swap_html"><div class="ttname"><a href="class_atlas_1_1_fix_float_swap.html">Atlas::FixFloatSwap</a></div><div class="ttdoc">A class for fixed-float swap instruments.</div><div class="ttdef"><b>Definition:</b> fixfloatswap.hpp:19</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fixed_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_fixed_rate_instrument.html">Atlas::FixedRateInstrument</a></div><div class="ttdoc">An class for fixed-rate-single-legged instruments.</div><div class="ttdef"><b>Definition:</b> fixedrateinstrument.hpp:24</div></div>
+<div class="ttc" id="aclass_atlas_1_1_floating_rate_instrument_html"><div class="ttname"><a href="class_atlas_1_1_floating_rate_instrument.html">Atlas::FloatingRateInstrument</a></div><div class="ttdoc">An class for floating, single-legged, rate instruments.</div><div class="ttdef"><b>Definition:</b> floatingrateinstrument.hpp:20</div></div>
+<div class="ttc" id="aclass_atlas_1_1_fx_forward_html"><div class="ttname"><a href="class_atlas_1_1_fx_forward.html">Atlas::FxForward</a></div><div class="ttdoc">A forward contract on an FX rate.</div><div class="ttdef"><b>Definition:</b> fxforward.hpp:18</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html"><div class="ttname"><a href="class_atlas_1_1_indexer.html">Atlas::Indexer</a></div><div class="ttdoc">A class for indexing the cashflows of an instrument.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:21</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_a027cb65cfee4f1e2277c8339fa4153a0"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a027cb65cfee4f1e2277c8339fa4153a0">Atlas::Indexer::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears the indexer.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:128</div></div>
-<div class="ttc" id="aclass_atlas_1_1_indexer_html_a08d10435109b34d246926a9377370e83"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a08d10435109b34d246926a9377370e83">Atlas::Indexer::Indexer</a></div><div class="ttdeci">Indexer()</div><div class="ttdef"><b>Definition:</b> indexer.hpp:23</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_a1058adefc1c8ea0dfb808786fee0e2e1"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a1058adefc1c8ea0dfb808786fee0e2e1">Atlas::Indexer::visit</a></div><div class="ttdeci">void visit(FxForward&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Indexes the cashflows of an FX forward.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:62</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_a6fb028b4770547275dff61c79925a40d"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a6fb028b4770547275dff61c79925a40d">Atlas::Indexer::visit</a></div><div class="ttdeci">void visit(FixedRateInstrument&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Indexes the cashflows of a fixed rate instrument.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:30</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_a72c7e9d2436c84ff607485bed0e3d45b"><div class="ttname"><a href="class_atlas_1_1_indexer.html#a72c7e9d2436c84ff607485bed0e3d45b">Atlas::Indexer::setRequest</a></div><div class="ttdeci">void setRequest(MarketRequest &amp;request)</div><div class="ttdoc">Set the Request object.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:106</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_ad1d7b6ef058ef9235b2259705eae60a2"><div class="ttname"><a href="class_atlas_1_1_indexer.html#ad1d7b6ef058ef9235b2259705eae60a2">Atlas::Indexer::visit</a></div><div class="ttdeci">void visit(FixFloatSwap&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Indexes the cashflows of a fixed float swap.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:88</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_ae329c8378c214b84ec15a636922aa714"><div class="ttname"><a href="class_atlas_1_1_indexer.html#ae329c8378c214b84ec15a636922aa714">Atlas::Indexer::request</a></div><div class="ttdeci">MarketRequest request()</div><div class="ttdoc">Get the Request object.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:118</div></div>
 <div class="ttc" id="aclass_atlas_1_1_indexer_html_ae483e05ea480b62001057d9b49dcfeed"><div class="ttname"><a href="class_atlas_1_1_indexer.html#ae483e05ea480b62001057d9b49dcfeed">Atlas::Indexer::visit</a></div><div class="ttdeci">void visit(FloatingRateInstrument&lt; adouble &gt; &amp;inst) override</div><div class="ttdoc">Indexes the cashflows of a floating rate instrument.</div><div class="ttdef"><b>Definition:</b> indexer.hpp:46</div></div>
-<div class="ttc" id="aclass_atlas_1_1_instrument_html_a27758814f8df1184d0db8944f189c2b3"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">Atlas::Instrument::endDate</a></div><div class="ttdeci">Date endDate() const</div><div class="ttdoc">Returns the end date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:50</div></div>
-<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a50d8bb1831fe247da8aa96d105580a71"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">Atlas::OneLegMixin::disbursement</a></div><div class="ttdeci">Cashflow&lt; adouble &gt; &amp; disbursement()</div><div class="ttdoc">Returns the disbursement of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:56</div></div>
-<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a87c1fc1edb2367e6ca21820e32afc9f3"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">Atlas::OneLegMixin::leg</a></div><div class="ttdeci">const FirstLeg &amp; leg() const</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:25</div></div>
+<div class="ttc" id="aclass_atlas_1_1_indexer_html_aff543f741252d9331082d61457af13b8"><div class="ttname"><a href="class_atlas_1_1_indexer.html#aff543f741252d9331082d61457af13b8">Atlas::Indexer::Indexer</a></div><div class="ttdeci">Indexer()=default</div></div>
+<div class="ttc" id="aclass_atlas_1_1_instrument_html_a27758814f8df1184d0db8944f189c2b3"><div class="ttname"><a href="class_atlas_1_1_instrument.html#a27758814f8df1184d0db8944f189c2b3">Atlas::Instrument::endDate</a></div><div class="ttdeci">Date endDate() const</div><div class="ttdoc">Returns the end date of the instrument.</div><div class="ttdef"><b>Definition:</b> instrument.hpp:53</div></div>
+<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a50d8bb1831fe247da8aa96d105580a71"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a50d8bb1831fe247da8aa96d105580a71">Atlas::OneLegMixin::disbursement</a></div><div class="ttdeci">Cashflow&lt; adouble &gt; &amp; disbursement()</div><div class="ttdoc">Returns the disbursement of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:69</div></div>
+<div class="ttc" id="aclass_atlas_1_1_one_leg_mixin_html_a87c1fc1edb2367e6ca21820e32afc9f3"><div class="ttname"><a href="class_atlas_1_1_one_leg_mixin.html#a87c1fc1edb2367e6ca21820e32afc9f3">Atlas::OneLegMixin::leg</a></div><div class="ttdeci">const FirstLeg &amp; leg() const</div><div class="ttdoc">Returns the leg of the instrument.</div><div class="ttdef"><b>Definition:</b> onelegmixin.hpp:32</div></div>
 <div class="ttc" id="aclass_atlas_1_1_two_leg_mixin_html_a9b3e3eefe4fe8b44c61260ad78946f7e"><div class="ttname"><a href="class_atlas_1_1_two_leg_mixin.html#a9b3e3eefe4fe8b44c61260ad78946f7e">Atlas::TwoLegMixin::firstLeg</a></div><div class="ttdeci">const FirstLeg &amp; firstLeg() const</div><div class="ttdef"><b>Definition:</b> twolegmixin.hpp:19</div></div>
 <div class="ttc" id="aclass_atlas_1_1_two_leg_mixin_html_ad639a0b047c81ce2f37033103dc9c409"><div class="ttname"><a href="class_atlas_1_1_two_leg_mixin.html#ad639a0b047c81ce2f37033103dc9c409">Atlas::TwoLegMixin::secondLeg</a></div><div class="ttdeci">const SecondLeg &amp; secondLeg() const</div><div class="ttdef"><b>Definition:</b> twolegmixin.hpp:23</div></div>
-<div class="ttc" id="aclass_atlas_1_1_visitor_html"><div class="ttname"><a href="class_atlas_1_1_visitor.html">Atlas::Visitor</a></div><div class="ttdoc">Visitor class.</div><div class="ttdef"><b>Definition:</b> visitor.hpp:39</div></div>
+<div class="ttc" id="aclass_atlas_1_1_visitor_html"><div class="ttname"><a href="class_atlas_1_1_visitor.html">Atlas::Visitor</a></div><div class="ttdoc">Visitor class.</div><div class="ttdef"><b>Definition:</b> visitor.hpp:40</div></div>
+<div class="ttc" id="afixedrateinstrument_8hpp_html"><div class="ttname"><a href="fixedrateinstrument_8hpp.html">fixedrateinstrument.hpp</a></div></div>
 <div class="ttc" id="afixfloatswap_8hpp_html"><div class="ttname"><a href="fixfloatswap_8hpp.html">fixfloatswap.hpp</a></div></div>
+<div class="ttc" id="afloatingrateinstrument_8hpp_html"><div class="ttname"><a href="floatingrateinstrument_8hpp.html">floatingrateinstrument.hpp</a></div></div>
 <div class="ttc" id="afxforward_8hpp_html"><div class="ttname"><a href="fxforward_8hpp.html">fxforward.hpp</a></div></div>
 <div class="ttc" id="amarketdata_8hpp_html"><div class="ttname"><a href="marketdata_8hpp.html">marketdata.hpp</a></div></div>
 <div class="ttc" id="anamespace_atlas_html"><div class="ttname"><a href="namespace_atlas.html">Atlas</a></div><div class="ttdoc">Atlas namespace.</div><div class="ttdef"><b>Definition:</b> atlasconfig.hpp:29</div></div>
@@ -293,13 +279,9 @@ $(document).ready(function(){initNavTree('indexer_8hpp_source.html',''); initRes
 <div class="ttc" id="astruct_atlas_1_1_market_request_html_af22d92ae1a4b60432b07a430b598e344"><div class="ttname"><a href="struct_atlas_1_1_market_request.html#af22d92ae1a4b60432b07a430b598e344">Atlas::MarketRequest::dfs</a></div><div class="ttdeci">std::vector&lt; DiscountFactor &gt; dfs</div><div class="ttdef"><b>Definition:</b> marketrequest.hpp:77</div></div>
 <div class="ttc" id="avisitor_8hpp_html"><div class="ttname"><a href="visitor_8hpp.html">visitor.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0e13c10e94116d4d3fea30b17d375539.html">atlas</a></li><li class="navelem"><a class="el" href="dir_a53b472716e5ae16db1319bb27f60f9a.html">visitors</a></li><li class="navelem"><a class="el" href="indexer_8hpp.html">indexer.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

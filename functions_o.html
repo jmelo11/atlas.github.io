@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_o.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,19 +75,16 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
 <li>object()&#160;:&#160;<a class="el" href="class_atlas_1_1_context.html#a83a8e08038fdf93b5702b54f82ebfef0">Atlas::Context&lt; T &gt;</a></li>
 <li>OneLegMixin()&#160;:&#160;<a class="el" href="class_atlas_1_1_one_leg_mixin.html#a4ebf0c3e10e58b7360fa70620baceb25">Atlas::OneLegMixin&lt; adouble, FirstLeg &gt;</a></li>
-<li>operator()()&#160;:&#160;<a class="el" href="class_atlas_1_1_interpolator.html#a64f9e6b1781094442c370545a0e228cc">Atlas::Interpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_linear_interpolator.html#a63be65a9af2bd0e833262c9ba3559b90">Atlas::LinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_log_linear_interpolator.html#ae662b802dfa0123a12e4ee1669cb2be4">Atlas::LogLinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_discount_factor_01_4.html#aa564dec821a4872f550c858770ee756d">std::hash&lt; Atlas::MarketRequest::DiscountFactor &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_exchange_rate_01_4.html#a91d9aa8438fb19b2e94ef72449bd1b81">std::hash&lt; Atlas::MarketRequest::ExchangeRate &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_forward_rate_01_4.html#a60e63542a413541ba1481472a930522a">std::hash&lt; Atlas::MarketRequest::ForwardRate &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_price_01_4.html#af6249a681b33371471339365de4e0ced">std::hash&lt; Atlas::MarketRequest::Price &gt;</a>, <a class="el" href="structstd_1_1hash_3_01std_1_1tuple_3_01size__t_00_01size__t_01_4_01_4.html#aa49bdbef696fa329484cb3a2445ad05b">std::hash&lt; std::tuple&lt; size_t, size_t &gt; &gt;</a></li>
+<li>operator()()&#160;:&#160;<a class="el" href="class_atlas_1_1_base_const_visitor.html#aa1e0e8fcbd3553b53d421f00537e7a95">Atlas::BaseConstVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_base_visitor.html#a9a4daedf29b93993399dcdea8dafbac6">Atlas::BaseVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_fixing_visitor.html#a8923caa847376755a33229c8887e6515">Atlas::FixingVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_indexing_visitor.html#ae4980c0e05f524add46ad3a3fe86f0e9">Atlas::IndexingVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_interpolator.html#a64f9e6b1781094442c370545a0e228cc">Atlas::Interpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_linear_interpolator.html#a63be65a9af2bd0e833262c9ba3559b90">Atlas::LinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_log_linear_interpolator.html#ae662b802dfa0123a12e4ee1669cb2be4">Atlas::LogLinearInterpolator&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_n_p_v_const_visitor.html#abf78800f9be3f37d06cd44d8892fc128">Atlas::NPVConstVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_par_rate_const_visitor.html#a60a02f083766d56de0940b8a6a40b2e9">Atlas::ParRateConstVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_sensibility_const_visitor.html#af8c5ace4d8d96f1cd7baf5b4ee57d541">Atlas::SensibilityConstVisitor&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_z_spread_const_visitor.html#a6e7d49aa041b798173f1c051d4a8f3d9">Atlas::ZSpreadConstVisitor&lt; adouble &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_discount_factor_01_4.html#aa564dec821a4872f550c858770ee756d">std::hash&lt; Atlas::MarketRequest::DiscountFactor &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_exchange_rate_01_4.html#a91d9aa8438fb19b2e94ef72449bd1b81">std::hash&lt; Atlas::MarketRequest::ExchangeRate &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_forward_rate_01_4.html#a60e63542a413541ba1481472a930522a">std::hash&lt; Atlas::MarketRequest::ForwardRate &gt;</a>, <a class="el" href="structstd_1_1hash_3_01_atlas_1_1_market_request_1_1_price_01_4.html#af6249a681b33371471339365de4e0ced">std::hash&lt; Atlas::MarketRequest::Price &gt;</a>, <a class="el" href="structstd_1_1hash_3_01std_1_1tuple_3_01size__t_00_01size__t_01_4_01_4.html#aa49bdbef696fa329484cb3a2445ad05b">std::hash&lt; std::tuple&lt; size_t, size_t &gt; &gt;</a></li>
 <li>operator+()&#160;:&#160;<a class="el" href="struct_atlas_1_1_bucket.html#a623d5277c827c3fea2b2d1d81e2df047">Atlas::Bucket&lt; adouble &gt;</a>, <a class="el" href="class_atlas_1_1_profile.html#a4b56d46fb21fcc72a926816050a87164">Atlas::Profile&lt; adouble &gt;</a></li>
 <li>operator=()&#160;:&#160;<a class="el" href="class_atlas_1_1_thread_pool.html#a1320c5ba7bc6c1b16eb050d76dbeb55a">Atlas::ThreadPool</a>, <a class="el" href="class_atlas_1_1_yield_term_structure.html#ac0b1e4845f260fc459c1dd191f421fbe">Atlas::YieldTermStructure&lt; adouble &gt;</a></li>
 <li>operator==()&#160;:&#160;<a class="el" href="struct_atlas_1_1_market_request_1_1_discount_factor.html#a803e95ba3dc3df84a1dc291e11f78e20">Atlas::MarketRequest::DiscountFactor</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_exchange_rate.html#adcb989ca81baa412f9edfe1e78d21e5a">Atlas::MarketRequest::ExchangeRate</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_forward_rate.html#aab7f53d10ce477d00b99855c7f4a3958">Atlas::MarketRequest::ForwardRate</a>, <a class="el" href="struct_atlas_1_1_market_request_1_1_price.html#a5561c5984ca60db5625091f2a4fd9b45">Atlas::MarketRequest::Price</a></li>
 <li>operator[]()&#160;:&#160;<a class="el" href="class_b_s_1_1multi__future.html#a304215df62ff42c3f32eb707b99db47e">BS::multi_future&lt; T &gt;</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

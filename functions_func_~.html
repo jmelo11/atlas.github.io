@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -52,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_~.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -93,16 +73,18 @@ $(document).ready(function(){initNavTree('functions_func_~.html',''); initResiza
 &#160;
 
 <h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
+<li>~BaseConstVisitor()&#160;:&#160;<a class="el" href="class_atlas_1_1_base_const_visitor.html#aff1d99ba32029231ed9ef94146d5f9b3">Atlas::BaseConstVisitor&lt; adouble &gt;</a></li>
+<li>~BaseVisitor()&#160;:&#160;<a class="el" href="class_atlas_1_1_base_visitor.html#a43cad4142240e9127acccfc11f63a467">Atlas::BaseVisitor&lt; adouble &gt;</a></li>
+<li>~CashAccount()&#160;:&#160;<a class="el" href="class_atlas_1_1_cash_account.html#aa6c3911fee3ed2b378facafec289f081">Atlas::CashAccount&lt; adouble, LegType &gt;</a></li>
 <li>~Cashflow()&#160;:&#160;<a class="el" href="class_atlas_1_1_cashflow.html#ab5a8bfc45f137aeabb3d578fc27e5427">Atlas::Cashflow&lt; adouble &gt;</a></li>
 <li>~ConcurrentQueue()&#160;:&#160;<a class="el" href="class_atlas_1_1_concurrent_queue.html#af22d915e5ddde57c95d9c30cf08f5390">Atlas::ConcurrentQueue&lt; T &gt;</a></li>
 <li>~ConstVisitor()&#160;:&#160;<a class="el" href="class_atlas_1_1_const_visitor.html#adfe85ae18a495237f71e0d31ebe379df">Atlas::ConstVisitor&lt; adouble &gt;</a></li>
 <li>~Coupon()&#160;:&#160;<a class="el" href="class_atlas_1_1_coupon.html#a9313acc1cbbb072ac53c2805ec9ac4ae">Atlas::Coupon&lt; adouble &gt;</a></li>
 <li>~FixedRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_fixed_rate_instrument.html#a521aca09382f94469fdb07682b312b1e">Atlas::FixedRateInstrument&lt; adouble &gt;</a></li>
 <li>~FloatingRateInstrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_floating_rate_instrument.html#a987547765e97f0fa65536d01453d3182">Atlas::FloatingRateInstrument&lt; adouble &gt;</a></li>
-<li>~Indexable()&#160;:&#160;<a class="el" href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">Atlas::Indexable</a></li>
+<li>~Indexable()&#160;:&#160;<a class="el" href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">Atlas::Indexable</a></li>
 <li>~Instrument()&#160;:&#160;<a class="el" href="class_atlas_1_1_instrument.html#a6d4756886ef720ded4b12d6f5d1dc5e0">Atlas::Instrument&lt; adouble &gt;</a></li>
 <li>~Leg()&#160;:&#160;<a class="el" href="class_atlas_1_1_leg.html#a2e7097cff0ac6aeb1a51945aa0868c11">Atlas::Leg&lt; adouble &gt;</a></li>
-<li>~Leg2()&#160;:&#160;<a class="el" href="class_atlas_1_1_leg2.html#aabbd7d3ca19e13e7307218952db65523">Atlas::Leg2&lt; adouble, Flow &gt;</a></li>
 <li>~Model()&#160;:&#160;<a class="el" href="class_atlas_1_1_model.html#ae9cef0c6416a5299ba67040dfb275a29">Atlas::Model&lt; adouble &gt;</a></li>
 <li>~thread_pool()&#160;:&#160;<a class="el" href="class_b_s_1_1thread__pool.html#a1f7cc32367d0d0c020bf103782506998">BS::thread_pool</a></li>
 <li>~ThreadPool()&#160;:&#160;<a class="el" href="class_atlas_1_1_thread_pool.html#abc84feecb36d4d27b8b992f253a53cc0">Atlas::ThreadPool</a></li>
@@ -111,12 +93,9 @@ $(document).ready(function(){initNavTree('functions_func_~.html',''); initResiza
 <li>~YieldTermStructureStrategy()&#160;:&#160;<a class="el" href="class_atlas_1_1_yield_term_structure_strategy.html#a1f4b65772324cc39efd6160e16f416d9">Atlas::YieldTermStructureStrategy&lt; adouble &gt;</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -25,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Atlas<span id="projectnumber">&#160;2.0.5</span>
    </div>
    <div id="projectbrief">Financial Library</div>
   </td>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_atlas_1_1_coupon.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,6 +68,11 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_coupon.html',''); init
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_coupon.html">Coupon</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Atlas::Coupon&lt; adouble &gt; Member List</div></div>
 </div><!--header-->
@@ -96,8 +80,8 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_coupon.html',''); init
 
 <p>This is the complete list of members for <a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a610514a287b8a5548abc73b01900c035">accruedAmount</a>(const Date &amp;start, const Date &amp;end) const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#ae58e2178e8506a7d2b43d7682c247d58">accruedPeriod</a>(const Date &amp;start, const Date &amp;end) const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a413fa1f13564c63d0a3a3f6dca1f6bce">accruedAmount</a>(const Date &amp;refStart, const Date &amp;refEnd) const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#abe1303b917b835b9dd4e2b56a7ba21b7">accruedPeriod</a>(const Date &amp;refStart, const Date &amp;refEnd) const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a2161615ad65ac66fbbb364f38dfdcf7b">amount</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a75d9d0b4f2b50a817e4dca443d877988">amount_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a046318687be0373b18734f7790257902">applyCcy</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -108,40 +92,40 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_coupon.html',''); init
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#abc81093eed09d778268b952021d38c96">Cashflow</a>(const Date &amp;paymentDate, adouble amount)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a47363aad4621b04197c8cbf24a2bb077">Cashflow</a>(const Date &amp;paymentDate, adouble amount, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ae3637686a25c36b0811fe08dff39af75">ccyCode_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a898617672131520d58e2a906f843dbcf">Coupon</a>(const Date &amp;startDate, const Date &amp;endDate, double notional)</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a572913e99b4765d6075b6eb920665f91">Coupon</a>(const Date &amp;startDate, const Date &amp;endDate, double notional, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a34edbd9696da2099754df4c27d79f128">currency</a>(const Currency &amp;ccy)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab8dadeab8dd5e1c5f464a5885be2abc4">currencyCode</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a5d1793ee7d4225cc52104e51f8556245">dayCounter</a>() const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">dfIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">dfIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#af77fefe868c1af4d88ab4147e4d49cf3">discountContextIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a276a890ddc304134a1947ddc7d2b77ab">discountContextIdx_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;context)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">fwdIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">fwdIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">fxIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">fxIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ad8efe920eb093280f9cf762f8592380a">hasDiscountContext</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a8f1cf5aa973805de3444d9650b77964d">hasDiscountContext_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a6d1a55fe576e20b114ef75f45d5dae9b">hasOcurred</a>(const Date &amp;date) const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a1eeb374df93d1e32212a53190730fe6a">paymentDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab71bda8b24c41b24e1eba760dafcd226">paymentDate_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">priceIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">priceIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab5a8bfc45f137aeabb3d578fc27e5427">~Cashflow</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a9313acc1cbbb072ac53c2805ec9ac4ae">~Coupon</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#ad51adcc4b5852793ea936d1aae6737dc">~Indexable</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a0f834eeb548bec491e8062853c9333c2">checkDates</a>(const Date &amp;start, const Date &amp;end) const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a898617672131520d58e2a906f843dbcf">Coupon</a>(const Date &amp;startDate, const Date &amp;endDate, double notional)</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a572913e99b4765d6075b6eb920665f91">Coupon</a>(const Date &amp;startDate, const Date &amp;endDate, double notional, const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;discountCurveContext)</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a34edbd9696da2099754df4c27d79f128">currency</a>(const Currency &amp;ccy)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab8dadeab8dd5e1c5f464a5885be2abc4">currencyCode</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a5d1793ee7d4225cc52104e51f8556245">dayCounter</a>() const =0</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a4fa9ca22ae473d9db3973a6be271859e">dfIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#af910d6be011944d9675a3329c9629d4b">dfIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#af77fefe868c1af4d88ab4147e4d49cf3">discountContextIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a276a890ddc304134a1947ddc7d2b77ab">discountContextIdx_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a65fac87ecd77664c1b090769038ec1d7">discountCurveContext</a>(const Context&lt; YieldTermStructure&lt; adouble &gt; &gt; &amp;context)</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a54d69223f1e22be302e08b50a103928a">endDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a8ec2384db9ee418923dd68ab9a452dfc">fwdIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a41cd3e13bf77727bdffae887c76f3960">fwdIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a2ebb7c64ed13e2d4bd7c67c177ea302f">fxIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#ade668ba64b5e6055332b6cceaf877bae">fxIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ad8efe920eb093280f9cf762f8592380a">hasDiscountContext</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a8f1cf5aa973805de3444d9650b77964d">hasDiscountContext_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a6d1a55fe576e20b114ef75f45d5dae9b">hasOcurred</a>(const Date &amp;date) const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a13826d18ebf48eb59aca69d11dba14a0">isIndexed</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a136b1ac911546cded86d15afb1a00e60">isIndexed</a>(bool isIndexed)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a7e81220885389f3dc1341539994ccfd2">notional</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#a1eeb374df93d1e32212a53190730fe6a">paymentDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab71bda8b24c41b24e1eba760dafcd226">paymentDate_</a></td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a7243ee72a5fed09f380832b5f5dad3e8">priceIdx</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#a36453e97eaf4761d4adbcedd5c53c589">priceIdx</a>(size_t idx)</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a8666508ffb1a33f8963e2bb6fe26a624">startDate</a>() const</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html#ab5a8bfc45f137aeabb3d578fc27e5427">~Cashflow</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_cashflow.html">Atlas::Cashflow&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html#a9313acc1cbbb072ac53c2805ec9ac4ae">~Coupon</a>()</td><td class="entry"><a class="el" href="class_atlas_1_1_coupon.html">Atlas::Coupon&lt; adouble &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html#aa9dee563eafdf88bba62d6f07c386521">~Indexable</a>()=default</td><td class="entry"><a class="el" href="class_atlas_1_1_indexable.html">Atlas::Indexable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
 </body>
 </html>
